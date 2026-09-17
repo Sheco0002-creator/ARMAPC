@@ -1,0 +1,25 @@
+# Fotos de PCPartPicker (JORGE, PECERA_pcpartpicker_2026-09-16/fotos) que pasan el estándar:
+# >= 900 px y revisadas a ojo el 16-09-2026 (producto entero, color correcto, sin sellos ni textos).
+# El resto de las altas mide menos de 900 px y usa la genérica.
+CC-H61FW-01
+CM-H92FW-P1
+CS-HYTE-Y70-WW
+O11DERGBW
+O11DEXL-W
+CC-9011310-WW
+MLW-D36M-A18PZ-RW
+RL-KR360-W2
+CW-9061021-WW
+B850M-EAGLE-WIFI6E-ICE
+X870-AORUS-ELITE-WIFI7-ICE
+90MB1I60-M0AAY0
+CP2K16G60C36U5W
+KF560C36BWEK2-64
+CO-9050196-WW
+CO-9050197-WW
+12RSL1F3W
+12RCL1F3B
+90DA00K0-B08020
+TL-M12QRW-S-X3
+CL-F195-PL14SW-A
+# GV-R907XGAMINGOCICE-16GD: foto de B&H (1000 px), puesta a mano en el catálogo

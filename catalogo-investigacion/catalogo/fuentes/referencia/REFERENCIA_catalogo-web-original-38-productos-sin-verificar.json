@@ -1,0 +1,707 @@
+[
+  {
+    "n": 1,
+    "categoria": "ram",
+    "nombre_original": "Corsair Vengeance DDR5-5600 16GB (2x8GB) CL36",
+    "campos_originales": {
+      "Marca": "Corsair",
+      "Tipo": "DDR5",
+      "Capacidad": "16GB (2x8GB)",
+      "Velocidad": "5600 MHz",
+      "Latencia": "CL36",
+      "Voltaje": "1.25V",
+      "RGB": "No",
+      "Perfil XMP/EXPO": "Sí (Intel XMP 3.0)",
+      "Precio ref": "~$48 USD"
+    },
+    "url_original": "https://www.corsair.com/us/en/p/memory/cmk16gx5m2b5600c36/vengeance-16gb-2x8gb-ddr5-dram-5600mhz-c36-memory-kit-black-cmk16gx5m2b5600c36/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 2,
+    "categoria": "ram",
+    "nombre_original": "Kingston Fury Beast DDR5-5600 16GB (2x8GB) CL36",
+    "campos_originales": {
+      "Marca": "Kingston",
+      "Tipo": "DDR5",
+      "Capacidad": "16GB (2x8GB)",
+      "Velocidad": "5600 MHz",
+      "Latencia": "CL36",
+      "Voltaje": "1.25V",
+      "RGB": "No",
+      "Perfil XMP/EXPO": "Sí (Intel XMP 3.0 / AMD EXPO)",
+      "Precio ref": "~$45 USD"
+    },
+    "url_original": "https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-memory",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 3,
+    "categoria": "ram",
+    "nombre_original": "TeamGroup T-Force Vulcan DDR5-5600 16GB (2x8GB) CL36",
+    "campos_originales": {
+      "Marca": "TeamGroup",
+      "Tipo": "DDR5",
+      "Capacidad": "16GB (2x8GB)",
+      "Velocidad": "5600 MHz",
+      "Latencia": "CL36",
+      "Voltaje": "1.25V",
+      "RGB": "No",
+      "Perfil XMP/EXPO": "Sí",
+      "Precio ref": "~$42 USD"
+    },
+    "url_original": "https://www.teamgroupinc.com/en/product-detail/memory/TEAM/t-force-vulcan-ddr5/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 4,
+    "categoria": "ram",
+    "nombre_original": "Corsair Vengeance DDR5-6000 32GB (2x16GB) CL30",
+    "campos_originales": {
+      "Marca": "Corsair",
+      "Tipo": "DDR5",
+      "Capacidad": "32GB (2x16GB)",
+      "Velocidad": "6000 MHz",
+      "Latencia": "CL30",
+      "Voltaje": "1.35V",
+      "RGB": "No",
+      "Perfil XMP/EXPO": "Sí (Perfil EXPO para AMD)",
+      "Precio ref": "~$85 USD",
+      "Notas": "El \"sweet spot\" para gaming. 6000 CL30 es la velocidad óptima para AMD AM5 Infinity Fabric 1:1."
+    },
+    "url_original": "https://www.corsair.com/us/en/p/memory/cmk32gx5m2d6000c30/vengeance-32gb-2x16gb-ddr5-dram-6000mt-s-c30-memory-kit-black-cmk32gx5m2d6000c30/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 5,
+    "categoria": "ram",
+    "nombre_original": "G.Skill Trident Z5 NEO DDR5-6000 32GB (2x16GB) CL30",
+    "campos_originales": {
+      "Marca": "G.Skill",
+      "Tipo": "DDR5",
+      "Capacidad": "32GB (2x16GB)",
+      "Velocidad": "6000 MHz",
+      "Latencia": "CL30-36-36-96",
+      "Voltaje": "1.35V",
+      "RGB": "No (versión NEO sin RGB)",
+      "Perfil XMP/EXPO": "Sí (optimizado para AMD EXPO)",
+      "Precio ref": "~$90 USD",
+      "Notas": "Considerada una de las mejores RAM para plataforma AM5"
+    },
+    "url_original": "https://www.gskill.com/product/165/390/1661838901/F5-6000J3040G16GX2-TZ5N",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 6,
+    "categoria": "ram",
+    "nombre_original": "Kingston Fury Beast DDR5-6000 32GB (2x16GB) CL30",
+    "campos_originales": {
+      "Marca": "Kingston",
+      "Tipo": "DDR5",
+      "Capacidad": "32GB (2x16GB)",
+      "Velocidad": "6000 MHz",
+      "Latencia": "CL30",
+      "Voltaje": "1.35V",
+      "RGB": "No",
+      "Perfil XMP/EXPO": "Sí",
+      "Precio ref": "~$82 USD"
+    },
+    "url_original": "https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-memory",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 7,
+    "categoria": "ram",
+    "nombre_original": "TeamGroup T-Force Delta RGB DDR5-6000 32GB (2x16GB) CL30",
+    "campos_originales": {
+      "Marca": "TeamGroup",
+      "Tipo": "DDR5",
+      "Capacidad": "32GB (2x16GB)",
+      "Velocidad": "6000 MHz",
+      "Latencia": "CL30",
+      "Voltaje": "1.35V",
+      "RGB": "Sí (ARGB)",
+      "Perfil XMP/EXPO": "Sí",
+      "Precio ref": "~$88 USD"
+    },
+    "url_original": "https://www.teamgroupinc.com/en/product-detail/memory/TEAM/t-force-delta-rgb-ddr5/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 8,
+    "categoria": "ram",
+    "nombre_original": "G.Skill Trident Z5 RGB DDR5-6400 32GB (2x16GB) CL32",
+    "campos_originales": {
+      "Marca": "G.Skill",
+      "Tipo": "DDR5",
+      "Capacidad": "32GB (2x16GB)",
+      "Velocidad": "6400 MHz",
+      "Latencia": "CL32",
+      "Voltaje": "1.40V",
+      "RGB": "Sí (Crystal RGB)",
+      "Perfil XMP/EXPO": "Sí",
+      "Precio ref": "~$115 USD"
+    },
+    "url_original": "https://www.gskill.com/product/165/388/1661838857/F5-6400J3239G16GX2-TZ5RS",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 9,
+    "categoria": "ram",
+    "nombre_original": "Corsair Dominator Titanium DDR5-6400 32GB (2x16GB) CL32",
+    "campos_originales": {
+      "Marca": "Corsair",
+      "Tipo": "DDR5",
+      "Capacidad": "32GB (2x16GB)",
+      "Velocidad": "6400 MHz",
+      "Latencia": "CL32",
+      "Voltaje": "1.40V",
+      "RGB": "Sí (iCUE Dual-LED patentado)",
+      "Perfil XMP/EXPO": "Sí",
+      "Precio ref": "~$145 USD",
+      "Notas": "Gama premium de Corsair, diseño blanco/negro premium"
+    },
+    "url_original": "https://www.corsair.com/us/en/p/memory/cmp32gx5m2x6400c32/dominator-titanium-32gb-2x16gb-ddr5-6400-c32-memory-cmp32gx5m2x6400c32/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 10,
+    "categoria": "ram",
+    "nombre_original": "G.Skill Trident Z5 Royal Neo DDR5-6800 32GB (2x16GB) CL34",
+    "campos_originales": {
+      "Marca": "G.Skill",
+      "Tipo": "DDR5",
+      "Capacidad": "32GB (2x16GB)",
+      "Velocidad": "6800 MHz",
+      "Latencia": "CL34",
+      "Voltaje": "1.40V",
+      "RGB": "Sí (Crystal LED)",
+      "Perfil XMP/EXPO": "Sí",
+      "Precio ref": "~$140 USD",
+      "Notas": "Alta velocidad, ideal para quienes quieren lo máximo en frecuencia"
+    },
+    "url_original": "https://www.gskill.com/product/165/390/1718086027/F5-6800J3441G16GX2-TZ5RN",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 11,
+    "categoria": "ram",
+    "nombre_original": "Corsair Vengeance DDR5-5600 48GB (2x24GB) CL40",
+    "campos_originales": {
+      "Marca": "Corsair",
+      "Tipo": "DDR5",
+      "Capacidad": "48GB (2x24GB)",
+      "Velocidad": "5600 MHz",
+      "Latencia": "CL40",
+      "Voltaje": "1.25V",
+      "RGB": "No",
+      "Perfil XMP/EXPO": "Sí",
+      "Precio ref": "~$110 USD",
+      "Notas": "Buena opción intermedia entre 32GB y 64GB"
+    },
+    "url_original": "https://www.corsair.com/us/en/p/memory/cmk48gx5m2b5600c40/vengeance-48gb-2x24gb-ddr5-dram-5600mhz-c40-memory-kit-black-cmk48gx5m2b5600c40/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 12,
+    "categoria": "ram",
+    "nombre_original": "G.Skill Trident Z5 NEO DDR5-6000 48GB (2x24GB) CL30",
+    "campos_originales": {
+      "Marca": "G.Skill",
+      "Tipo": "DDR5",
+      "Capacidad": "48GB (2x24GB)",
+      "Velocidad": "6000 MHz",
+      "Latencia": "CL30",
+      "Voltaje": "1.35V",
+      "RGB": "No",
+      "Perfil XMP/EXPO": "Sí",
+      "Precio ref": "~$130 USD"
+    },
+    "url_original": "https://www.gskill.com/product/165/390/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 13,
+    "categoria": "ram",
+    "nombre_original": "Corsair Vengeance DDR5-6000 64GB (2x32GB) CL30",
+    "campos_originales": {
+      "Marca": "Corsair",
+      "Tipo": "DDR5",
+      "Capacidad": "64GB (2x32GB)",
+      "Velocidad": "6000 MHz",
+      "Latencia": "CL30",
+      "Voltaje": "1.35V",
+      "RGB": "No",
+      "Perfil XMP/EXPO": "Sí",
+      "Precio ref": "~$180 USD",
+      "Notas": "Ideal para streaming, edición de video, IA local y juegos pesados en 4K"
+    },
+    "url_original": "https://www.corsair.com/us/en/p/memory/cmk64gx5m2d6000c30/vengeance-64gb-2x32gb-ddr5-dram-6000mt-s-c30-memory-kit-black-cmk64gx5m2d6000c30/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 14,
+    "categoria": "ram",
+    "nombre_original": "G.Skill Trident Z5 RGB DDR5-6000 64GB (2x32GB) CL30",
+    "campos_originales": {
+      "Marca": "G.Skill",
+      "Tipo": "DDR5",
+      "Capacidad": "64GB (2x32GB)",
+      "Velocidad": "6000 MHz",
+      "Latencia": "CL30",
+      "Voltaje": "1.35V",
+      "RGB": "Sí",
+      "Perfil XMP/EXPO": "Sí",
+      "Precio ref": "~$200 USD"
+    },
+    "url_original": "https://www.gskill.com/product/165/388/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 15,
+    "categoria": "ram",
+    "nombre_original": "Kingston Fury Beast DDR5-5600 64GB (2x32GB) CL40",
+    "campos_originales": {
+      "Marca": "Kingston",
+      "Tipo": "DDR5",
+      "Capacidad": "64GB (2x32GB)",
+      "Velocidad": "5600 MHz",
+      "Latencia": "CL40",
+      "Voltaje": "1.25V",
+      "RGB": "No",
+      "Precio ref": "~$165 USD"
+    },
+    "url_original": "https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-memory",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 16,
+    "categoria": "ram",
+    "nombre_original": "Corsair Vengeance LPX DDR4-3200 32GB (2x16GB) CL16",
+    "campos_originales": {
+      "Marca": "Corsair",
+      "Tipo": "DDR4",
+      "Capacidad": "32GB (2x16GB)",
+      "Velocidad": "3200 MHz",
+      "Latencia": "CL16",
+      "RGB": "No",
+      "Precio ref": "~$52 USD",
+      "Notas": "Para builds AM4 y LGA1700 económicos que usen placas DDR4"
+    },
+    "url_original": "https://www.corsair.com/us/en/p/memory/cmk32gx4m2e3200c16/vengeance-lpx-32gb-2x16gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk32gx4m2e3200c16/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 17,
+    "categoria": "ram",
+    "nombre_original": "G.Skill Ripjaws V DDR4-3600 32GB (2x16GB) CL18",
+    "campos_originales": {
+      "Marca": "G.Skill",
+      "Tipo": "DDR4",
+      "Capacidad": "32GB (2x16GB)",
+      "Velocidad": "3600 MHz",
+      "Latencia": "CL18",
+      "RGB": "No",
+      "Precio ref": "~$58 USD",
+      "Notas": "Óptimo para Ryzen 5000 AM4 (Infinity Fabric 1:1 a 1800MHz)"
+    },
+    "url_original": "https://www.gskill.com/product/165/184/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 18,
+    "categoria": "ram",
+    "nombre_original": "Kingston Fury Beast DDR4-3200 16GB (2x8GB) CL16",
+    "campos_originales": {
+      "Marca": "Kingston",
+      "Tipo": "DDR4",
+      "Capacidad": "16GB (2x8GB)",
+      "Velocidad": "3200 MHz",
+      "Latencia": "CL16",
+      "RGB": "No",
+      "Precio ref": "~$32 USD",
+      "Notas": "Kit económico para builds AM4 entry"
+    },
+    "url_original": "https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr4-memory",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 1,
+    "categoria": "placa",
+    "nombre_original": "ASUS PRIME B650M-A WiFi II",
+    "campos_originales": {
+      "Marca": "ASUS",
+      "Chipset": "B650",
+      "Socket": "AM5",
+      "Form Factor": "mATX",
+      "RAM": "DDR5, 2 slots, hasta 7200+ MHz",
+      "PCIe": "1x PCIe 4.0 x16",
+      "M.2": "2x M.2 (1x PCIe 4.0)",
+      "WiFi": "WiFi 6",
+      "Precio ref": "~$120 USD"
+    },
+    "url_original": "https://www.asus.com/motherboards-components/motherboards/prime/prime-b650m-a-wifi-ii/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 2,
+    "categoria": "placa",
+    "nombre_original": "MSI MAG B650 TOMAHAWK WiFi",
+    "campos_originales": {
+      "Marca": "MSI",
+      "Chipset": "B650",
+      "Socket": "AM5",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots, hasta 7200+ MHz",
+      "PCIe": "1x PCIe 4.0 x16",
+      "M.2": "2x M.2 (PCIe 4.0)",
+      "WiFi": "WiFi 6E",
+      "VRM": "12+2+1 fases, 60A SPS",
+      "Precio ref": "~$180 USD"
+    },
+    "url_original": "https://www.msi.com/Motherboard/MAG-B650-TOMAHAWK-WIFI",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 3,
+    "categoria": "placa",
+    "nombre_original": "Gigabyte B650 Gaming X AX",
+    "campos_originales": {
+      "Marca": "Gigabyte",
+      "Chipset": "B650",
+      "Socket": "AM5",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots, hasta 7600 MHz",
+      "PCIe": "1x PCIe 4.0 x16",
+      "M.2": "2x M.2",
+      "WiFi": "WiFi 6E",
+      "Precio ref": "~$135 USD"
+    },
+    "url_original": "https://www.gigabyte.com/Motherboard/B650-Gaming-X-AX",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 4,
+    "categoria": "placa",
+    "nombre_original": "ASRock B650M PG Riptide WiFi",
+    "campos_originales": {
+      "Marca": "ASRock",
+      "Chipset": "B650",
+      "Socket": "AM5",
+      "Form Factor": "mATX",
+      "RAM": "DDR5, 2 slots, hasta 7200+ MHz",
+      "PCIe": "1x PCIe 4.0 x16",
+      "M.2": "2x M.2",
+      "WiFi": "WiFi 6E",
+      "Precio ref": "~$110 USD"
+    },
+    "url_original": "https://www.asrock.com/mb/AMD/B650M%20PG%20Riptide%20WiFi/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 5,
+    "categoria": "placa",
+    "nombre_original": "MSI MAG B850 Tomahawk MAX WiFi",
+    "campos_originales": {
+      "Marca": "MSI",
+      "Chipset": "B850",
+      "Socket": "AM5",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots, hasta 8400+ MHz",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "3x M.2 (1x PCIe 5.0)",
+      "WiFi": "WiFi 7",
+      "VRM": "Robusto, ideal para X3D",
+      "Precio ref": "~$230 USD",
+      "Notas": "Verificado como \"Best X3D/Value\" en búsqueda web"
+    },
+    "url_original": "https://www.msi.com/Motherboard/MAG-B850-TOMAHAWK-MAX-WIFI",
+    "sello_original": "verificado_web"
+  },
+  {
+    "n": 6,
+    "categoria": "placa",
+    "nombre_original": "ASRock B850 Pro-A WiFi",
+    "campos_originales": {
+      "Marca": "ASRock",
+      "Chipset": "B850",
+      "Socket": "AM5",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "2x M.2 (PCIe 5.0)",
+      "WiFi": "WiFi 6E/7",
+      "Precio ref": "~$140 USD",
+      "Notas": "Verificado como \"Best Budget AM5\" en búsqueda web"
+    },
+    "url_original": "https://www.asrock.com/mb/AMD/B850%20Pro-A%20WiFi/",
+    "sello_original": "verificado_web"
+  },
+  {
+    "n": 7,
+    "categoria": "placa",
+    "nombre_original": "MSI MAG X870 Tomahawk WiFi",
+    "campos_originales": {
+      "Marca": "MSI",
+      "Chipset": "X870",
+      "Socket": "AM5",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots, hasta 8400+ MHz",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "4x M.2 (2x PCIe 5.0)",
+      "WiFi": "WiFi 7",
+      "USB4": "Sí",
+      "Precio ref": "~$260 USD"
+    },
+    "url_original": "https://www.msi.com/Motherboard/MAG-X870-TOMAHAWK-WIFI",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 8,
+    "categoria": "placa",
+    "nombre_original": "ASUS ROG Strix X870-A Gaming WiFi",
+    "campos_originales": {
+      "Marca": "ASUS",
+      "Chipset": "X870",
+      "Socket": "AM5",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots, hasta 8400+ MHz",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "4x M.2",
+      "WiFi": "WiFi 7",
+      "USB4": "Sí",
+      "Precio ref": "~$310 USD"
+    },
+    "url_original": "https://rog.asus.com/motherboards/rog-strix/rog-strix-x870-a-gaming-wifi/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 9,
+    "categoria": "placa",
+    "nombre_original": "Gigabyte X870 AORUS Elite WiFi7",
+    "campos_originales": {
+      "Marca": "Gigabyte",
+      "Chipset": "X870",
+      "Socket": "AM5",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots, hasta 8400+ MHz",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "4x M.2",
+      "WiFi": "WiFi 7",
+      "Precio ref": "~$280 USD"
+    },
+    "url_original": "https://www.gigabyte.com/Motherboard/X870-AORUS-ELITE-WIFI7",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 10,
+    "categoria": "placa",
+    "nombre_original": "ASUS ROG Strix X870E-E Gaming WiFi",
+    "campos_originales": {
+      "Marca": "ASUS",
+      "Chipset": "X870E",
+      "Socket": "AM5",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots",
+      "PCIe": "2x PCIe 5.0 (GPU + M.2)",
+      "M.2": "5x M.2",
+      "WiFi": "WiFi 7",
+      "USB4": "Dual USB4",
+      "Precio ref": "~$499 USD",
+      "Notas": "Verificado como \"Best Overall AM5\" en búsqueda web"
+    },
+    "url_original": "https://rog.asus.com/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi/",
+    "sello_original": "verificado_web"
+  },
+  {
+    "n": 11,
+    "categoria": "placa",
+    "nombre_original": "ASUS ROG Crosshair X870E Hero",
+    "campos_originales": {
+      "Marca": "ASUS",
+      "Chipset": "X870E",
+      "Socket": "AM5",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots",
+      "PCIe": "2x PCIe 5.0",
+      "M.2": "5x M.2 (Gen5)",
+      "WiFi": "WiFi 7",
+      "USB4": "Dual USB4",
+      "VRM": "Premium 18+2 fases",
+      "Precio ref": "~$600 USD"
+    },
+    "url_original": "https://rog.asus.com/motherboards/rog-crosshair/rog-crosshair-x870e-hero/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 12,
+    "categoria": "placa",
+    "nombre_original": "Gigabyte B860 Eagle WiFi",
+    "campos_originales": {
+      "Marca": "Gigabyte",
+      "Chipset": "B860",
+      "Socket": "LGA 1851",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "2x M.2",
+      "WiFi": "WiFi 6E",
+      "Precio ref": "~$179 USD",
+      "Notas": "Verificado como \"Best Budget LGA1851\" en búsqueda web"
+    },
+    "url_original": "https://www.gigabyte.com/Motherboard/B860-Eagle-WiFi",
+    "sello_original": "verificado_web"
+  },
+  {
+    "n": 13,
+    "categoria": "placa",
+    "nombre_original": "ASRock B860 Pro RS WiFi",
+    "campos_originales": {
+      "Marca": "ASRock",
+      "Chipset": "B860",
+      "Socket": "LGA 1851",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "2x M.2",
+      "WiFi": "WiFi 6E",
+      "USB-C": "Sí",
+      "Precio ref": "~$145 USD"
+    },
+    "url_original": "https://www.asrock.com/mb/Intel/B860%20Pro%20RS%20WiFi/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 14,
+    "categoria": "placa",
+    "nombre_original": "MSI MAG B860M Mortar WiFi",
+    "campos_originales": {
+      "Marca": "MSI",
+      "Chipset": "B860",
+      "Socket": "LGA 1851",
+      "Form Factor": "mATX",
+      "RAM": "DDR5, 2 slots",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "2x M.2",
+      "WiFi": "WiFi 7",
+      "Precio ref": "~$165 USD"
+    },
+    "url_original": "https://www.msi.com/Motherboard/MAG-B860M-MORTAR-WIFI",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 15,
+    "categoria": "placa",
+    "nombre_original": "MSI MPG Z890 Edge Ti WiFi",
+    "campos_originales": {
+      "Marca": "MSI",
+      "Chipset": "Z890",
+      "Socket": "LGA 1851",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots, hasta 9200+ MHz",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "4x M.2 (PCIe 5.0)",
+      "WiFi": "WiFi 7",
+      "VRM": "Fuerte, soporte OC",
+      "Precio ref": "~$369 USD",
+      "Notas": "Verificado como \"Best Performance LGA1851\" en búsqueda web"
+    },
+    "url_original": "https://www.msi.com/Motherboard/MPG-Z890-EDGE-TI-WIFI",
+    "sello_original": "verificado_web"
+  },
+  {
+    "n": 16,
+    "categoria": "placa",
+    "nombre_original": "ASUS ROG Strix Z890-A Gaming WiFi",
+    "campos_originales": {
+      "Marca": "ASUS",
+      "Chipset": "Z890",
+      "Socket": "LGA 1851",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "4x M.2",
+      "WiFi": "WiFi 7",
+      "Precio ref": "~$295 USD"
+    },
+    "url_original": "https://rog.asus.com/motherboards/rog-strix/rog-strix-z890-a-gaming-wifi/",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 17,
+    "categoria": "placa",
+    "nombre_original": "ASUS ROG Maximus Z890 Hero",
+    "campos_originales": {
+      "Marca": "ASUS",
+      "Chipset": "Z890",
+      "Socket": "LGA 1851",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots",
+      "PCIe": "2x PCIe 5.0",
+      "M.2": "5x M.2",
+      "WiFi": "WiFi 7",
+      "VRM": "Ultra premium",
+      "Precio ref": "~$660 USD",
+      "Notas": "Verificado como \"Best High-End LGA1851\" en búsqueda web"
+    },
+    "url_original": "https://rog.asus.com/motherboards/rog-maximus/rog-maximus-z890-hero/",
+    "sello_original": "verificado_web"
+  },
+  {
+    "n": 18,
+    "categoria": "placa",
+    "nombre_original": "MSI MAG B760M Mortar WiFi II",
+    "campos_originales": {
+      "Marca": "MSI",
+      "Chipset": "B760",
+      "Socket": "LGA 1700",
+      "Form Factor": "mATX",
+      "RAM": "DDR5, 2 slots, hasta 7800+ MHz",
+      "PCIe": "1x PCIe 4.0 x16",
+      "M.2": "2x M.2 (PCIe 4.0)",
+      "WiFi": "WiFi 6E",
+      "Precio ref": "~$150 USD"
+    },
+    "url_original": "https://www.msi.com/Motherboard/MAG-B760M-MORTAR-WIFI-II",
+    "sello_original": "no_verificado"
+  },
+  {
+    "n": 19,
+    "categoria": "placa",
+    "nombre_original": "MSI MAG Z790 Tomahawk WiFi",
+    "campos_originales": {
+      "Marca": "MSI",
+      "Chipset": "Z790",
+      "Socket": "LGA 1700",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "4x M.2",
+      "WiFi": "WiFi 6E",
+      "VRM": "Robusto para i7/i9",
+      "Precio ref": "~$230 USD",
+      "Notas": "Verificado como \"Best Overall LGA1700\" en búsqueda web"
+    },
+    "url_original": "https://www.msi.com/Motherboard/MAG-Z790-TOMAHAWK-WIFI",
+    "sello_original": "verificado_web"
+  },
+  {
+    "n": 20,
+    "categoria": "placa",
+    "nombre_original": "Gigabyte Z790 AORUS Elite AX",
+    "campos_originales": {
+      "Marca": "Gigabyte",
+      "Chipset": "Z790",
+      "Socket": "LGA 1700",
+      "Form Factor": "ATX",
+      "RAM": "DDR5, 4 slots",
+      "PCIe": "1x PCIe 5.0 x16",
+      "M.2": "4x M.2",
+      "WiFi": "WiFi 6E",
+      "Precio ref": "~$250 USD",
+      "Notas": "Verificado como \"Best Value LGA1700\" en búsqueda web"
+    },
+    "url_original": "https://www.gigabyte.com/Motherboard/Z790-AORUS-ELITE-AX",
+    "sello_original": "verificado_web"
+  }
+]

@@ -1,0 +1,102 @@
+﻿Brand,MPN,EAN,Model,Description,Category,SourceURL
+AMD,,,Ryzen 5 5600,AMD Ryzen 5 5600,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600.html
+AMD,,,Ryzen 5 5600X,AMD Ryzen 5 5600X,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-5-5600x.html
+AMD,,,Ryzen 7 5700X3D,AMD Ryzen 7 5700X3D,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/5000-series/amd-ryzen-7-5700x3d.html
+AMD,,,Ryzen 5 7600,AMD Ryzen 5 7600,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600.html
+AMD,,,Ryzen 5 7600X,AMD Ryzen 5 7600X,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600x.html
+AMD,,,Ryzen 5 9600X,AMD Ryzen 5 9600X,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html
+AMD,,,Ryzen 7 7700X,AMD Ryzen 7 7700X,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7700x.html
+AMD,,,Ryzen 7 9700X,AMD Ryzen 7 9700X,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html
+AMD,,,Ryzen 7 7800X3D,AMD Ryzen 7 7800X3D,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html
+AMD,,,Ryzen 7 9800X3D,AMD Ryzen 7 9800X3D,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html
+AMD,,,Ryzen 7 9850X3D,AMD Ryzen 7 9850X3D,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html
+AMD,,,Ryzen 9 9900X,AMD Ryzen 9 9900X,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html
+AMD,,,Ryzen 9 9950X,AMD Ryzen 9 9950X,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html
+AMD,,,Ryzen 9 9950X3D,AMD Ryzen 9 9950X3D,CPU,https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html
+Intel,,,Core Ultra 5 245K,Intel Core Ultra 5 245K,CPU,https://www.intel.com/content/www/us/en/products/sku/241046/intel-core-ultra-5-processor-245k/specifications.html
+Intel,,,Core Ultra 5 250K Plus,Intel Core Ultra 5 250K Plus,CPU,https://www.intel.com/content/www/us/en/products/details/processors/core-ultra.html
+Intel,,,Core Ultra 7 265K,Intel Core Ultra 7 265K,CPU,https://www.intel.com/content/www/us/en/products/sku/241048/intel-core-ultra-7-processor-265k/specifications.html
+Intel,,,Core Ultra 7 270K Plus,Intel Core Ultra 7 270K Plus,CPU,https://www.intel.com/content/www/us/en/products/details/processors/core-ultra.html
+Intel,,,Core Ultra 9 285K,Intel Core Ultra 9 285K,CPU,https://www.intel.com/content/www/us/en/products/sku/241050/intel-core-ultra-9-processor-285k/specifications.html
+Intel,,,Core i5-14600K,Intel Core i5-14600K,CPU,https://www.intel.com/content/www/us/en/products/sku/236787/intel-core-i5-processor-14600k/specifications.html
+Intel,,,Core i7-14700K,Intel Core i7-14700K,CPU,https://www.intel.com/content/www/us/en/products/sku/236789/intel-core-i7-processor-14700k/specifications.html
+Intel,,,Core i9-14900K,Intel Core i9-14900K,CPU,https://www.intel.com/content/www/us/en/products/sku/236791/intel-core-i9-processor-14900k/specifications.html
+NVIDIA,,,GeForce RTX 5060 8GB,NVIDIA GeForce RTX 5060 8GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5060/
+NVIDIA,,,GeForce RTX 5060 Ti 8GB,NVIDIA GeForce RTX 5060 Ti 8GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5060-ti/
+NVIDIA,,,GeForce RTX 5060 Ti 16GB,NVIDIA GeForce RTX 5060 Ti 16GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5060-ti/
+NVIDIA,,,GeForce RTX 5070 12GB,NVIDIA GeForce RTX 5070 12GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5070/
+NVIDIA,,,GeForce RTX 5070 Ti 16GB,NVIDIA GeForce RTX 5070 Ti 16GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5070-ti/
+NVIDIA,,,GeForce RTX 5080 16GB,NVIDIA GeForce RTX 5080 16GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5080/
+NVIDIA,,,GeForce RTX 5090 32GB,NVIDIA GeForce RTX 5090 32GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/
+NVIDIA,,,GeForce RTX 4060 8GB,NVIDIA GeForce RTX 4060 8GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4060/
+NVIDIA,,,GeForce RTX 4060 Ti 8GB,NVIDIA GeForce RTX 4060 Ti 8GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4060-4060ti/
+NVIDIA,,,GeForce RTX 4070 12GB,NVIDIA GeForce RTX 4070 12GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4070/
+NVIDIA,,,GeForce RTX 4070 Ti Super 16GB,NVIDIA GeForce RTX 4070 Ti Super 16GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4070-ti-super/
+NVIDIA,,,GeForce RTX 4080 Super 16GB,NVIDIA GeForce RTX 4080 Super 16GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4080-super/
+NVIDIA,,,GeForce RTX 4090 24GB,NVIDIA GeForce RTX 4090 24GB,GPU,https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/
+AMD,,,Radeon RX 9060 XT 8GB,AMD Radeon RX 9060 XT 8GB,GPU,https://www.amd.com/en/products/graphics/amd-radeon-rx-9060-xt.html
+AMD,,,Radeon RX 9060 XT 16GB,AMD Radeon RX 9060 XT 16GB,GPU,https://www.amd.com/en/products/graphics/amd-radeon-rx-9060-xt.html
+AMD,,,Radeon RX 9070 16GB,AMD Radeon RX 9070 16GB,GPU,https://www.amd.com/en/products/graphics/amd-radeon-rx-9070.html
+AMD,,,Radeon RX 9070 XT 16GB,AMD Radeon RX 9070 XT 16GB,GPU,https://www.amd.com/en/products/graphics/amd-radeon-rx-9070-xt.html
+AMD,,,Radeon RX 7600 8GB,AMD Radeon RX 7600 8GB,GPU,https://www.amd.com/en/products/graphics/amd-radeon-rx-7600.html
+AMD,,,Radeon RX 7700 XT 12GB,AMD Radeon RX 7700 XT 12GB,GPU,https://www.amd.com/en/products/graphics/amd-radeon-rx-7700-xt.html
+AMD,,,Radeon RX 7800 XT 16GB,AMD Radeon RX 7800 XT 16GB,GPU,https://www.amd.com/en/products/graphics/amd-radeon-rx-7800-xt.html
+AMD,,,Radeon RX 7900 XT 20GB,AMD Radeon RX 7900 XT 20GB,GPU,https://www.amd.com/en/products/graphics/amd-radeon-rx-7900-xt.html
+AMD,,,Radeon RX 7900 XTX 24GB,AMD Radeon RX 7900 XTX 24GB,GPU,https://www.amd.com/en/products/graphics/amd-radeon-rx-7900-xtx.html
+ASUS,,,PRIME B650M-A WiFi II,ASUS PRIME B650M-A WiFi II,Motherboard,https://www.asus.com/motherboards-components/motherboards/prime/prime-b650m-a-wifi-ii/
+MSI,,,MAG B650 TOMAHAWK WiFi,MSI MAG B650 TOMAHAWK WiFi,Motherboard,https://www.msi.com/Motherboard/MAG-B650-TOMAHAWK-WIFI
+Gigabyte,,,B650 Gaming X AX,Gigabyte B650 Gaming X AX,Motherboard,https://www.gigabyte.com/Motherboard/B650-Gaming-X-AX
+ASRock,,,B650M PG Riptide WiFi,ASRock B650M PG Riptide WiFi,Motherboard,https://www.asrock.com/mb/AMD/B650M%20PG%20Riptide%20WiFi/
+MSI,,,MAG B850 Tomahawk MAX WiFi,MSI MAG B850 Tomahawk MAX WiFi,Motherboard,https://www.msi.com/Motherboard/MAG-B850-TOMAHAWK-MAX-WIFI
+ASRock,,,B850 Pro-A WiFi,ASRock B850 Pro-A WiFi,Motherboard,https://www.asrock.com/mb/AMD/B850%20Pro-A%20WiFi/
+MSI,,,MAG X870 Tomahawk WiFi,MSI MAG X870 Tomahawk WiFi,Motherboard,https://www.msi.com/Motherboard/MAG-X870-TOMAHAWK-WIFI
+ASUS,,,ROG Strix X870-A Gaming WiFi,ASUS ROG Strix X870-A Gaming WiFi,Motherboard,https://rog.asus.com/motherboards/rog-strix/rog-strix-x870-a-gaming-wifi/
+Gigabyte,,,X870 AORUS Elite WiFi7,Gigabyte X870 AORUS Elite WiFi7,Motherboard,https://www.gigabyte.com/Motherboard/X870-AORUS-ELITE-WIFI7
+ASUS,,,ROG Strix X870E-E Gaming WiFi,ASUS ROG Strix X870E-E Gaming WiFi,Motherboard,https://rog.asus.com/motherboards/rog-strix/rog-strix-x870e-e-gaming-wifi/
+ASUS,,,ROG Crosshair X870E Hero,ASUS ROG Crosshair X870E Hero,Motherboard,https://rog.asus.com/motherboards/rog-crosshair/rog-crosshair-x870e-hero/
+Gigabyte,,,B860 Eagle WiFi,Gigabyte B860 Eagle WiFi,Motherboard,https://www.gigabyte.com/Motherboard/B860-Eagle-WiFi
+ASRock,,,B860 Pro RS WiFi,ASRock B860 Pro RS WiFi,Motherboard,https://www.asrock.com/mb/Intel/B860%20Pro%20RS%20WiFi/
+MSI,,,MAG B860M Mortar WiFi,MSI MAG B860M Mortar WiFi,Motherboard,https://www.msi.com/Motherboard/MAG-B860M-MORTAR-WIFI
+MSI,,,MPG Z890 Edge Ti WiFi,MSI MPG Z890 Edge Ti WiFi,Motherboard,https://www.msi.com/Motherboard/MPG-Z890-EDGE-TI-WIFI
+ASUS,,,ROG Strix Z890-A Gaming WiFi,ASUS ROG Strix Z890-A Gaming WiFi,Motherboard,https://rog.asus.com/motherboards/rog-strix/rog-strix-z890-a-gaming-wifi/
+ASUS,,,ROG Maximus Z890 Hero,ASUS ROG Maximus Z890 Hero,Motherboard,https://rog.asus.com/motherboards/rog-maximus/rog-maximus-z890-hero/
+MSI,,,MAG B760M Mortar WiFi II,MSI MAG B760M Mortar WiFi II,Motherboard,https://www.msi.com/Motherboard/MAG-B760M-MORTAR-WIFI-II
+MSI,,,MAG Z790 Tomahawk WiFi,MSI MAG Z790 Tomahawk WiFi,Motherboard,https://www.msi.com/Motherboard/MAG-Z790-TOMAHAWK-WIFI
+Gigabyte,,,Z790 AORUS Elite AX,Gigabyte Z790 AORUS Elite AX,Motherboard,https://www.gigabyte.com/Motherboard/Z790-AORUS-ELITE-AX
+Corsair,CMK16GX5M2B5600C36,,Vengeance DDR5-5600 16GB (2x8GB) CL36,Corsair Vengeance DDR5-5600 16GB (2x8GB) CL36,Memory,https://www.corsair.com/us/en/p/memory/cmk16gx5m2b5600c36/vengeance-16gb-2x8gb-ddr5-dram-5600mhz-c36-memory-kit-black-cmk16gx5m2b5600c36/
+Kingston,,,Fury Beast DDR5-5600 16GB (2x8GB) CL36,Kingston Fury Beast DDR5-5600 16GB (2x8GB) CL36,Memory,https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-memory
+TeamGroup,,,T-Force Vulcan DDR5-5600 16GB (2x8GB) CL36,TeamGroup T-Force Vulcan DDR5-5600 16GB (2x8GB) CL36,Memory,https://www.teamgroupinc.com/en/product-detail/memory/TEAM/t-force-vulcan-ddr5/
+Corsair,CMK32GX5M2D6000C30,,Vengeance DDR5-6000 32GB (2x16GB) CL30,Corsair Vengeance DDR5-6000 32GB (2x16GB) CL30,Memory,https://www.corsair.com/us/en/p/memory/cmk32gx5m2d6000c30/vengeance-32gb-2x16gb-ddr5-dram-6000mt-s-c30-memory-kit-black-cmk32gx5m2d6000c30/
+G.Skill,,,Trident Z5 NEO DDR5-6000 32GB (2x16GB) CL30,G.Skill Trident Z5 NEO DDR5-6000 32GB (2x16GB) CL30,Memory,https://www.gskill.com/product/165/390/1661838901/F5-6000J3040G16GX2-TZ5N
+Kingston,,,Fury Beast DDR5-6000 32GB (2x16GB) CL30,Kingston Fury Beast DDR5-6000 32GB (2x16GB) CL30,Memory,https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-memory
+TeamGroup,,,T-Force Delta RGB DDR5-6000 32GB (2x16GB) CL30,TeamGroup T-Force Delta RGB DDR5-6000 32GB (2x16GB) CL30,Memory,https://www.teamgroupinc.com/en/product-detail/memory/TEAM/t-force-delta-rgb-ddr5/
+G.Skill,,,Trident Z5 RGB DDR5-6400 32GB (2x16GB) CL32,G.Skill Trident Z5 RGB DDR5-6400 32GB (2x16GB) CL32,Memory,https://www.gskill.com/product/165/388/1661838857/F5-6400J3239G16GX2-TZ5RS
+Corsair,CMP32GX5M2X6400C32,,Dominator Titanium DDR5-6400 32GB (2x16GB) CL32,Corsair Dominator Titanium DDR5-6400 32GB (2x16GB) CL32,Memory,https://www.corsair.com/us/en/p/memory/cmp32gx5m2x6400c32/dominator-titanium-32gb-2x16gb-ddr5-6400-c32-memory-cmp32gx5m2x6400c32/
+G.Skill,,,Trident Z5 Royal Neo DDR5-6800 32GB (2x16GB) CL34,G.Skill Trident Z5 Royal Neo DDR5-6800 32GB (2x16GB) CL34,Memory,https://www.gskill.com/product/165/390/1718086027/F5-6800J3441G16GX2-TZ5RN
+Corsair,CMK48GX5M2B5600C40,,Vengeance DDR5-5600 48GB (2x24GB) CL40,Corsair Vengeance DDR5-5600 48GB (2x24GB) CL40,Memory,https://www.corsair.com/us/en/p/memory/cmk48gx5m2b5600c40/vengeance-48gb-2x24gb-ddr5-dram-5600mhz-c40-memory-kit-black-cmk48gx5m2b5600c40/
+G.Skill,,,Trident Z5 NEO DDR5-6000 48GB (2x24GB) CL30,G.Skill Trident Z5 NEO DDR5-6000 48GB (2x24GB) CL30,Memory,https://www.gskill.com/product/165/390/
+Corsair,CMK64GX5M2D6000C30,,Vengeance DDR5-6000 64GB (2x32GB) CL30,Corsair Vengeance DDR5-6000 64GB (2x32GB) CL30,Memory,https://www.corsair.com/us/en/p/memory/cmk64gx5m2d6000c30/vengeance-64gb-2x32gb-ddr5-dram-6000mt-s-c30-memory-kit-black-cmk64gx5m2d6000c30/
+G.Skill,,,Trident Z5 RGB DDR5-6000 64GB (2x32GB) CL30,G.Skill Trident Z5 RGB DDR5-6000 64GB (2x32GB) CL30,Memory,https://www.gskill.com/product/165/388/
+Kingston,,,Fury Beast DDR5-5600 64GB (2x32GB) CL40,Kingston Fury Beast DDR5-5600 64GB (2x32GB) CL40,Memory,https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-memory
+Corsair,CMK32GX4M2E3200C16,,Vengeance LPX DDR4-3200 32GB (2x16GB) CL16,Corsair Vengeance LPX DDR4-3200 32GB (2x16GB) CL16,Memory,https://www.corsair.com/us/en/p/memory/cmk32gx4m2e3200c16/vengeance-lpx-32gb-2x16gb-ddr4-dram-3200mhz-c16-memory-kit-black-cmk32gx4m2e3200c16/
+G.Skill,,,Ripjaws V DDR4-3600 32GB (2x16GB) CL18,G.Skill Ripjaws V DDR4-3600 32GB (2x16GB) CL18,Memory,https://www.gskill.com/product/165/184/
+Kingston,,,Fury Beast DDR4-3200 16GB (2x8GB) CL16,Kingston Fury Beast DDR4-3200 16GB (2x8GB) CL16,Memory,https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr4-memory
+Crucial,,,BX500 1TB SSD SATA,Crucial BX500 1TB SSD SATA,Storage,
+Kingston,,,KC3000 1TB NVMe Gen4,Kingston KC3000 1TB NVMe Gen4,Storage,
+Samsung,,,990 PRO 2TB NVMe Gen4,Samsung 990 PRO 2TB NVMe Gen4,Storage,
+Crucial,,,T705 4TB NVMe Gen5,Crucial T705 4TB NVMe Gen5,Storage,
+Corsair,,,CX550 550W 80+ Bronze,Corsair CX550 550W 80+ Bronze,Power Supply,
+MSI,,,MAG A650GL 650W 80+ Gold,MSI MAG A650GL 650W 80+ Gold,Power Supply,
+Corsair,,,RM750e 750W 80+ Gold,Corsair RM750e 750W 80+ Gold,Power Supply,
+Seasonic,,,Focus GX-850 850W 80+ Gold,Seasonic Focus GX-850 850W 80+ Gold,Power Supply,
+be quiet!,,,Dark Power 13 1000W Titanium,be quiet! Dark Power 13 1000W Titanium,Power Supply,
+Corsair,,,HX1200i 1200W 80+ Platinum,Corsair HX1200i 1200W 80+ Platinum,Power Supply,
+Lian Li,,,A3-mATX Mesh,Lian Li A3-mATX Mesh,Case,
+Fractal Design,,,Pop Air / NZXT H5 Flow,Fractal Design Pop Air / NZXT H5 Flow,Case,
+Lian Li,,,O11 Vision Panorámico,Lian Li O11 Vision Panorámico,Case,
+Corsair,,,7000D AIRFLOW Full-Tower,Corsair 7000D AIRFLOW Full-Tower,Case,
+Thermalright,,,Assassin X 120 Refined SE,Thermalright Assassin X 120 Refined SE,Cooling,
+Thermalright,,,Peerless Assassin 120 SE,Thermalright Peerless Assassin 120 SE,Cooling,
+Noctua,,,NH-D15 G2,Noctua NH-D15 G2,Cooling,
+Arctic,,,Liquid Freezer III 240,Arctic Liquid Freezer III 240,Cooling,
+Arctic,,,Liquid Freezer III 360 ARGB,Arctic Liquid Freezer III 360 ARGB,Cooling,

@@ -1,0 +1,3480 @@
+{
+ "preciosDesde": "2026-09-15",
+ "preciosHasta": "2026-09-17",
+ "items": [
+  {
+   "id": "setup-0",
+   "module": "monitor",
+   "tier": "entrada",
+   "kind": null,
+   "brand": "ASUS",
+   "model": "TUF Gaming VG259Q3A",
+   "mpn": "90LM09N0-B011B0",
+   "price": 145.0,
+   "store": "Newegg (vendedor TechBlink)",
+   "url": "https://www.newegg.com/asus-vg259q3a-24-5-fhd-180-hz-tuf-gaming-ips/p/N82E16824281302",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "24,5\""
+    },
+    {
+     "label": "Resolución",
+     "value": "1920 x 1080"
+    },
+    {
+     "label": "Refresco",
+     "value": "180 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "Fast IPS, 1 ms GtG"
+    },
+    {
+     "label": "Puertos",
+     "value": "1x DP 1.2, 2x HDMI 2.0"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/monitor-entrada-asus-tuf-gaming-vg259q3a.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "24.5\""
+    },
+    {
+     "label": "Resolution",
+     "value": "1920 x 1080"
+    },
+    {
+     "label": "Refresh rate",
+     "value": "180 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "Fast IPS, 1 ms GtG"
+    },
+    {
+     "label": "Ports",
+     "value": "1x DP 1.2, 2x HDMI 2.0"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg (sold by TechBlink)"
+  },
+  {
+   "id": "setup-1",
+   "module": "monitor",
+   "tier": "entrada",
+   "kind": null,
+   "brand": "MSI",
+   "model": "MAG 275QF E20",
+   "mpn": "9S6-3CAA1M-013",
+   "price": 159.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/msi-mag-275qf-e20-27-qhd-200hz-rapid-ips-metallic-black/p/N82E16824475551",
+   "stock": "en reposición (llega 18-09)",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "27\""
+    },
+    {
+     "label": "Resolución",
+     "value": "2560 x 1440"
+    },
+    {
+     "label": "Refresco",
+     "value": "200 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "Rapid IPS, 0,5 ms"
+    },
+    {
+     "label": "Puertos",
+     "value": "1x DP 1.4a, 2x HDMI 2.0b"
+    }
+   ],
+   "note": "Opción 1440p casi al mismo precio; con una gráfica de 8 GB conviene bajar detalles en juegos AAA.",
+   "image": "/images/setup/monitor-entrada-msi-mag-275qf-e20.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "27\""
+    },
+    {
+     "label": "Resolution",
+     "value": "2560 x 1440"
+    },
+    {
+     "label": "Refresh rate",
+     "value": "200 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "Rapid IPS, 0.5 ms"
+    },
+    {
+     "label": "Ports",
+     "value": "1x DP 1.4a, 2x HDMI 2.0b"
+    }
+   ],
+   "noteEn": "A 1440p option for almost the same price; with an 8 GB graphics card, lower the details in AAA games.",
+   "stockEn": "restocking (arrives Sep 18)",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-2",
+   "module": "monitor",
+   "tier": "media",
+   "kind": null,
+   "brand": "ASUS",
+   "model": "TUF Gaming VG27AQ3A",
+   "mpn": "90LM0940-B019B0",
+   "price": 209.0,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/asus-vg27aq3a-27-qhd-180-hz-tuf-gaming-fast-ips/p/N82E16824281271",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "27\""
+    },
+    {
+     "label": "Resolución",
+     "value": "2560 x 1440"
+    },
+    {
+     "label": "Refresco",
+     "value": "180 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "Fast IPS, 1 ms GtG, 130% sRGB"
+    },
+    {
+     "label": "Puertos",
+     "value": "1x DP 1.4, 2x HDMI 2.0"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/monitor-media-asus-tuf-gaming-vg27aq3a.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "27\""
+    },
+    {
+     "label": "Resolution",
+     "value": "2560 x 1440"
+    },
+    {
+     "label": "Refresh rate",
+     "value": "180 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "Fast IPS, 1 ms GtG, 130% sRGB"
+    },
+    {
+     "label": "Ports",
+     "value": "1x DP 1.4, 2x HDMI 2.0"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-3",
+   "module": "monitor",
+   "tier": "media",
+   "kind": null,
+   "brand": "MSI",
+   "model": "MAG 271QP QD-OLED X28",
+   "mpn": "9S6-3CF19T-009",
+   "price": 449.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/msi-mag-271qp-qd-oled-x28-27-qhd-280-hz-metallic-black/p/N82E16824475503",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "26,5\""
+    },
+    {
+     "label": "Resolución",
+     "value": "2560 x 1440"
+    },
+    {
+     "label": "Refresco",
+     "value": "280 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "QD-OLED, 0,03 ms"
+    },
+    {
+     "label": "Puertos",
+     "value": "1x DP 1.4a, 2x HDMI 2.1, USB-C 15 W"
+    }
+   ],
+   "note": "Salto a OLED dentro de la gama media.",
+   "image": "/images/setup/monitor-media-msi-mag-271qp-qd-oled-x28.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "26.5\""
+    },
+    {
+     "label": "Resolution",
+     "value": "2560 x 1440"
+    },
+    {
+     "label": "Refresh rate",
+     "value": "280 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "QD-OLED, 0.03 ms"
+    },
+    {
+     "label": "Ports",
+     "value": "1x DP 1.4a, 2x HDMI 2.1, USB-C 15 W"
+    }
+   ],
+   "noteEn": "A jump to OLED within the mid range.",
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-4",
+   "module": "monitor",
+   "tier": "alta",
+   "kind": null,
+   "brand": "MSI",
+   "model": "MAG 271QPX QD-OLED",
+   "mpn": "MAG 271QPX QD-OLED",
+   "price": 579.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/msi-mag-271qpx-qd-oled-27-qhd-360-hz-metallic-black/p/N82E16824475360",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "26,5\""
+    },
+    {
+     "label": "Resolución",
+     "value": "2560 x 1440"
+    },
+    {
+     "label": "Refresco",
+     "value": "360 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "QD-OLED, 0,03 ms, True Black 400"
+    },
+    {
+     "label": "Puertos",
+     "value": "USB-C DP Alt, 2x HDMI 2.1"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/monitor-alta-msi-mag-271qpx-qd-oled.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "26.5\""
+    },
+    {
+     "label": "Resolution",
+     "value": "2560 x 1440"
+    },
+    {
+     "label": "Refresh rate",
+     "value": "360 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "QD-OLED, 0.03 ms, True Black 400"
+    },
+    {
+     "label": "Ports",
+     "value": "USB-C DP Alt, 2x HDMI 2.1"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-5",
+   "module": "monitor",
+   "tier": "alta",
+   "kind": null,
+   "brand": "Dell",
+   "model": "Alienware AW2725DF",
+   "mpn": "AW2725DF",
+   "price": 588.99,
+   "store": "Newegg (vendedor Dell Technologies)",
+   "url": "https://www.newegg.com/p/3D4-000V-00087",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "26,7\""
+    },
+    {
+     "label": "Resolución",
+     "value": "2560 x 1440"
+    },
+    {
+     "label": "Refresco",
+     "value": "360 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "QD-OLED, 0,03 ms, 99,3% DCI-P3"
+    },
+    {
+     "label": "Puertos",
+     "value": "HDMI, DisplayPort, USB 3.2 Gen1"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/monitor-alta-dell-alienware-aw2725df.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "26.7\""
+    },
+    {
+     "label": "Resolution",
+     "value": "2560 x 1440"
+    },
+    {
+     "label": "Refresh rate",
+     "value": "360 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "QD-OLED, 0.03 ms, 99.3% DCI-P3"
+    },
+    {
+     "label": "Ports",
+     "value": "HDMI, DisplayPort, USB 3.2 Gen1"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg (sold by Dell Technologies)"
+  },
+  {
+   "id": "setup-6",
+   "module": "monitor",
+   "tier": "extrema",
+   "kind": null,
+   "brand": "MSI",
+   "model": "MPG 321URX QD-OLED",
+   "mpn": "MPG 321URX QD-OLED",
+   "price": 859.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/msi-mpg-321urx-qd-oled-32-uhd-240-hz/p/N82E16824475357",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "31,5\""
+    },
+    {
+     "label": "Resolución",
+     "value": "3840 x 2160"
+    },
+    {
+     "label": "Refresco",
+     "value": "240 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "QD-OLED, 0,03 ms, True Black 400"
+    },
+    {
+     "label": "Puertos",
+     "value": "1x DP 1.4a, 2x HDMI 2.1, USB-C 90 W"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/monitor-extrema-msi-mpg-321urx-qd-oled.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "31.5\""
+    },
+    {
+     "label": "Resolution",
+     "value": "3840 x 2160"
+    },
+    {
+     "label": "Refresh rate",
+     "value": "240 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "QD-OLED, 0.03 ms, True Black 400"
+    },
+    {
+     "label": "Ports",
+     "value": "1x DP 1.4a, 2x HDMI 2.1, USB-C 90 W"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-7",
+   "module": "monitor",
+   "tier": "extrema",
+   "kind": null,
+   "brand": "ASUS",
+   "model": "ROG Swift PG32UCDM3",
+   "mpn": "PG32UCDM3",
+   "price": 1299.0,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/asus-pg32ucdm3-31-5-qd-oled-240-hz-rog-swift-qd-oled-black/p/N82E16824281393",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "31,5\""
+    },
+    {
+     "label": "Resolución",
+     "value": "3840 x 2160"
+    },
+    {
+     "label": "Refresco",
+     "value": "240 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "QD-OLED, 0,03 ms, HDR 500"
+    },
+    {
+     "label": "Puertos",
+     "value": "DP 2.1a UHBR20, 2x HDMI 2.1, USB-C 90 W"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/monitor-extrema-asus-rog-swift-pg32ucdm3.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "31.5\""
+    },
+    {
+     "label": "Resolution",
+     "value": "3840 x 2160"
+    },
+    {
+     "label": "Refresh rate",
+     "value": "240 Hz"
+    },
+    {
+     "label": "Panel",
+     "value": "QD-OLED, 0.03 ms, HDR 500"
+    },
+    {
+     "label": "Ports",
+     "value": "DP 2.1a UHBR20, 2x HDMI 2.1, USB-C 90 W"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-8",
+   "module": "keyboard",
+   "tier": "entrada",
+   "kind": null,
+   "brand": "Keychron",
+   "model": "C3 Pro 8K",
+   "mpn": "C3PX-H12",
+   "price": 54.99,
+   "store": "keychron.com",
+   "url": "https://www.keychron.com/products/keychron-c3-pro-8k-qmk-wired-custom-mechanical-keyboard",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Formato",
+     "value": "TKL (87 teclas)"
+    },
+    {
+     "label": "Switch",
+     "value": "Keychron Apex Red lineal, hot-swap"
+    },
+    {
+     "label": "Conexión",
+     "value": "Cable USB-C, 8000 Hz"
+    },
+    {
+     "label": "Montaje",
+     "value": "Gasket"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/keyboard-entrada-keychron-c3-pro-8k.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Layout",
+     "value": "TKL (87 keys)"
+    },
+    {
+     "label": "Switch",
+     "value": "Keychron Apex Red linear, hot-swap"
+    },
+    {
+     "label": "Connection",
+     "value": "USB-C cable, 8000 Hz"
+    },
+    {
+     "label": "Mounting",
+     "value": "Gasket"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "keychron.com"
+  },
+  {
+   "id": "setup-9",
+   "module": "keyboard",
+   "tier": "entrada",
+   "kind": null,
+   "brand": "Logitech",
+   "model": "G413 TKL SE",
+   "mpn": "920-010442",
+   "price": 79.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/p/N82E16823126669",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Formato",
+     "value": "TKL"
+    },
+    {
+     "label": "Switch",
+     "value": "Mecánico táctil Logitech"
+    },
+    {
+     "label": "Teclas",
+     "value": "PBT"
+    },
+    {
+     "label": "Chasis",
+     "value": "Placa superior de aluminio"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/keyboard-entrada-logitech-g413-tkl-se.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Layout",
+     "value": "TKL"
+    },
+    {
+     "label": "Switch",
+     "value": "Logitech tactile mechanical"
+    },
+    {
+     "label": "Keys",
+     "value": "PBT"
+    },
+    {
+     "label": "Chassis",
+     "value": "Aluminum top plate"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-10",
+   "module": "keyboard",
+   "tier": "media",
+   "kind": null,
+   "brand": "Keychron",
+   "model": "V1 Max",
+   "mpn": "V1M-D1",
+   "price": 104.99,
+   "store": "keychron.com",
+   "url": "https://www.keychron.com/products/keychron-v1-max-qmk-via-wireless-custom-mechanical-keyboard",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Formato",
+     "value": "75% con perilla"
+    },
+    {
+     "label": "Switch",
+     "value": "Gateron Jupiter Red, hot-swap"
+    },
+    {
+     "label": "Conexión",
+     "value": "2,4 GHz / Bluetooth 5.1 / cable, 1000 Hz"
+    },
+    {
+     "label": "Montaje",
+     "value": "Gasket con espuma acústica"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/keyboard-media-keychron-v1-max.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Layout",
+     "value": "75% with knob"
+    },
+    {
+     "label": "Switch",
+     "value": "Gateron Jupiter Red, hot-swap"
+    },
+    {
+     "label": "Connection",
+     "value": "2.4 GHz / Bluetooth 5.1 / wired, 1000 Hz"
+    },
+    {
+     "label": "Mounting",
+     "value": "Gasket with acoustic foam"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "keychron.com"
+  },
+  {
+   "id": "setup-11",
+   "module": "keyboard",
+   "tier": "media",
+   "kind": null,
+   "brand": "Logitech",
+   "model": "G515 LIGHTSPEED TKL",
+   "mpn": "920-012536",
+   "price": 159.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/p/N82E16823126746",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Formato",
+     "value": "TKL de perfil bajo (22 mm)"
+    },
+    {
+     "label": "Switch",
+     "value": "GL Red lineal"
+    },
+    {
+     "label": "Conexión",
+     "value": "LIGHTSPEED / Bluetooth / cable"
+    },
+    {
+     "label": "Batería",
+     "value": "Hasta 36 h"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/keyboard-media-logitech-g515-lightspeed-tkl.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Layout",
+     "value": "Low-profile TKL (22 mm)"
+    },
+    {
+     "label": "Switch",
+     "value": "GL Red linear"
+    },
+    {
+     "label": "Connection",
+     "value": "LIGHTSPEED / Bluetooth / wired"
+    },
+    {
+     "label": "Battery",
+     "value": "Up to 36 h"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-12",
+   "module": "keyboard",
+   "tier": "alta",
+   "kind": null,
+   "brand": "Wooting",
+   "model": "80HE",
+   "mpn": "80HE",
+   "price": 199.99,
+   "store": "wooting.io",
+   "url": "https://wooting.io/wooting-80he",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Formato",
+     "value": "80% (TKL compacto)"
+    },
+    {
+     "label": "Switch",
+     "value": "Lekker L60 V2 magnético (Hall)"
+    },
+    {
+     "label": "Rapid Trigger",
+     "value": "Sí, actuación ajustable"
+    },
+    {
+     "label": "Sondeo",
+     "value": "8000 Hz"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/keyboard-alta-wooting-80he.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Layout",
+     "value": "80% (compact TKL)"
+    },
+    {
+     "label": "Switch",
+     "value": "Lekker L60 V2 magnetic (Hall effect)"
+    },
+    {
+     "label": "Rapid Trigger",
+     "value": "Yes, adjustable actuation"
+    },
+    {
+     "label": "Polling rate",
+     "value": "8000 Hz"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "wooting.io"
+  },
+  {
+   "id": "setup-13",
+   "module": "keyboard",
+   "tier": "alta",
+   "kind": null,
+   "brand": "SteelSeries",
+   "model": "Apex Pro TKL Gen 3",
+   "mpn": "64740",
+   "price": 212.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/steelseries-apex-pro-tkl-gen-3-wired-hypermagnetic-gaming-keyboard-with-rapid-tap-rapid-trigger-adjustable-actuation-64740-mechanical-keyboard-omnipoint-adjustable-switch/p/N82E16823239062",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Formato",
+     "value": "TKL"
+    },
+    {
+     "label": "Switch",
+     "value": "OmniPoint 3.0 magnético"
+    },
+    {
+     "label": "Actuación",
+     "value": "0,1–4,0 mm, Rapid Trigger"
+    },
+    {
+     "label": "Extras",
+     "value": "Pantalla OLED, teclas PBT"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/keyboard-alta-steelseries-apex-pro-tkl-gen-3.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Layout",
+     "value": "TKL"
+    },
+    {
+     "label": "Switch",
+     "value": "OmniPoint 3.0 magnetic"
+    },
+    {
+     "label": "Actuation",
+     "value": "0.1–4.0 mm, Rapid Trigger"
+    },
+    {
+     "label": "Extras",
+     "value": "OLED screen, PBT keycaps"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-14",
+   "module": "keyboard",
+   "tier": "extrema",
+   "kind": null,
+   "brand": "Keychron",
+   "model": "Q1 HE",
+   "mpn": "Q1H-M1",
+   "price": 219.99,
+   "store": "keychron.com",
+   "url": "https://www.keychron.com/products/keychron-q1-he-qmk-wireless-custom-keyboard",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Formato",
+     "value": "75% con perilla"
+    },
+    {
+     "label": "Switch",
+     "value": "Gateron Double-Rail magnético (Hall)"
+    },
+    {
+     "label": "Chasis",
+     "value": "Aluminio CNC"
+    },
+    {
+     "label": "Conexión",
+     "value": "2,4 GHz / Bluetooth / cable"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/keyboard-extrema-keychron-q1-he.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Layout",
+     "value": "75% with knob"
+    },
+    {
+     "label": "Switch",
+     "value": "Gateron Double-Rail magnetic (Hall effect)"
+    },
+    {
+     "label": "Chassis",
+     "value": "CNC aluminum"
+    },
+    {
+     "label": "Connection",
+     "value": "2.4 GHz / Bluetooth / wired"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "keychron.com"
+  },
+  {
+   "id": "setup-15",
+   "module": "keyboard",
+   "tier": "extrema",
+   "kind": null,
+   "brand": "Razer",
+   "model": "Huntsman V3 Pro TKL",
+   "mpn": "RZ03-04980200-R3U1",
+   "price": 219.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/p/32N-04JS-00015",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Formato",
+     "value": "TKL"
+    },
+    {
+     "label": "Switch",
+     "value": "Óptico analógico Gen-2"
+    },
+    {
+     "label": "Actuación",
+     "value": "0,1–4,0 mm, Rapid Trigger"
+    },
+    {
+     "label": "Chasis",
+     "value": "Placa de aluminio cepillado + reposamuñecas"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/keyboard-extrema-razer-huntsman-v3-pro-tkl.jpg",
+   "kindEn": null,
+   "specsEn": [
+    {
+     "label": "Layout",
+     "value": "TKL"
+    },
+    {
+     "label": "Switch",
+     "value": "Gen-2 analog optical"
+    },
+    {
+     "label": "Actuation",
+     "value": "0.1–4.0 mm, Rapid Trigger"
+    },
+    {
+     "label": "Chassis",
+     "value": "Brushed aluminum plate + wrist rest"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-16",
+   "module": "mouse",
+   "tier": "entrada",
+   "kind": "ratón",
+   "brand": "Logitech",
+   "model": "G305 LIGHTSPEED",
+   "mpn": "910-005280",
+   "price": 39.99,
+   "store": "Newegg (vendedor Electronic Express)",
+   "url": "https://www.newegg.com/logitech-910-005280-g305-lightspeed-wireless/p/N82E16826197308",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Peso",
+     "value": "99 g (con pila AA)"
+    },
+    {
+     "label": "Sensor",
+     "value": "HERO 12K"
+    },
+    {
+     "label": "Conexión",
+     "value": "Inalámbrico LIGHTSPEED, 1000 Hz"
+    },
+    {
+     "label": "Autonomía",
+     "value": "250 h"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/mouse-entrada-logitech-g305-lightspeed.jpg",
+   "kindEn": "mouse",
+   "specsEn": [
+    {
+     "label": "Weight",
+     "value": "99 g (with AA battery)"
+    },
+    {
+     "label": "Sensor",
+     "value": "HERO 12K"
+    },
+    {
+     "label": "Connection",
+     "value": "LIGHTSPEED wireless, 1000 Hz"
+    },
+    {
+     "label": "Battery life",
+     "value": "250 h"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg (sold by Electronic Express)"
+  },
+  {
+   "id": "setup-17",
+   "module": "mouse",
+   "tier": "entrada",
+   "kind": "alfombrilla",
+   "brand": "SteelSeries",
+   "model": "QcK Heavy (L)",
+   "mpn": "63008",
+   "price": 34.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/steelseries-63008/p/N82E16826995024",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "450 x 400 mm"
+    },
+    {
+     "label": "Grosor",
+     "value": "6 mm"
+    },
+    {
+     "label": "Superficie",
+     "value": "Tela"
+    },
+    {
+     "label": "Base",
+     "value": "Goma antideslizante"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/mouse-entrada-steelseries-qck-heavy-l.jpg",
+   "kindEn": "mousepad",
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "450 x 400 mm"
+    },
+    {
+     "label": "Thickness",
+     "value": "6 mm"
+    },
+    {
+     "label": "Surface",
+     "value": "Cloth"
+    },
+    {
+     "label": "Base",
+     "value": "Non-slip rubber"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-18",
+   "module": "mouse",
+   "tier": "media",
+   "kind": "ratón",
+   "brand": "Razer",
+   "model": "DeathAdder V3 HyperSpeed",
+   "mpn": "RZ01-05140100-R3U1",
+   "price": 99.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/p/32K-0091-00021",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Peso",
+     "value": "55 g"
+    },
+    {
+     "label": "Sensor",
+     "value": "Focus X 26K"
+    },
+    {
+     "label": "Conexión",
+     "value": "HyperSpeed inalámbrico (8000 Hz con dongle aparte)"
+    },
+    {
+     "label": "Autonomía",
+     "value": "100 h"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/mouse-media-razer-deathadder-v3-hyperspeed.jpg",
+   "kindEn": "mouse",
+   "specsEn": [
+    {
+     "label": "Weight",
+     "value": "55 g"
+    },
+    {
+     "label": "Sensor",
+     "value": "Focus X 26K"
+    },
+    {
+     "label": "Connection",
+     "value": "HyperSpeed wireless (8000 Hz with separate dongle)"
+    },
+    {
+     "label": "Battery life",
+     "value": "100 h"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-19",
+   "module": "mouse",
+   "tier": "media",
+   "kind": "alfombrilla",
+   "brand": "Pulsar",
+   "model": "ParaBrake XXL",
+   "mpn": "PMP13XXLB",
+   "price": 34.95,
+   "store": "pulsar.gg",
+   "url": "https://www.pulsar.gg/products/para-brake-v2-mouse-pad-xl-slow-speed",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "XXL (cubre teclado y ratón)"
+    },
+    {
+     "label": "Superficie",
+     "value": "Tela de control (lenta)"
+    },
+    {
+     "label": "Base",
+     "value": "Goma"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/mouse-media-pulsar-parabrake-xxl.jpg",
+   "kindEn": "mousepad",
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "XXL (covers keyboard and mouse)"
+    },
+    {
+     "label": "Surface",
+     "value": "Control cloth (slow)"
+    },
+    {
+     "label": "Base",
+     "value": "Rubber"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "pulsar.gg"
+  },
+  {
+   "id": "setup-20",
+   "module": "mouse",
+   "tier": "alta",
+   "kind": "ratón",
+   "brand": "Razer",
+   "model": "Viper V3 Pro",
+   "mpn": "RZ01-05120100-R3U1",
+   "price": 129.99,
+   "store": "Newegg (vendedor Electronic Express)",
+   "url": "https://www.newegg.com/p/26J-05FW-00003",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Peso",
+     "value": "54 g"
+    },
+    {
+     "label": "Sensor",
+     "value": "Focus Pro Gen-2 (35.000 DPI)"
+    },
+    {
+     "label": "Sondeo",
+     "value": "8000 Hz (dongle incluido)"
+    },
+    {
+     "label": "Autonomía",
+     "value": "95 h"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/mouse-alta-razer-viper-v3-pro.jpg",
+   "kindEn": "mouse",
+   "specsEn": [
+    {
+     "label": "Weight",
+     "value": "54 g"
+    },
+    {
+     "label": "Sensor",
+     "value": "Focus Pro Gen-2 (35,000 DPI)"
+    },
+    {
+     "label": "Polling rate",
+     "value": "8000 Hz (dongle included)"
+    },
+    {
+     "label": "Battery life",
+     "value": "95 h"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg (sold by Electronic Express)"
+  },
+  {
+   "id": "setup-21",
+   "module": "mouse",
+   "tier": "alta",
+   "kind": "alfombrilla",
+   "brand": "Pulsar",
+   "model": "eS Saturn Pro Soft XL",
+   "mpn": "PSTSFXLB",
+   "price": 49.95,
+   "store": "pulsar.gg",
+   "url": "https://www.pulsar.gg/products/es-saturn-pro-gaming-mousepad-soft",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "XL"
+    },
+    {
+     "label": "Superficie",
+     "value": "Tela de equilibrio velocidad/control"
+    },
+    {
+     "label": "Base",
+     "value": "Espuma blanda"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/mouse-alta-pulsar-es-saturn-pro-soft-xl.jpg",
+   "kindEn": "mousepad",
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "XL"
+    },
+    {
+     "label": "Surface",
+     "value": "Balanced speed/control cloth"
+    },
+    {
+     "label": "Base",
+     "value": "Soft foam"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "pulsar.gg"
+  },
+  {
+   "id": "setup-22",
+   "module": "mouse",
+   "tier": "extrema",
+   "kind": "ratón",
+   "brand": "Logitech",
+   "model": "PRO X SUPERLIGHT 2",
+   "mpn": "910-006628",
+   "price": 159.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/logitech-g-pro-x-superlight-2-910-006628-usb-type-c-2-4ghz-wired/p/N82E16826197629",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Peso",
+     "value": "60 g"
+    },
+    {
+     "label": "Sensor",
+     "value": "HERO 2 (44.000 DPI)"
+    },
+    {
+     "label": "Sondeo",
+     "value": "8000 Hz"
+    },
+    {
+     "label": "Autonomía",
+     "value": "95 h, carga USB-C"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/mouse-extrema-logitech-pro-x-superlight-2.jpg",
+   "kindEn": "mouse",
+   "specsEn": [
+    {
+     "label": "Weight",
+     "value": "60 g"
+    },
+    {
+     "label": "Sensor",
+     "value": "HERO 2 (44,000 DPI)"
+    },
+    {
+     "label": "Polling rate",
+     "value": "8000 Hz"
+    },
+    {
+     "label": "Battery life",
+     "value": "95 h, USB-C charging"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-23",
+   "module": "mouse",
+   "tier": "extrema",
+   "kind": "alfombrilla",
+   "brand": "Pulsar",
+   "model": "Superglide Glass XXL",
+   "mpn": "SGPXXLB2",
+   "price": 149.95,
+   "store": "pulsar.gg",
+   "url": "https://www.pulsar.gg/products/superglide-mousepad",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tamaño",
+     "value": "XXL (978 x 419 mm)"
+    },
+    {
+     "label": "Superficie",
+     "value": "Vidrio aluminosilicato"
+    },
+    {
+     "label": "Base",
+     "value": "Silicona moldeada"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/mouse-extrema-pulsar-superglide-glass-xxl.jpg",
+   "kindEn": "mousepad",
+   "specsEn": [
+    {
+     "label": "Size",
+     "value": "XXL (978 x 419 mm)"
+    },
+    {
+     "label": "Surface",
+     "value": "Aluminosilicate glass"
+    },
+    {
+     "label": "Base",
+     "value": "Molded silicone"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "pulsar.gg"
+  },
+  {
+   "id": "setup-24",
+   "module": "audio",
+   "tier": "entrada",
+   "kind": "auriculares",
+   "brand": "HyperX",
+   "model": "Cloud III (Black-Red)",
+   "mpn": "727A9AA",
+   "price": 57.99,
+   "store": "hyperx.com",
+   "url": "https://hyperx.com/products/hyperx-cloud-iii-wired-gaming-headset",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Cerrado con micrófono desmontable"
+    },
+    {
+     "label": "Drivers",
+     "value": "53 mm angulados"
+    },
+    {
+     "label": "Conexión",
+     "value": "USB-C, USB-A y 3,5 mm"
+    },
+    {
+     "label": "Audio",
+     "value": "DTS Headphone:X"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/audio-entrada-hyperx-cloud-iii-black-red.jpg",
+   "kindEn": "headset",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Closed-back with detachable microphone"
+    },
+    {
+     "label": "Drivers",
+     "value": "53 mm angled"
+    },
+    {
+     "label": "Connection",
+     "value": "USB-C, USB-A and 3.5 mm"
+    },
+    {
+     "label": "Audio",
+     "value": "DTS Headphone:X"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "hyperx.com"
+  },
+  {
+   "id": "setup-25",
+   "module": "audio",
+   "tier": "media",
+   "kind": "auriculares",
+   "brand": "HyperX",
+   "model": "Cloud III S Wireless",
+   "mpn": "A59YZAA",
+   "price": 129.99,
+   "store": "hyperx.com",
+   "url": "https://hyperx.com/products/hyperx-cloud-iii-s-wireless-gaming-headset",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Cerrado inalámbrico con micrófono"
+    },
+    {
+     "label": "Conexión",
+     "value": "2,4 GHz + Bluetooth"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/audio-media-hyperx-cloud-iii-s-wireless.jpg",
+   "kindEn": "headset",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Closed-back wireless with microphone"
+    },
+    {
+     "label": "Connection",
+     "value": "2.4 GHz + Bluetooth"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "hyperx.com"
+  },
+  {
+   "id": "setup-26",
+   "module": "audio",
+   "tier": "media",
+   "kind": "micrófono",
+   "brand": "HyperX",
+   "model": "QuadCast 2",
+   "mpn": "872V1AA",
+   "price": 119.99,
+   "store": "hyperx.com",
+   "url": "https://hyperx.com/products/hyperx-quadcast-2-usb-microphone",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Micrófono de condensador USB"
+    },
+    {
+     "label": "Uso",
+     "value": "Voz para streaming y llamadas"
+    }
+   ],
+   "note": "Opcional: sólo si vas a transmitir o grabar; el del auricular basta para jugar.",
+   "image": "/images/setup/audio-media-hyperx-quadcast-2.jpg",
+   "kindEn": "microphone",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "USB condenser microphone"
+    },
+    {
+     "label": "Use",
+     "value": "Voice for streaming and calls"
+    }
+   ],
+   "noteEn": "Optional: only if you're going to stream or record; the headset mic is enough for gaming.",
+   "stockEn": "in stock",
+   "storeEn": "hyperx.com"
+  },
+  {
+   "id": "setup-27",
+   "module": "audio",
+   "tier": "alta",
+   "kind": "auriculares",
+   "brand": "HIFIMAN",
+   "model": "Edition XS",
+   "mpn": "Edition XS",
+   "price": 209.0,
+   "store": "apos.audio",
+   "url": "https://apos.audio/products/hifiman-edition-xs-planar-magnetic-headphone",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Abiertos, planar magnéticos"
+    },
+    {
+     "label": "Micrófono",
+     "value": "No incluye (usar uno aparte)"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/audio-alta-hifiman-edition-xs.jpg",
+   "kindEn": "headset",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Open-back, planar magnetic"
+    },
+    {
+     "label": "Microphone",
+     "value": "Not included (use a separate one)"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "apos.audio"
+  },
+  {
+   "id": "setup-28",
+   "module": "audio",
+   "tier": "alta",
+   "kind": "DAC/amplificador",
+   "brand": "FiiO",
+   "model": "K11 R2R",
+   "mpn": "K11 R2R",
+   "price": 175.99,
+   "store": "apos.audio",
+   "url": "https://apos.audio/products/fiio-k11-r2r-desktop-dac-amp",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "DAC",
+     "value": "R2R de 24 bits"
+    },
+    {
+     "label": "Potencia",
+     "value": "1300 mW"
+    },
+    {
+     "label": "Salidas",
+     "value": "6,35 mm y 4,4 mm balanceada"
+    },
+    {
+     "label": "Entradas",
+     "value": "USB, óptica, coaxial"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/audio-alta-fiio-k11-r2r.jpg",
+   "kindEn": "DAC/amp",
+   "specsEn": [
+    {
+     "label": "DAC",
+     "value": "24-bit R2R"
+    },
+    {
+     "label": "Output power",
+     "value": "1300 mW"
+    },
+    {
+     "label": "Outputs",
+     "value": "6.35 mm and 4.4 mm balanced"
+    },
+    {
+     "label": "Inputs",
+     "value": "USB, optical, coaxial"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "apos.audio"
+  },
+  {
+   "id": "setup-29",
+   "module": "audio",
+   "tier": "extrema",
+   "kind": "auriculares",
+   "brand": "HIFIMAN",
+   "model": "Arya Stealth",
+   "mpn": "Arya Stealth",
+   "price": 599.0,
+   "store": "apos.audio",
+   "url": "https://apos.audio/products/hifiman-arya-planar-magnetic-headphone",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Abiertos, planar magnéticos (imanes Stealth)"
+    },
+    {
+     "label": "Micrófono",
+     "value": "No incluye"
+    }
+   ],
+   "note": "Se aprovecha con un DAC/amplificador de escritorio como el FiiO K11 R2R de la gama alta.",
+   "image": "/images/setup/audio-extrema-hifiman-arya-stealth.jpg",
+   "kindEn": "headset",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Open-back, planar magnetic (Stealth magnets)"
+    },
+    {
+     "label": "Microphone",
+     "value": "Not included"
+    }
+   ],
+   "noteEn": "Best driven by a desktop DAC/amp like the FiiO K11 R2R from the high tier.",
+   "stockEn": "in stock",
+   "storeEn": "apos.audio"
+  },
+  {
+   "id": "setup-30",
+   "module": "audio",
+   "tier": "extrema",
+   "kind": "micrófono",
+   "brand": "HyperX",
+   "model": "QuadCast 2 S",
+   "mpn": "9A273AA",
+   "price": 149.99,
+   "store": "hyperx.com",
+   "url": "https://hyperx.com/products/hyperx-quadcast-2-s-usb-microphone",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Micrófono de condensador USB con RGB"
+    },
+    {
+     "label": "Uso",
+     "value": "Streaming y grabación"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/audio-extrema-hyperx-quadcast-2-s.jpg",
+   "kindEn": "microphone",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "USB condenser microphone with RGB"
+    },
+    {
+     "label": "Use",
+     "value": "Streaming and recording"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "hyperx.com"
+  },
+  {
+   "id": "setup-31",
+   "module": "ergonomics",
+   "tier": "entrada",
+   "kind": "silla",
+   "brand": "Sihoo",
+   "model": "M18",
+   "mpn": "M18-M148",
+   "price": 169.99,
+   "store": "sihoooffice.com",
+   "url": "https://www.sihoooffice.com/products/m18-ergonomic-chair",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Silla ergonómica de malla"
+    },
+    {
+     "label": "Soporte",
+     "value": "Lumbar integrado"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/ergonomics-entrada-sihoo-m18.jpg",
+   "kindEn": "chair",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Ergonomic mesh chair"
+    },
+    {
+     "label": "Support",
+     "value": "Built-in lumbar"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "sihoooffice.com"
+  },
+  {
+   "id": "setup-32",
+   "module": "ergonomics",
+   "tier": "media",
+   "kind": "silla",
+   "brand": "Sihoo",
+   "model": "Doro C300",
+   "mpn": "DORO-C300L-A3-001",
+   "price": 279.99,
+   "store": "sihoooffice.com",
+   "url": "https://www.sihoooffice.com/products/sihoo-doro-c300-ergonomic-office-chair",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Silla ergonómica de malla"
+    },
+    {
+     "label": "Soporte",
+     "value": "Lumbar dinámico que sigue la espalda"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/ergonomics-media-sihoo-doro-c300.jpg",
+   "kindEn": "chair",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Ergonomic mesh chair"
+    },
+    {
+     "label": "Support",
+     "value": "Dynamic lumbar that follows your back"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "sihoooffice.com"
+  },
+  {
+   "id": "setup-33",
+   "module": "ergonomics",
+   "tier": "media",
+   "kind": "silla",
+   "brand": "Branch",
+   "model": "Ergonomic Chair",
+   "mpn": "11-01-00-50",
+   "price": 369.0,
+   "store": "branchfurniture.com",
+   "url": "https://www.branchfurniture.com/products/ergonomic-chair",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Silla ergonómica de malla"
+    },
+    {
+     "label": "Ajustes",
+     "value": "Altura, profundidad de asiento, brazos y lumbar"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/ergonomics-media-branch-ergonomic-chair.jpg",
+   "kindEn": "chair",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Ergonomic mesh chair"
+    },
+    {
+     "label": "Adjustments",
+     "value": "Height, seat depth, arms and lumbar"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "branchfurniture.com"
+  },
+  {
+   "id": "setup-34",
+   "module": "ergonomics",
+   "tier": "alta",
+   "kind": "silla",
+   "brand": "Branch",
+   "model": "Ergonomic Chair Pro",
+   "mpn": "11-16-00-13",
+   "price": 499.0,
+   "store": "branchfurniture.com",
+   "url": "https://www.branchfurniture.com/products/ergonomic-chair-pro",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Silla ergonómica de malla"
+    },
+    {
+     "label": "Ajustes",
+     "value": "Brazos, lumbar y profundidad de asiento regulables"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/ergonomics-alta-branch-ergonomic-chair-pro.jpg",
+   "kindEn": "chair",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Ergonomic mesh chair"
+    },
+    {
+     "label": "Adjustments",
+     "value": "Adjustable arms, lumbar and seat depth"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "branchfurniture.com"
+  },
+  {
+   "id": "setup-35",
+   "module": "ergonomics",
+   "tier": "alta",
+   "kind": "escritorio",
+   "brand": "Branch",
+   "model": "Duo Standing Desk (48 x 24\")",
+   "mpn": "10-10-05-10",
+   "price": 649.0,
+   "store": "branchfurniture.com",
+   "url": "https://www.branchfurniture.com/products/duo-standing-desk",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Escritorio eléctrico de altura regulable"
+    },
+    {
+     "label": "Tablero",
+     "value": "122 x 61 cm"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/ergonomics-alta-branch-duo-standing-desk-48-x-24.jpg",
+   "kindEn": "desk",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Height-adjustable electric desk"
+    },
+    {
+     "label": "Desktop",
+     "value": "122 x 61 cm"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "branchfurniture.com"
+  },
+  {
+   "id": "setup-36",
+   "module": "ergonomics",
+   "tier": "extrema",
+   "kind": "silla",
+   "brand": "Herman Miller x Logitech G",
+   "model": "Embody Gaming Chair",
+   "mpn": "Embody Gaming",
+   "price": 2255.0,
+   "store": "store.hermanmiller.com",
+   "url": "https://store.hermanmiller.com/gaming-chairs/embody-gaming-chair/2517590.html?lang=en_US",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Respaldo",
+     "value": "Se adapta a la columna (Backfit)"
+    },
+    {
+     "label": "Asiento",
+     "value": "Espuma con cobre que no acumula calor"
+    },
+    {
+     "label": "Carga",
+     "value": "Hasta 136 kg (300 lb)"
+    },
+    {
+     "label": "Garantía",
+     "value": "12 años"
+    }
+   ],
+   "note": "Suele tener ofertas de temporada; precio regular.",
+   "image": "/images/setup/ergonomics-extrema-herman-miller-x-logitech-g-embody-gaming-chair.jpg",
+   "kindEn": "chair",
+   "specsEn": [
+    {
+     "label": "Backrest",
+     "value": "Adapts to your spine (Backfit)"
+    },
+    {
+     "label": "Seat",
+     "value": "Copper-infused foam that doesn't trap heat"
+    },
+    {
+     "label": "Load capacity",
+     "value": "Up to 136 kg (300 lb)"
+    },
+    {
+     "label": "Warranty",
+     "value": "12 years"
+    }
+   ],
+   "noteEn": "Often has seasonal deals; regular price shown.",
+   "stockEn": "in stock",
+   "storeEn": "store.hermanmiller.com"
+  },
+  {
+   "id": "setup-37",
+   "module": "ergonomics",
+   "tier": "extrema",
+   "kind": "escritorio",
+   "brand": "Branch",
+   "model": "Four Leg Standing Desk (59 x 27\")",
+   "mpn": "10-09-06-101",
+   "price": 1099.0,
+   "store": "branchfurniture.com",
+   "url": "https://www.branchfurniture.com/products/four-leg-standing-desk",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Escritorio eléctrico de 4 patas"
+    },
+    {
+     "label": "Tablero",
+     "value": "150 x 69 cm"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/ergonomics-extrema-branch-four-leg-standing-desk-59-x-27.jpg",
+   "kindEn": "desk",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "4-leg electric desk"
+    },
+    {
+     "label": "Desktop",
+     "value": "150 x 69 cm"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "branchfurniture.com"
+  },
+  {
+   "id": "setup-38",
+   "module": "accessories",
+   "tier": "entrada",
+   "kind": "brazo de monitor",
+   "brand": "HUANUO",
+   "model": "SS6 Essential Single Monitor Mount",
+   "mpn": "HNSS6B",
+   "price": 49.99,
+   "store": "huanuo.com",
+   "url": "https://huanuo.com/products/single-monitor-arm-mount-ss6",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Pantallas",
+     "value": "13\" a 32\""
+    },
+    {
+     "label": "Carga",
+     "value": "Hasta 9 kg (19,8 lb)"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/accessories-entrada-huanuo-ss6-essential-single-monitor-mount.jpg",
+   "kindEn": "monitor arm",
+   "specsEn": [
+    {
+     "label": "Displays",
+     "value": "13\" to 32\""
+    },
+    {
+     "label": "Load capacity",
+     "value": "Up to 9 kg (19.8 lb)"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "huanuo.com"
+  },
+  {
+   "id": "setup-39",
+   "module": "accessories",
+   "tier": "media",
+   "kind": "brazo de monitor",
+   "brand": "HUANUO",
+   "model": "FlowLift Pro Single Monitor Arm",
+   "mpn": "HNDMA118B-SS",
+   "price": 49.99,
+   "store": "huanuo.com",
+   "url": "https://huanuo.com/products/huanuo-single-monitor-arm-flowlift-pro",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Pantallas",
+     "value": "Hasta 32\""
+    },
+    {
+     "label": "Carga",
+     "value": "Hasta 9 kg (19,8 lb)"
+    },
+    {
+     "label": "Movimiento",
+     "value": "Inclinación +85°/-25°, giro ±90°, rotación ±90°"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/accessories-media-huanuo-flowlift-pro-single-monitor-arm.jpg",
+   "kindEn": "monitor arm",
+   "specsEn": [
+    {
+     "label": "Displays",
+     "value": "Up to 32\""
+    },
+    {
+     "label": "Load capacity",
+     "value": "Up to 9 kg (19.8 lb)"
+    },
+    {
+     "label": "Range of motion",
+     "value": "Tilt +85°/-25°, swivel ±90°, rotation ±90°"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "huanuo.com"
+  },
+  {
+   "id": "setup-40",
+   "module": "accessories",
+   "tier": "media",
+   "kind": "lámpara de monitor",
+   "brand": "Quntis",
+   "model": "Monitor Light Bar Focus Dual-Control 41 cm",
+   "mpn": "LI-HY-2213-GY-QU-TB",
+   "price": 52.99,
+   "store": "quntis.com",
+   "url": "https://www.quntis.com/products/quntis-40cm-monitor-light-bar-with-remote-and-touch-control-eye-caring-computer-monitor-lamp-auto-stepless-dimming-and-color-temperature-curved-screen-light-no-glare-anti-blue-desk-light-bar",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Largo",
+     "value": "41 cm"
+    },
+    {
+     "label": "Luz",
+     "value": "Asimétrica, sin reflejo en la pantalla"
+    },
+    {
+     "label": "Control",
+     "value": "Táctil y remoto, atenuación automática"
+    },
+    {
+     "label": "Alimentación",
+     "value": "USB"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/accessories-media-quntis-monitor-light-bar-focus-dual-control-41-cm.jpg",
+   "kindEn": "monitor light bar",
+   "specsEn": [
+    {
+     "label": "Length",
+     "value": "41 cm"
+    },
+    {
+     "label": "Light",
+     "value": "Asymmetric, no screen glare"
+    },
+    {
+     "label": "Control",
+     "value": "Touch and remote, auto-dimming"
+    },
+    {
+     "label": "Power",
+     "value": "USB"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "quntis.com"
+  },
+  {
+   "id": "setup-41",
+   "module": "accessories",
+   "tier": "alta",
+   "kind": "brazo de monitor",
+   "brand": "HUANUO",
+   "model": "Titan Single Monitor Arm",
+   "mpn": "HNSS48B",
+   "price": 104.99,
+   "store": "huanuo.com",
+   "url": "https://huanuo.com/products/single-monitor-arm-rgb-heavy-duty-mount",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Pantallas",
+     "value": "27\" a 49\" (ultrapanorámicos)"
+    },
+    {
+     "label": "Carga",
+     "value": "Hasta 18 kg (40 lb)"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/accessories-alta-huanuo-titan-single-monitor-arm.jpg",
+   "kindEn": "monitor arm",
+   "specsEn": [
+    {
+     "label": "Displays",
+     "value": "27\" to 49\" (ultrawide)"
+    },
+    {
+     "label": "Load capacity",
+     "value": "Up to 18 kg (40 lb)"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "huanuo.com"
+  },
+  {
+   "id": "setup-42",
+   "module": "accessories",
+   "tier": "alta",
+   "kind": "lámpara de monitor",
+   "brand": "Quntis",
+   "model": "Monitor Light Bar Focus 51 cm PRO+",
+   "mpn": "LI-HY-0208-BK-QU",
+   "price": 69.99,
+   "store": "quntis.com",
+   "url": "https://www.quntis.com/products/monitor-light-bar-pro-with-remote-control-eye-care-technology-computer-monitor-lamp-with-auto-dimming-no-screen-glare",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Largo",
+     "value": "51 cm"
+    },
+    {
+     "label": "Luz",
+     "value": "Asimétrica, ángulo regulable 45°"
+    },
+    {
+     "label": "Control",
+     "value": "Remoto, atenuación automática"
+    },
+    {
+     "label": "Alimentación",
+     "value": "USB"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/accessories-alta-quntis-monitor-light-bar-focus-51-cm-pro.jpg",
+   "kindEn": "monitor light bar",
+   "specsEn": [
+    {
+     "label": "Length",
+     "value": "51 cm"
+    },
+    {
+     "label": "Light",
+     "value": "Asymmetric, adjustable 45° angle"
+    },
+    {
+     "label": "Control",
+     "value": "Remote, auto-dimming"
+    },
+    {
+     "label": "Power",
+     "value": "USB"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "quntis.com"
+  },
+  {
+   "id": "setup-43",
+   "module": "accessories",
+   "tier": "extrema",
+   "kind": "brazo de monitor",
+   "brand": "HUANUO",
+   "model": "DS7 High-Performance Dual Monitor Arm",
+   "mpn": "DS7",
+   "price": 149.99,
+   "store": "huanuo.com",
+   "url": "https://huanuo.com/products/huanuo-dual-monitor-mount-for-13-inch-to-40-inch-screens",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Pantallas",
+     "value": "Dos monitores de 13\" a 40\""
+    }
+   ],
+   "note": "Para un segundo monitor (chat, OBS, trabajo) junto al principal.",
+   "image": "/images/setup/accessories-extrema-huanuo-ds7-high-performance-dual-monitor-arm.jpg",
+   "kindEn": "monitor arm",
+   "specsEn": [
+    {
+     "label": "Displays",
+     "value": "Two monitors from 13\" to 40\""
+    }
+   ],
+   "noteEn": "For a second monitor (chat, OBS, work) next to your main one.",
+   "stockEn": "in stock",
+   "storeEn": "huanuo.com"
+  },
+  {
+   "id": "setup-44",
+   "module": "accessories",
+   "tier": "extrema",
+   "kind": "hub USB-C",
+   "brand": "UGREEN",
+   "model": "Revodok Pro 9-in-1 USB-C Hub",
+   "mpn": "15532",
+   "price": 54.99,
+   "store": "us.ugreen.com",
+   "url": "https://us.ugreen.com/products/ugreen-revodok-pro-9-in-1-usb-c-hub",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Datos",
+     "value": "10 Gbps"
+    },
+    {
+     "label": "Red",
+     "value": "Ethernet Gigabit"
+    },
+    {
+     "label": "Carga",
+     "value": "100 W PD"
+    },
+    {
+     "label": "Video",
+     "value": "HDMI 4K a 60 Hz, lector SD/TF"
+    }
+   ],
+   "note": "Deja los puertos USB, la red y la tarjeta SD a mano sobre el escritorio.",
+   "image": "/images/setup/accessories-extrema-ugreen-revodok-pro-9-in-1-usb-c-hub.jpg",
+   "kindEn": "USB-C hub",
+   "specsEn": [
+    {
+     "label": "Data",
+     "value": "10 Gbps"
+    },
+    {
+     "label": "Network",
+     "value": "Gigabit Ethernet"
+    },
+    {
+     "label": "Charging",
+     "value": "100 W PD"
+    },
+    {
+     "label": "Video",
+     "value": "HDMI 4K at 60 Hz, SD/TF reader"
+    }
+   ],
+   "noteEn": "Puts USB ports, network and the SD card within reach on your desk.",
+   "stockEn": "in stock",
+   "storeEn": "us.ugreen.com"
+  },
+  {
+   "id": "setup-45",
+   "module": "audio",
+   "tier": "entrada",
+   "kind": "auriculares",
+   "brand": "HyperX",
+   "model": "Cloud Stinger 2 Core",
+   "mpn": "683L9AA",
+   "price": 29.99,
+   "store": "hyperx.com",
+   "url": "https://hyperx.com/products/hyperx-cloud-stinger-2-core-wired-gaming-headset",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Cerrado con micrófono"
+    },
+    {
+     "label": "Drivers",
+     "value": "40 mm con imanes de neodimio"
+    },
+    {
+     "label": "Conexión",
+     "value": "Cable 3,5 mm"
+    }
+   ],
+   "note": "La opción más barata: suficiente para jugar y hablar con tu equipo.",
+   "image": "/images/setup/audio-entrada-hyperx-cloud-stinger-2-core.jpg",
+   "kindEn": "headset",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Closed-back with microphone"
+    },
+    {
+     "label": "Drivers",
+     "value": "40 mm with neodymium magnets"
+    },
+    {
+     "label": "Connection",
+     "value": "3.5 mm cable"
+    }
+   ],
+   "noteEn": "The cheapest option: good enough to game and talk to your team.",
+   "stockEn": "in stock",
+   "storeEn": "hyperx.com"
+  },
+  {
+   "id": "setup-46",
+   "module": "ergonomics",
+   "tier": "entrada",
+   "kind": "silla",
+   "brand": "Sihoo",
+   "model": "B100 (asiento acolchado)",
+   "mpn": "B100-SE-M101",
+   "price": 199.99,
+   "store": "sihoooffice.com",
+   "url": "https://www.sihoooffice.com/products/sihoo-b100-ergonomic-office-chair",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Silla ergonómica de malla"
+    },
+    {
+     "label": "Reposabrazos",
+     "value": "Abatibles (para acercarte a la mesa)"
+    },
+    {
+     "label": "Asiento",
+     "value": "Acolchado"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/ergonomics-entrada-sihoo-b100-asiento-acolchado.jpg",
+   "kindEn": "chair",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Ergonomic mesh chair"
+    },
+    {
+     "label": "Armrests",
+     "value": "Flip-up (to get closer to the desk)"
+    },
+    {
+     "label": "Seat",
+     "value": "Padded"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "sihoooffice.com"
+  },
+  {
+   "id": "setup-47",
+   "module": "accessories",
+   "tier": "entrada",
+   "kind": "brazo de monitor",
+   "brand": "VIVO",
+   "model": "Pneumatic Arm Single Monitor Desk Mount",
+   "mpn": "STAND-V101O",
+   "price": 49.99,
+   "store": "vivo-us.com",
+   "url": "https://www.vivo-us.com/products/stand-v101o",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Pantallas",
+     "value": "17\" a 27\""
+    },
+    {
+     "label": "Carga",
+     "value": "2 a 6,5 kg (4,4–14,3 lb)"
+    },
+    {
+     "label": "Montaje",
+     "value": "Abrazadera o pasacables, VESA 75/100"
+    },
+    {
+     "label": "Movimiento",
+     "value": "Inclinación -45°/+90°, giro 180°, rotación 360°"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/accessories-entrada-vivo-pneumatic-arm-single-monitor-desk-mount.jpg",
+   "kindEn": "monitor arm",
+   "specsEn": [
+    {
+     "label": "Displays",
+     "value": "17\" to 27\""
+    },
+    {
+     "label": "Load capacity",
+     "value": "2 to 6.5 kg (4.4–14.3 lb)"
+    },
+    {
+     "label": "Mounting",
+     "value": "Clamp or grommet, VESA 75/100"
+    },
+    {
+     "label": "Range of motion",
+     "value": "Tilt -45°/+90°, swivel 180°, rotation 360°"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "vivo-us.com"
+  },
+  {
+   "id": "setup-48",
+   "module": "streaming",
+   "tier": "entrada",
+   "kind": "cámara",
+   "brand": "Logitech",
+   "model": "C920s Pro HD",
+   "mpn": "960-001257",
+   "price": 59.99,
+   "store": "Newegg",
+   "url": "https://www.newegg.com/logitech-c920s-black-usb-1920-x-1080/p/N82E16826197335",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Vídeo",
+     "value": "1080p a 30 fps"
+    },
+    {
+     "label": "Enfoque",
+     "value": "Automático con corrección de luz"
+    },
+    {
+     "label": "Extras",
+     "value": "Tapa de privacidad, micrófono estéreo"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/streaming-entrada-logitech-c920s-pro-hd.jpg",
+   "kindEn": "camera",
+   "specsEn": [
+    {
+     "label": "Video",
+     "value": "1080p at 30 fps"
+    },
+    {
+     "label": "Focus",
+     "value": "Auto with light correction"
+    },
+    {
+     "label": "Extras",
+     "value": "Privacy cover, stereo microphone"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "Newegg"
+  },
+  {
+   "id": "setup-49",
+   "module": "streaming",
+   "tier": "entrada",
+   "kind": "micrófono",
+   "brand": "HyperX",
+   "model": "SoloCast 2",
+   "mpn": "AR0A0AA",
+   "price": 44.99,
+   "store": "hyperx.com",
+   "url": "https://hyperx.com/products/hyperx-solocast-2-gaming-usb-condenser-microphone",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Condensador USB"
+    },
+    {
+     "label": "Uso",
+     "value": "Voz clara para el directo sin equipo extra"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/streaming-entrada-hyperx-solocast-2.jpg",
+   "kindEn": "microphone",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "USB condenser"
+    },
+    {
+     "label": "Use",
+     "value": "Clear voice for live streams with no extra gear"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "hyperx.com"
+  },
+  {
+   "id": "setup-50",
+   "module": "streaming",
+   "tier": "media",
+   "kind": "cámara",
+   "brand": "Elgato",
+   "model": "Facecam MK.2",
+   "mpn": "10WAC9901",
+   "price": 139.99,
+   "store": "elgato.com",
+   "url": "https://www.elgato.com/us/en/p/facecam-mk2",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Vídeo",
+     "value": "1080p a 60 fps sin comprimir"
+    },
+    {
+     "label": "Sensor",
+     "value": "Sony STARVIS 1/2,5\""
+    },
+    {
+     "label": "Control",
+     "value": "Exposición manual y encuadre (Camera Hub)"
+    },
+    {
+     "label": "Extras",
+     "value": "Tapa de privacidad"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/streaming-media-elgato-facecam-mk-2.jpg",
+   "kindEn": "camera",
+   "specsEn": [
+    {
+     "label": "Video",
+     "value": "1080p at 60 fps uncompressed"
+    },
+    {
+     "label": "Sensor",
+     "value": "Sony STARVIS 1/2.5\""
+    },
+    {
+     "label": "Control",
+     "value": "Manual exposure and framing (Camera Hub)"
+    },
+    {
+     "label": "Extras",
+     "value": "Privacy cover"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "elgato.com"
+  },
+  {
+   "id": "setup-51",
+   "module": "streaming",
+   "tier": "media",
+   "kind": "control",
+   "brand": "Elgato",
+   "model": "Stream Deck Neo",
+   "mpn": "10GBJ9911",
+   "price": 99.99,
+   "store": "elgato.com",
+   "url": "https://www.elgato.com/us/en/p/stream-deck-neo-black",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Teclas",
+     "value": "8 teclas LCD + 2 táctiles"
+    },
+    {
+     "label": "Uso",
+     "value": "Escenas de OBS, silenciar micro, música y atajos"
+    },
+    {
+     "label": "Conexión",
+     "value": "USB-C"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/streaming-media-elgato-stream-deck-neo.jpg",
+   "kindEn": "controller",
+   "specsEn": [
+    {
+     "label": "Keys",
+     "value": "8 LCD keys + 2 touch keys"
+    },
+    {
+     "label": "Use",
+     "value": "OBS scenes, mic mute, music and shortcuts"
+    },
+    {
+     "label": "Connection",
+     "value": "USB-C"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "elgato.com"
+  },
+  {
+   "id": "setup-52",
+   "module": "streaming",
+   "tier": "media",
+   "kind": "luz",
+   "brand": "Elgato",
+   "model": "Key Light Neo",
+   "mpn": "10LAJ9901",
+   "price": 69.99,
+   "store": "elgato.com",
+   "url": "https://www.elgato.com/us/en/p/key-light-neo",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Brillo",
+     "value": "Hasta 1000 lúmenes"
+    },
+    {
+     "label": "Color",
+     "value": "2900–7000 K, CRI > 94"
+    },
+    {
+     "label": "Montaje",
+     "value": "Sobre el monitor (incluido)"
+    },
+    {
+     "label": "Control",
+     "value": "USB-C o Wi-Fi"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/streaming-media-elgato-key-light-neo.jpg",
+   "kindEn": "light",
+   "specsEn": [
+    {
+     "label": "Brightness",
+     "value": "Up to 1000 lumens"
+    },
+    {
+     "label": "Color",
+     "value": "2900–7000 K, CRI > 94"
+    },
+    {
+     "label": "Mounting",
+     "value": "Monitor-top mount (included)"
+    },
+    {
+     "label": "Control",
+     "value": "USB-C or Wi-Fi"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "elgato.com"
+  },
+  {
+   "id": "setup-53",
+   "module": "streaming",
+   "tier": "alta",
+   "kind": "cámara",
+   "brand": "Elgato",
+   "model": "Facecam 4K",
+   "mpn": "10WAF9901",
+   "price": 199.99,
+   "store": "elgato.com",
+   "url": "https://www.elgato.com/us/en/p/facecam-4k",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Vídeo",
+     "value": "4K a 60 fps"
+    },
+    {
+     "label": "Sensor",
+     "value": "Sony STARVIS 2 1/1,8\""
+    },
+    {
+     "label": "Lente",
+     "value": "f/4.0, 90°, admite filtros de 49 mm"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/streaming-alta-elgato-facecam-4k.jpg",
+   "kindEn": "camera",
+   "specsEn": [
+    {
+     "label": "Video",
+     "value": "4K at 60 fps"
+    },
+    {
+     "label": "Sensor",
+     "value": "Sony STARVIS 2 1/1.8\""
+    },
+    {
+     "label": "Lens",
+     "value": "f/4.0, 90°, takes 49 mm filters"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "elgato.com"
+  },
+  {
+   "id": "setup-54",
+   "module": "streaming",
+   "tier": "alta",
+   "kind": "control",
+   "brand": "Elgato",
+   "model": "Stream Deck (15 teclas, Scissor Keys)",
+   "mpn": "10GBL9901",
+   "price": 149.99,
+   "store": "elgato.com",
+   "url": "https://www.elgato.com/us/en/p/stream-deck-scissor-keys",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Teclas",
+     "value": "15 teclas LCD con switch tipo tijera"
+    },
+    {
+     "label": "Conexión",
+     "value": "USB-C"
+    },
+    {
+     "label": "Extras",
+     "value": "Base magnética desmontable"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/streaming-alta-elgato-stream-deck-15-teclas-scissor-keys.jpg",
+   "kindEn": "controller",
+   "specsEn": [
+    {
+     "label": "Keys",
+     "value": "15 LCD keys with scissor switches"
+    },
+    {
+     "label": "Connection",
+     "value": "USB-C"
+    },
+    {
+     "label": "Extras",
+     "value": "Detachable magnetic base"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "elgato.com"
+  },
+  {
+   "id": "setup-55",
+   "module": "streaming",
+   "tier": "alta",
+   "kind": "micrófono",
+   "brand": "HyperX",
+   "model": "FlipCast",
+   "mpn": "B2CM1AA",
+   "price": 229.99,
+   "store": "hyperx.com",
+   "url": "https://hyperx.com/products/hyperx-flipcast-streaming-xlr-usb-dynamic-microphone",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Dinámico cardioide"
+    },
+    {
+     "label": "Conexión",
+     "value": "USB-C y XLR"
+    },
+    {
+     "label": "Extras",
+     "value": "Silencio táctil, filtro de graves y medidor de nivel"
+    }
+   ],
+   "note": "Dinámico: capta tu voz y rechaza el ruido de teclado y ventiladores.",
+   "image": "/images/setup/streaming-alta-hyperx-flipcast.jpg",
+   "kindEn": "microphone",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Dynamic cardioid"
+    },
+    {
+     "label": "Connection",
+     "value": "USB-C and XLR"
+    },
+    {
+     "label": "Extras",
+     "value": "Touch mute, low-cut filter and level meter"
+    }
+   ],
+   "noteEn": "Dynamic: picks up your voice and rejects keyboard and fan noise.",
+   "stockEn": "in stock",
+   "storeEn": "hyperx.com"
+  },
+  {
+   "id": "setup-56",
+   "module": "streaming",
+   "tier": "alta",
+   "kind": "brazo de micrófono",
+   "brand": "Elgato",
+   "model": "Wave Mic Arm LP",
+   "mpn": "10AAN9901",
+   "price": 99.99,
+   "store": "elgato.com",
+   "url": "https://www.elgato.com/us/en/p/wave-mic-arm-lp",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Alcance",
+     "value": "74 cm horizontal, 55 cm vertical"
+    },
+    {
+     "label": "Carga",
+     "value": "Hasta 2 kg"
+    },
+    {
+     "label": "Montaje",
+     "value": "Abrazadera hasta 6 cm, cables ocultos"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/streaming-alta-elgato-wave-mic-arm-lp.jpg",
+   "kindEn": "mic arm",
+   "specsEn": [
+    {
+     "label": "Reach",
+     "value": "74 cm horizontal, 55 cm vertical"
+    },
+    {
+     "label": "Load capacity",
+     "value": "Up to 2 kg"
+    },
+    {
+     "label": "Mounting",
+     "value": "Clamp up to 6 cm, hidden cables"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "elgato.com"
+  },
+  {
+   "id": "setup-57",
+   "module": "streaming",
+   "tier": "extrema",
+   "kind": "cámara",
+   "brand": "Sony",
+   "model": "ZV-E10 II + 16-50 mm",
+   "mpn": "ZVE10M2K/B",
+   "price": 1298.0,
+   "store": "Newegg (vendedor Electronic Express)",
+   "url": "https://www.newegg.com/p/0UF-001Z-00AB3",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Sensor",
+     "value": "APS-C de 26 MP"
+    },
+    {
+     "label": "Vídeo",
+     "value": "4K a 60 fps"
+    },
+    {
+     "label": "Salida",
+     "value": "Micro-HDMI y USB-C"
+    }
+   ],
+   "note": "Para directos largos conviene un adaptador de corriente de batería (no incluido).",
+   "image": "/images/setup/streaming-extrema-sony-zv-e10-ii-16-50-mm.jpg",
+   "kindEn": "camera",
+   "specsEn": [
+    {
+     "label": "Sensor",
+     "value": "26 MP APS-C"
+    },
+    {
+     "label": "Video",
+     "value": "4K at 60 fps"
+    },
+    {
+     "label": "Output",
+     "value": "Micro-HDMI and USB-C"
+    }
+   ],
+   "noteEn": "For long streams, use a dummy battery power adapter (not included).",
+   "stockEn": "in stock",
+   "storeEn": "Newegg (sold by Electronic Express)"
+  },
+  {
+   "id": "setup-58",
+   "module": "streaming",
+   "tier": "extrema",
+   "kind": "capturadora",
+   "brand": "Elgato",
+   "model": "Cam Link 4K",
+   "mpn": "10GAM9901",
+   "price": 99.99,
+   "store": "elgato.com",
+   "url": "https://www.elgato.com/us/en/p/cam-link-4k",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Entrada",
+     "value": "HDMI hasta 4K"
+    },
+    {
+     "label": "Conexión",
+     "value": "USB 3.0"
+    },
+    {
+     "label": "Uso",
+     "value": "Convierte la cámara en webcam para OBS, Discord y Zoom"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/streaming-extrema-elgato-cam-link-4k.jpg",
+   "kindEn": "capture card",
+   "specsEn": [
+    {
+     "label": "Input",
+     "value": "HDMI up to 4K"
+    },
+    {
+     "label": "Connection",
+     "value": "USB 3.0"
+    },
+    {
+     "label": "Use",
+     "value": "Turns your camera into a webcam for OBS, Discord and Zoom"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "elgato.com"
+  },
+  {
+   "id": "setup-59",
+   "module": "streaming",
+   "tier": "extrema",
+   "kind": "control",
+   "brand": "Elgato",
+   "model": "Stream Deck + XL",
+   "mpn": "10GBX9901",
+   "price": 349.99,
+   "store": "elgato.com",
+   "url": "https://www.elgato.com/us/en/p/stream-deck-plus-xl",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Teclas",
+     "value": "36 teclas LCD"
+    },
+    {
+     "label": "Diales",
+     "value": "6 giratorios con pulsación"
+    },
+    {
+     "label": "Uso",
+     "value": "Volumen de cada fuente, escenas y efectos"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/streaming-extrema-elgato-stream-deck-xl.jpg",
+   "kindEn": "controller",
+   "specsEn": [
+    {
+     "label": "Keys",
+     "value": "36 LCD keys"
+    },
+    {
+     "label": "Dials",
+     "value": "6 push-button rotary dials"
+    },
+    {
+     "label": "Use",
+     "value": "Per-source volume, scenes and effects"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "elgato.com"
+  },
+  {
+   "id": "setup-60",
+   "module": "streaming",
+   "tier": "extrema",
+   "kind": "luz",
+   "brand": "Elgato",
+   "model": "Key Light",
+   "mpn": null,
+   "price": 179.99,
+   "store": "elgato.com",
+   "url": "https://www.elgato.com/us/en/p/key-light",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Brillo",
+     "value": "2800 lúmenes"
+    },
+    {
+     "label": "Color",
+     "value": "2900–7000 K, CRI > 92"
+    },
+    {
+     "label": "Montaje",
+     "value": "Brazo de mesa Master Mount (incluido)"
+    },
+    {
+     "label": "Control",
+     "value": "Wi-Fi"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/streaming-extrema-elgato-key-light.jpg",
+   "kindEn": "light",
+   "specsEn": [
+    {
+     "label": "Brightness",
+     "value": "2800 lumens"
+    },
+    {
+     "label": "Color",
+     "value": "2900–7000 K, CRI > 92"
+    },
+    {
+     "label": "Mounting",
+     "value": "Master Mount desk arm (included)"
+    },
+    {
+     "label": "Control",
+     "value": "Wi-Fi"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "elgato.com"
+  },
+  {
+   "id": "setup-61",
+   "module": "streaming",
+   "tier": "extrema",
+   "kind": "brazo de micrófono",
+   "brand": "Elgato",
+   "model": "Wave Mic Arm LP",
+   "mpn": "10AAN9901",
+   "price": 99.99,
+   "store": "elgato.com",
+   "url": "https://www.elgato.com/us/en/p/wave-mic-arm-lp",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Alcance",
+     "value": "74 cm horizontal, 55 cm vertical"
+    },
+    {
+     "label": "Carga",
+     "value": "Hasta 2 kg"
+    },
+    {
+     "label": "Montaje",
+     "value": "Abrazadera hasta 6 cm, cables ocultos"
+    }
+   ],
+   "note": "Para el QuadCast 2 S del módulo de audio.",
+   "image": "/images/setup/streaming-extrema-elgato-wave-mic-arm-lp.jpg",
+   "kindEn": "mic arm",
+   "specsEn": [
+    {
+     "label": "Reach",
+     "value": "74 cm horizontal, 55 cm vertical"
+    },
+    {
+     "label": "Load capacity",
+     "value": "Up to 2 kg"
+    },
+    {
+     "label": "Mounting",
+     "value": "Clamp up to 6 cm, hidden cables"
+    }
+   ],
+   "noteEn": "For the QuadCast 2 S in the audio module.",
+   "stockEn": "in stock",
+   "storeEn": "elgato.com"
+  },
+  {
+   "id": "setup-62",
+   "module": "coolant",
+   "tier": "entrada",
+   "kind": "agua",
+   "brand": "Mayhems",
+   "model": "Ultra Pure H2O (1 L)",
+   "mpn": "MH2O1L",
+   "price": 7.99,
+   "store": "Performance-PCs",
+   "url": "https://www.performance-pcs.com/products/mayhems-pc-coolant-ultra-pure-h2o-high-purity-low-electrical-conductivity-1-litre",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Agua de alta pureza para PC"
+    },
+    {
+     "label": "Volumen",
+     "value": "1 L"
+    },
+    {
+     "label": "Uso",
+     "value": "Base para mezclar con aditivo o concentrado"
+    }
+   ],
+   "note": "Un circuito con uno o dos radiadores lleva de 1 a 1,5 L: calcula dos botellas.",
+   "image": "/images/setup/coolant-entrada-mayhems-ultra-pure-h2o-1-l.jpg",
+   "kindEn": "water",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "High-purity PC water"
+    },
+    {
+     "label": "Volume",
+     "value": "1 L"
+    },
+    {
+     "label": "Use",
+     "value": "Base for mixing with an additive or concentrate"
+    }
+   ],
+   "noteEn": "A loop with one or two radiators takes 1 to 1.5 L: plan on two bottles.",
+   "stockEn": "in stock",
+   "storeEn": "Performance-PCs"
+  },
+  {
+   "id": "setup-63",
+   "module": "coolant",
+   "tier": "entrada",
+   "kind": "aditivo",
+   "brand": "PrimoChill",
+   "model": "Liquid Utopia (15 ml)",
+   "mpn": "PCLUBT-CLR",
+   "price": 13.99,
+   "store": "PrimoChill (primochill.com)",
+   "url": "https://www.primochill.com/products/primochill-liquid-utopia-15ml-bottle",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Aditivo transparente"
+    },
+    {
+     "label": "Protege",
+     "value": "Biocida e inhibidor de corrosión"
+    },
+    {
+     "label": "Color",
+     "value": "Incoloro"
+    }
+   ],
+   "note": "Se mezcla con agua destilada: el color lo ponen los tubos y la iluminación.",
+   "image": "/images/setup/coolant-entrada-primochill-liquid-utopia-15-ml.jpg",
+   "kindEn": "additive",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Clear additive"
+    },
+    {
+     "label": "Protection",
+     "value": "Biocide and corrosion inhibitor"
+    },
+    {
+     "label": "Color",
+     "value": "Colorless"
+    }
+   ],
+   "noteEn": "Mix it with distilled water: the tubing and lighting provide the color.",
+   "stockEn": "in stock",
+   "storeEn": "PrimoChill (primochill.com)"
+  },
+  {
+   "id": "setup-64",
+   "module": "coolant",
+   "tier": "media",
+   "kind": "líquido",
+   "brand": "Corsair",
+   "model": "Hydro X XL8 Clear (1 L)",
+   "mpn": "CX-9060007-WW",
+   "price": 16.19,
+   "store": "Performance-PCs",
+   "url": "https://www.performance-pcs.com/products/hydro-x-series-xl8-performance-coolant-1l-clear",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Premezcla transparente"
+    },
+    {
+     "label": "Volumen",
+     "value": "1 L"
+    },
+    {
+     "label": "Colores",
+     "value": "Incoloro, rojo, verde y morado"
+    }
+   ],
+   "note": "Listo para verter; es el más fácil de mantener.",
+   "image": "/images/setup/coolant-media-corsair-hydro-x-xl8-clear-1-l.jpg",
+   "kindEn": "coolant",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Clear premix"
+    },
+    {
+     "label": "Volume",
+     "value": "1 L"
+    },
+    {
+     "label": "Colors",
+     "value": "Colorless, red, green and purple"
+    }
+   ],
+   "noteEn": "Ready to pour; the easiest to maintain.",
+   "stockEn": "in stock",
+   "storeEn": "Performance-PCs"
+  },
+  {
+   "id": "setup-65",
+   "module": "coolant",
+   "tier": "media",
+   "kind": "líquido",
+   "brand": "PrimoChill",
+   "model": "Pure Performance Clear (32 oz)",
+   "mpn": "PC-PURE",
+   "price": 13.95,
+   "store": "PrimoChill (primochill.com)",
+   "url": "https://www.primochill.com/products/primochill-pure-performance-watercooling-coolant-clear-32oz",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Premezcla transparente"
+    },
+    {
+     "label": "Volumen",
+     "value": "32 oz (0,95 L)"
+    },
+    {
+     "label": "Color",
+     "value": "Incoloro"
+    }
+   ],
+   "note": null,
+   "image": "/images/setup/coolant-media-primochill-pure-performance-clear-32-oz.jpg",
+   "kindEn": "coolant",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Clear premix"
+    },
+    {
+     "label": "Volume",
+     "value": "32 oz (0.95 L)"
+    },
+    {
+     "label": "Color",
+     "value": "Colorless"
+    }
+   ],
+   "noteEn": null,
+   "stockEn": "in stock",
+   "storeEn": "PrimoChill (primochill.com)"
+  },
+  {
+   "id": "setup-66",
+   "module": "coolant",
+   "tier": "alta",
+   "kind": "concentrado",
+   "brand": "PrimoChill",
+   "model": "True Opaque Sky White SX (8 oz)",
+   "mpn": "PC-T8O-SW",
+   "price": 29.99,
+   "store": "PrimoChill (primochill.com)",
+   "url": "https://www.primochill.com/products/primochill-true-opaque-8oz",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Concentrado pastel (opaco)"
+    },
+    {
+     "label": "Rinde",
+     "value": "Hasta 1 galón (3,8 L) con agua destilada"
+    },
+    {
+     "label": "Colores",
+     "value": "24, mismo precio"
+    }
+   ],
+   "note": "Blanco pastel para la pecera blanca. Revisa el circuito cada pocos meses: las partículas se asientan.",
+   "image": "/images/setup/coolant-alta-primochill-true-opaque-sky-white-sx-8-oz.jpg",
+   "kindEn": "concentrate",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Pastel concentrate (opaque)"
+    },
+    {
+     "label": "Yield",
+     "value": "Up to 1 gallon (3.8 L) with distilled water"
+    },
+    {
+     "label": "Colors",
+     "value": "24, same price"
+    }
+   ],
+   "noteEn": "Pastel white for a white fishbowl build. Check the loop every few months: the particles settle.",
+   "stockEn": "in stock",
+   "storeEn": "PrimoChill (primochill.com)"
+  },
+  {
+   "id": "setup-67",
+   "module": "coolant",
+   "tier": "alta",
+   "kind": "agua",
+   "brand": "Mayhems",
+   "model": "Ultra Pure H2O (1 L)",
+   "mpn": "MH2O1L",
+   "price": 7.99,
+   "store": "Performance-PCs",
+   "url": "https://www.performance-pcs.com/products/mayhems-pc-coolant-ultra-pure-h2o-high-purity-low-electrical-conductivity-1-litre",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Agua de alta pureza para PC"
+    },
+    {
+     "label": "Volumen",
+     "value": "1 L"
+    },
+    {
+     "label": "Uso",
+     "value": "Base para mezclar con aditivo o concentrado"
+    }
+   ],
+   "note": "Un circuito con uno o dos radiadores lleva de 1 a 1,5 L: calcula dos botellas.",
+   "image": "/images/setup/coolant-alta-mayhems-ultra-pure-h2o-1-l.jpg",
+   "kindEn": "water",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "High-purity PC water"
+    },
+    {
+     "label": "Volume",
+     "value": "1 L"
+    },
+    {
+     "label": "Use",
+     "value": "Base for mixing with an additive or concentrate"
+    }
+   ],
+   "noteEn": "A loop with one or two radiators takes 1 to 1.5 L: plan on two bottles.",
+   "stockEn": "in stock",
+   "storeEn": "Performance-PCs"
+  },
+  {
+   "id": "setup-68",
+   "module": "coolant",
+   "tier": "extrema",
+   "kind": "líquido",
+   "brand": "PrimoChill",
+   "model": "Vue (32 oz)",
+   "mpn": null,
+   "price": 29.99,
+   "store": "PrimoChill (primochill.com)",
+   "url": "https://www.primochill.com/products/primochill-vue-pre-mix-32oz",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Premezcla con brillo (remolinos al fluir)"
+    },
+    {
+     "label": "Volumen",
+     "value": "32 oz (0,9 L)"
+    },
+    {
+     "label": "Colores",
+     "value": "24, mismo precio"
+    },
+    {
+     "label": "Extras",
+     "value": "Incluye PrimoPrep para limpiar el circuito"
+    }
+   ],
+   "note": "El más vistoso para una pecera y el que más limpieza pide: vacía y limpia el circuito cada pocos meses. La referencia cambia con el color (PC-V32K-…).",
+   "image": "/images/setup/coolant-extrema-primochill-vue-32-oz.jpg",
+   "kindEn": "coolant",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Shimmer premix (swirls as it flows)"
+    },
+    {
+     "label": "Volume",
+     "value": "32 oz (0.9 L)"
+    },
+    {
+     "label": "Colors",
+     "value": "24, same price"
+    },
+    {
+     "label": "Extras",
+     "value": "Includes PrimoPrep to clean the loop"
+    }
+   ],
+   "noteEn": "The most eye-catching coolant for a fishbowl and the one that needs the most cleaning: drain and clean the loop every few months. The part number changes with the color (PC-V32K-…).",
+   "stockEn": "in stock",
+   "storeEn": "PrimoChill (primochill.com)"
+  },
+  {
+   "id": "setup-69",
+   "module": "coolant",
+   "tier": "extrema",
+   "kind": "limpieza",
+   "brand": "Mayhems",
+   "model": "Blitz System",
+   "mpn": "MBKS",
+   "price": 16.99,
+   "store": "Performance-PCs",
+   "url": "https://www.performance-pcs.com/products/mayhems-pc-cleaning-kit-blitz-system-coolant-loop-cleaning-for-initial-setup-and-coolant-change",
+   "stock": "disponible",
+   "specs": [
+    {
+     "label": "Tipo",
+     "value": "Kit de limpieza del circuito"
+    },
+    {
+     "label": "Uso",
+     "value": "Antes del primer llenado y en cada cambio de líquido"
+    }
+   ],
+   "note": "Imprescindible con líquidos de brillo o pastel: quita los restos que se quedan en bloques y radiadores.",
+   "image": "/images/setup/coolant-extrema-mayhems-blitz-system.jpg",
+   "kindEn": "cleaning kit",
+   "specsEn": [
+    {
+     "label": "Type",
+     "value": "Loop cleaning kit"
+    },
+    {
+     "label": "Use",
+     "value": "Before the first fill and at every coolant change"
+    }
+   ],
+   "noteEn": "A must with shimmer or pastel coolants: it removes residue left in blocks and radiators.",
+   "stockEn": "in stock",
+   "storeEn": "Performance-PCs"
+  }
+ ]
+}

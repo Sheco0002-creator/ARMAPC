@@ -1,0 +1,85 @@
+{
+  "updated": "2026-07",
+  "guides": [
+    {
+      "slug": "glosario",
+      "file": "guias/glosario.html",
+      "tag": "BÁSICOS",
+      "title": "Glosario para principiantes",
+      "summary": "Qué es cada pieza de una PC, explicado en palabras simples: CPU, GPU, RAM, placa madre y el resto, sin tecnicismos.",
+      "readMinutes": 7
+    },
+    {
+      "slug": "compatibilidad",
+      "file": "guias/compatibilidad.html",
+      "tag": "GUÍA",
+      "title": "Compatibilidad de componentes",
+      "summary": "Las reglas que hacen que las piezas encajen entre sí: socket, tipo de RAM, tamaño del gabinete y potencia de la fuente. Lo mismo que revisa el configurador.",
+      "readMinutes": 9
+    },
+    {
+      "slug": "elegir-gpu",
+      "file": "guias/elegir-gpu.html",
+      "tag": "GPU",
+      "title": "Cómo elegir tu tarjeta gráfica",
+      "summary": "La pieza que más define tu experiencia gamer. Cómo elegirla según la resolución a la que juegas, sin pagar de más ni quedarte corto.",
+      "readMinutes": 8
+    },
+    {
+      "slug": "errores-comunes",
+      "file": "guias/errores-comunes.html",
+      "tag": "CONSEJOS",
+      "title": "Errores comunes al armar tu primera PC",
+      "summary": "Los tropiezos más frecuentes al armar tu primer equipo — fuente barata, mal presupuesto, olvidar la refrigeración — y cómo evitarlos todos.",
+      "readMinutes": 8
+    },
+    {
+      "slug": "cuanta-ram",
+      "file": "guias/cuanta-ram.html",
+      "tag": "RAM",
+      "title": "¿Cuánta RAM necesito?",
+      "summary": "16 GB, 32 GB o más: cuánta memoria necesitas de verdad según lo que hagas con tu PC, sin gastar de más ni quedarte corto.",
+      "readMinutes": 6
+    },
+    {
+      "slug": "fuente-de-poder",
+      "file": "guias/fuente-de-poder.html",
+      "tag": "FUENTE",
+      "title": "Guía de fuentes de poder",
+      "summary": "Cuántos watts necesitas, qué significa la certificación 80+ y por qué la fuente es la pieza donde no conviene ahorrar.",
+      "readMinutes": 7
+    },
+    {
+      "slug": "elegir-cpu",
+      "file": "guias/elegir-cpu.html",
+      "tag": "CPU",
+      "title": "Cómo elegir tu procesador",
+      "summary": "Núcleos, caché y socket: en qué fijarte de verdad al elegir el cerebro de tu PC, y por qué el más caro no siempre es el mejor para jugar.",
+      "readMinutes": 8
+    },
+    {
+      "slug": "almacenamiento",
+      "file": "guias/almacenamiento.html",
+      "tag": "SSD",
+      "title": "Guía de almacenamiento (SSD)",
+      "summary": "NVMe vs SATA, cuántos GB o TB necesitas y por qué la velocidad importa más para cargar juegos que para tu FPS.",
+      "readMinutes": 6
+    },
+    {
+      "slug": "gabinete-refrigeracion",
+      "file": "guias/gabinete-refrigeracion.html",
+      "tag": "GABINETE",
+      "title": "Guía de gabinete y refrigeración",
+      "summary": "Factor de forma, flujo de aire, y refrigeración por aire vs líquida (AIO): cómo elegir sin complicarte.",
+      "readMinutes": 7
+    },
+    {
+      "slug": "liquidos-pecera",
+      "file": "guias/liquidos-pecera.html",
+      "tag": "LÍQUIDA",
+      "title": "Líquidos para refrigeración en pecera",
+      "summary": "Qué líquido poner en un circuito abierto de una PC pecera: transparente, de color, pastel o con brillo. Cuál ensucia menos, qué nunca usar y cada cuánto cambiarlo.",
+      "readMinutes": 8
+    }
+  ]
+}

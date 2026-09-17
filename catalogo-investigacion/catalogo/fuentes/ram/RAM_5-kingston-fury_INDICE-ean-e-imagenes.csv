@@ -1,0 +1,6 @@
+prod_id,supplier_name,ean_upc,path(es_pe),timestamp,"Your product ID",error_message
+KF556C36BBEK2-16,"Kingston Technology",0740617331769|740617331769|7406173317694,https://data.icecat.biz/export/freexml/ES_PE/107944077.xml,"2026-08-20 16:25:56",,
+KF560C36BBEK2-32,"Kingston Technology",0740617330755|740617330755,https://data.icecat.biz/export/freexml/ES_PE/101871067.xml,"2026-05-12 13:49:00",,
+KF556C40BBK2-64,"Kingston Technology",0740617326574|740617326574|7406173265742,https://data.icecat.biz/export/freexml/ES_PE/97334433.xml,"2026-08-20 16:22:31",,
+KF432C16BBK2/16,"Kingston Technology",0740617319903|740617319903,https://data.icecat.biz/export/freexml/ES_PE/92899568.xml,"2026-05-25 15:10:37",,
+KF556C36BBEK2-32,"Kingston Technology",0740617330793|740617330793|7406173307930,https://data.icecat.biz/export/freexml/ES_PE/101871065.xml,"2026-08-20 16:24:17",,

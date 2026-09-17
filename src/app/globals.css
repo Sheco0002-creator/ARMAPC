@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono), "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .text-mega {
+    font-size: clamp(4rem, 18vw, 16rem);
+    line-height: 0.8;
+    letter-spacing: -0.04em;
+  }
+}
+
+::selection {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #08090a;
+  color: #ffffff;
+}
+
+body {
+  background-color: #08090a;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* "Imprimir / PDF" del configurador y de Setup completo (15-09-2026): si la página trae el informe
+   de PC + setup (InformeEquipo), se imprime sólo el informe, en blanco y negro */
+@media print {
+  html:has(body > .informe-equipo),
+  body:has(> .informe-equipo) {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  body:has(> .informe-equipo) > :not(.informe-equipo) {
+    display: none !important;
+  }
+}
