@@ -513,7 +513,7 @@ export const ASSEMBLY_STEPS: AssemblyStep[] = [
     faseIndex: 5,
     titulo: "Instalación de Refrigeración Líquida (AIO)",
     tiempoEstimado: "15 min",
-    nivelRiesgo: "Alto",
+    nivelRiesgo: "Medio",
     icono: Droplet,
     descripcion: "Reglas de oro para montar sistemas All-in-One y evitar que la bomba trague aire o falle prematuramente.",
     instrucciones: [
@@ -591,7 +591,7 @@ export const ASSEMBLY_STEPS: AssemblyStep[] = [
     faseIndex: 5,
     titulo: "Refrigeración Líquida Custom (Custom Loop)",
     tiempoEstimado: "4+ horas",
-    nivelRiesgo: "Muy Alto",
+    nivelRiesgo: "Crítico",
     icono: Droplet,
     descripcion: "El pináculo del modding: diseña tu propio circuito de refrigeración para CPU y GPU con tubos a medida y líquido refrigerante.",
     instrucciones: [
@@ -775,7 +775,7 @@ export function GuiaEnsamblajeStepByStep() {
     while (stepIdx >= 0) {
       if (subIdx >= 0) {
         const step = pasos[stepIdx];
-        const prevSub = step.instrucciones[subIdx];
+        const prevSub = getInstructionData(step.instrucciones[subIdx]);
         if (prevSub.imagen) {
           setModalItem({ stepNum: step.id, subIdx, data: prevSub });
           setCurrentStepIndex(stepIdx);
@@ -802,7 +802,7 @@ export function GuiaEnsamblajeStepByStep() {
     while (stepIdx < pasos.length) {
       const step = pasos[stepIdx];
       if (subIdx < step.instrucciones.length) {
-        const nextSub = step.instrucciones[subIdx];
+        const nextSub = getInstructionData(step.instrucciones[subIdx]);
         if (nextSub.imagen) {
           setModalItem({ stepNum: step.id, subIdx, data: nextSub });
           setCurrentStepIndex(stepIdx);
