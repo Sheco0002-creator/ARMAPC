@@ -40,7 +40,9 @@ import {
   useEquipo,
   useCargarEquipo,
   lineasSetup,
+  lineasSetupSeleccionado,
   totalSetup as calcularTotalSetup,
+  calcularTotalProductos,
   nombreNivelSetup,
   usd,
   usosBuild,
@@ -277,7 +279,13 @@ export function ConfiguradorVista() {
   });
   const guardarPc = useEquipo((s) => s.guardarPc);
   const setupNivel = useEquipo((s) => s.setupNivel);
-  const totalSetupElegido = setupNivel ? calcularTotalSetup(setupNivel) : 0;
+  const setupProductos = useEquipo((s) => s.setupProductos);
+  const totalSetupElegido =
+    setupProductos && setupProductos.length > 0
+      ? calcularTotalProductos(setupProductos)
+      : setupNivel
+      ? calcularTotalSetup(setupNivel)
+      : 0;
   useEffect(() => {
     if (equipoListo)
       guardarPc({ componentes: selectedComponents, origen: "configurador", nivel: presetActivo, uso: usoPreset, estilo });
@@ -928,15 +936,17 @@ export function ConfiguradorVista() {
             ),
           ]
         : []),
-      // con un nivel elegido en Setup completo, también el monitor y los periféricos
-      ...(setupNivel
+      // con periféricos elegidos o un nivel en Setup completo
+      ...(setupNivel || (setupProductos && setupProductos.length > 0)
         ? [
             "",
-            ...lineasSetup(setupNivel, lang),
+            ...(setupProductos && setupProductos.length > 0
+              ? lineasSetupSeleccionado(setupProductos, setupNivel, lang)
+              : lineasSetup(setupNivel!, lang)),
             "",
             tr(
-              `TOTAL PC + SETUP: desde ${usd(totalPrice + totalSetupElegido)} USD`,
-              `PC + SETUP TOTAL: from ${usd(totalPrice + totalSetupElegido)} USD`
+              `TOTAL PC + SETUP: ${usd(totalPrice + totalSetupElegido)} USD`,
+              `PC + SETUP TOTAL: ${usd(totalPrice + totalSetupElegido)} USD`
             ),
           ]
         : []),
@@ -1951,22 +1961,22 @@ export function ConfiguradorVista() {
               </div>
 
               {/* Con un nivel elegido en Setup completo: sus periféricos y el total de PC + setup */}
-              {setupNivel && (
+              {(setupNivel || (setupProductos && setupProductos.length > 0)) && (
                 <div className="p-3.5 rounded-lg bg-white/[0.03] border border-white/10 space-y-1.5 text-xs font-mono">
                   <div className="flex justify-between items-baseline text-gray-400">
                     <span>
-                      {tr("Setup completo", "Full setup")} · {nombreNivelSetup(setupNivel, lang)}:
+                      {tr("Setup completo", "Full setup")}{setupNivel ? ` · ${nombreNivelSetup(setupNivel, lang)}` : ""}:
                     </span>
                     <span className="text-gray-200">+ {usd(totalSetupElegido)}</span>
                   </div>
                   <div className="flex justify-between items-baseline pt-1.5 border-t border-white/10">
                     <span className="text-[10px] tracking-widest uppercase text-emerald-400">
-                      {tr("PC + Setup desde", "PC + Setup from")}
+                      {tr("PC + Setup total", "Total PC + Setup")}
                     </span>
                     <span className="text-lg font-medium text-white">{usd(totalPrice + totalSetupElegido)}</span>
                   </div>
                   <Link href={ruta("setup")} className="block text-[11px] text-gray-400 hover:text-white underline">
-                    {tr("Cambiar el setup", "Change the setup")}
+                    {tr("Cambiar periféricos del setup", "Change setup peripherals")}
                   </Link>
                 </div>
               )}
@@ -2018,6 +2028,7 @@ export function ConfiguradorVista() {
         componentes={selectedComponents}
         origenPc={tr("del Configurador", "from the Configurator")}
         setupNivel={setupNivel}
+        setupProductos={setupProductos}
         notasPc={[
           `${tr("Compatibilidad", "Compatibility")}: ${
             compatibilityIssues.length === 0

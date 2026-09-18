@@ -116,6 +116,69 @@ export function lineasSetup(nivel: TierType, lang: Lang): string[] {
   return lineas;
 }
 
+/** Devuelve los IDs de los productos recomendados por defecto para un nivel (la opción más económica de cada tipo en módulos base). */
+export function productosPorDefecto(tier: TierType): string[] {
+  const ids: string[] = [];
+  for (const m of MODULOS_SETUP) {
+    if (m.optional) continue;
+    const productos = productosDe(m.id, tier);
+    const porTipo = new Map<string, SetupProduct>();
+    for (const p of productos) {
+      const k = p.kind ?? "";
+      const actual = porTipo.get(k);
+      if (!actual || p.price < actual.price) {
+        porTipo.set(k, p);
+      }
+    }
+    for (const p of porTipo.values()) {
+      ids.push(p.id);
+    }
+  }
+  return ids;
+}
+
+/** Calcula el precio total de una lista de IDs de productos de setup. */
+export function calcularTotalProductos(ids: string[]): number {
+  const idSet = new Set(ids);
+  return SETUP_PRODUCTS.filter((p) => idSet.has(p.id)).reduce((acc, p) => acc + p.price, 0);
+}
+
+/** Genera las líneas de texto para copiar con los productos exactamente seleccionados por el usuario. */
+export function lineasSetupSeleccionado(ids: string[], nivel: TierType | null, lang: Lang): string[] {
+  const en = lang === "en";
+  const idSet = new Set(ids);
+  const seleccionados = SETUP_PRODUCTS.filter((p) => idSet.has(p.id));
+  const total = seleccionados.reduce((s, p) => s + p.price, 0);
+
+  const lineas = [
+    nivel
+      ? en
+        ? `--- FULL SETUP · ${nombreNivelSetup(nivel, lang)}: ${usd(total)} USD ---`
+        : `--- SETUP COMPLETO · ${nombreNivelSetup(nivel, lang)}: ${usd(total)} USD ---`
+      : en
+      ? `--- CUSTOM SETUP: ${usd(total)} USD ---`
+      : `--- SETUP PERSONALIZADO: ${usd(total)} USD ---`,
+  ];
+
+  if (seleccionados.length === 0) {
+    lineas.push(en ? "• No peripherals selected" : "• Sin periféricos seleccionados");
+    return lineas;
+  }
+
+  for (const m of MODULOS_SETUP) {
+    const prodsMod = seleccionados.filter((p) => p.module === m.id);
+    if (prodsMod.length === 0) continue;
+    const modulo = nombreModulo(m, lang).replace(en ? " (Optional)" : " (Opcional)", "");
+    for (const p of prodsMod) {
+      const tipo = tipoDe(p, lang);
+      const nombre = tipo ? `${modulo} · ${tipo}` : modulo;
+      lineas.push(`• ${nombre}: ${p.brand} ${p.model} (${usd(p.price)})`);
+    }
+  }
+
+  return lineas;
+}
+
 // ---------- Uso de las builds (15-09-2026) ----------
 // Cada nivel trae 3 builds de gaming, 1 de streaming y 1 de IA local (compatibilidad.py, PERFILES);
 // Presupuestos y el configurador las separan con un selector "Uso".
@@ -269,8 +332,10 @@ export type PcGuardada = {
 type EstadoEquipo = {
   pc: PcGuardada | null;
   setupNivel: TierType | null; // null = sin nivel (no se ha elegido o se pulsó "Reset")
+  setupProductos: string[]; // IDs de los productos seleccionados en el setup
   guardarPc: (pc: PcGuardada) => void;
   guardarSetupNivel: (nivel: TierType | null) => void;
+  guardarSetupProductos: (ids: string[]) => void;
 };
 
 export const useEquipo = create<EstadoEquipo>()(
@@ -278,13 +343,19 @@ export const useEquipo = create<EstadoEquipo>()(
     (set) => ({
       pc: null,
       setupNivel: null,
+      setupProductos: [],
       guardarPc: (pc) => set({ pc }),
       guardarSetupNivel: (setupNivel) => set({ setupNivel }),
+      guardarSetupProductos: (setupProductos) => set({ setupProductos }),
     }),
     {
       name: "armapc-equipo",
       storage: createJSONStorage(() => localStorage),
-      partialize: (s) => ({ pc: s.pc, setupNivel: s.setupNivel }),
+      partialize: (s) => ({
+        pc: s.pc,
+        setupNivel: s.setupNivel,
+        setupProductos: s.setupProductos ?? [],
+      }),
       // Se carga después de montar: el servidor no conoce el localStorage y el primer render del
       // navegador tiene que ser igual al suyo (si no, error de hidratación)
       skipHydration: true,

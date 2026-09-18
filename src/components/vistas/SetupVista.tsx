@@ -32,6 +32,7 @@ import {
   ExternalLink,
   Video,
   Droplets,
+  Plus,
 } from "lucide-react";
 import { useConfiguratorStore, TierType } from "@/store/useConfiguratorStore";
 import { setupPeripheralsData } from "@/data/setupPeripherals";
@@ -52,6 +53,9 @@ import {
   totalSetup as calcularTotalSetup,
   totalStreaming as calcularTotalStreaming,
   totalLiquidos as calcularTotalLiquidos,
+  productosPorDefecto,
+  calcularTotalProductos,
+  lineasSetupSeleccionado,
   lineasSetup,
   piezasPc,
   CATEGORIAS_OBLIGATORIAS,
@@ -352,10 +356,57 @@ export function SetupVista() {
   // Es estado local: el nivel del store lo comparten otras páginas y no admite "ninguno".
   const [sinNivel, setSinNivel] = useState(false);
   const nivel: TierType | null = sinNivel ? null : selectedTier;
+
+  // Selección interactiva de periféricos (18-09-2026):
+  // Permite elegir uno, mantener ambos o quitar opciones para que sumen a la build real
+  const setupProductosGuardados = useEquipo((s) => s.setupProductos);
+  const guardarSetupProductos = useEquipo((s) => s.guardarSetupProductos);
+  const [selectedProductIds, setSelectedProductIds] = useState<string[]>([]);
+
   const elegirNivel = (tier: TierType) => {
     setSinNivel(false);
     selectTier(tier, true);
+    const def = productosPorDefecto(tier);
+    setSelectedProductIds(def);
+    guardarSetupProductos(def);
   };
+
+  const handleReset = () => {
+    setSinNivel(true);
+    setSelectedProductIds([]);
+    guardarSetupProductos([]);
+  };
+
+  // Alternar selección de un producto individual (sumar o quitar de la build)
+  const toggleProducto = (id: string) => {
+    setSelectedProductIds((prev) => {
+      const existe = prev.includes(id);
+      const siguiente = existe ? prev.filter((x) => x !== id) : [...prev, id];
+      guardarSetupProductos(siguiente);
+      return siguiente;
+    });
+  };
+
+  // Acciones en lote para un módulo: elegir todos o deseleccionar todos
+  const seleccionarTodosDelModulo = (ids: string[]) => {
+    setSelectedProductIds((prev) => {
+      const set = new Set(prev);
+      ids.forEach((id) => set.add(id));
+      const siguiente = Array.from(set);
+      guardarSetupProductos(siguiente);
+      return siguiente;
+    });
+  };
+
+  const deseleccionarTodosDelModulo = (ids: string[]) => {
+    setSelectedProductIds((prev) => {
+      const set = new Set(ids);
+      const siguiente = prev.filter((id) => !set.has(id));
+      guardarSetupProductos(siguiente);
+      return siguiente;
+    });
+  };
+
   // El configurador abre la PC guardada; si no hay, el preset del nivel
   const enlaceConfigurador = nivel ? `${ruta("configurador")}?nivel=${nivel}` : ruta("configurador");
 
@@ -364,9 +415,24 @@ export function SetupVista() {
   const equipoListo = useCargarEquipo();
   const pcGuardada = useEquipo((s) => s.pc);
   const guardarSetupNivel = useEquipo((s) => s.guardarSetupNivel);
+
+  useEffect(() => {
+    if (equipoListo) {
+      guardarSetupNivel(nivel);
+      if (setupProductosGuardados && setupProductosGuardados.length > 0) {
+        setSelectedProductIds(setupProductosGuardados);
+      } else if (nivel) {
+        const def = productosPorDefecto(nivel);
+        setSelectedProductIds(def);
+        guardarSetupProductos(def);
+      }
+    }
+  }, [equipoListo]);
+
   useEffect(() => {
     if (equipoListo) guardarSetupNivel(nivel);
   }, [equipoListo, nivel, guardarSetupNivel]);
+
   const pc = pcGuardada && Object.keys(pcGuardada.componentes).length > 0 ? pcGuardada : null;
   const piezas = pc ? piezasPc(pc.componentes, lang) : [];
   const precioPc = pc ? totalPc(pc.componentes) : 0;
@@ -387,18 +453,37 @@ export function SetupVista() {
   // Información del preset actual
   const currentPreset = PRESETS_INFO[selectedTier] || PRESETS_INFO.media;
 
-  // Total del setup en esta gama: la opción más barata de cada tipo de periférico (sin módulos opcionales)
-  const totalSetup = useMemo(() => (nivel ? calcularTotalSetup(nivel) : 0), [nivel]);
-  const totalStreaming = useMemo(() => (nivel ? calcularTotalStreaming(nivel) : 0), [nivel]);
-  const totalLiquidos = useMemo(() => (nivel ? calcularTotalLiquidos(nivel) : 0), [nivel]);
+  // Total del setup: suma dinámica de todos los periféricos seleccionados por el usuario
+  const totalSetup = useMemo(() => {
+    if (selectedProductIds.length > 0) {
+      return calcularTotalProductos(selectedProductIds);
+    }
+    return nivel ? calcularTotalSetup(nivel) : 0;
+  }, [selectedProductIds, nivel]);
 
-  // Copiar la lista completa: la PC guardada y los periféricos del nivel, con el total de los dos
+  const totalStreaming = useMemo(() => {
+    const idSet = new Set(selectedProductIds);
+    return SETUP_PRODUCTS.filter((p) => p.module === "streaming" && idSet.has(p.id)).reduce(
+      (s, p) => s + p.price,
+      0
+    );
+  }, [selectedProductIds]);
+
+  const totalLiquidos = useMemo(() => {
+    const idSet = new Set(selectedProductIds);
+    return SETUP_PRODUCTS.filter((p) => p.module === "liquidos" && idSet.has(p.id)).reduce(
+      (s, p) => s + p.price,
+      0
+    );
+  }, [selectedProductIds]);
+
+  // Copiar la lista completa: la PC guardada y los periféricos elegidos, con el total exacto de ambos
   const handleCopyLista = () => {
     const lineas = [
       tr("=== MI SETUP COMPLETO 2026 · PC + PERIFÉRICOS ===", "=== MY FULL SETUP 2026 · PC + PERIPHERALS ==="),
       tr(
-        `Total PC + setup: desde ${usd(precioPc + totalSetup)} USD (${textoPreciosConFechas(lang)}; no son el precio exacto)`,
-        `PC + setup total: from ${usd(precioPc + totalSetup)} USD (${textoPreciosConFechas(lang)}; not the exact price)`
+        `Total PC + setup: ${usd(precioPc + totalSetup)} USD (${textoPreciosConFechas(lang)}; no son el precio exacto)`,
+        `PC + setup total: ${usd(precioPc + totalSetup)} USD (${textoPreciosConFechas(lang)}; not the exact price)`
       ),
       "",
       ...(pc
@@ -413,7 +498,9 @@ export function SetupVista() {
             ),
           ]),
       "",
-      ...(nivel
+      ...(selectedProductIds.length > 0
+        ? lineasSetupSeleccionado(selectedProductIds, nivel, lang)
+        : nivel
         ? lineasSetup(nivel, lang)
         : [tr("--- SETUP COMPLETO: sin nivel elegido ---", "--- FULL SETUP: no level chosen ---")]),
       "",
@@ -513,7 +600,7 @@ export function SetupVista() {
               })}
             </div>
             <button
-              onClick={() => setSinNivel(true)}
+              onClick={handleReset}
               title={tr("Limpiar selección", "Reset selection")}
               className="ml-2 inline-flex items-center justify-center w-8 h-8 rounded-lg bg-[#08090a]/80 backdrop-blur-sm border border-white/10 text-gray-400 hover:bg-red-500/20 hover:border-red-500/30 hover:text-red-400 transition-all cursor-pointer shadow-sm"
             >
@@ -571,6 +658,8 @@ export function SetupVista() {
               const chapterData = chapterBase ? capituloEnIdioma(chapterBase, lang) : undefined;
               const tierRec = nivel ? chapterData?.recommendations[nivel] : undefined;
               const productos = nivel ? productosDe(mod.id, nivel) : [];
+              const prodsModSeleccionados = productos.filter((p) => selectedProductIds.includes(p.id));
+              const totalModSeleccionado = prodsModSeleccionados.reduce((s, p) => s + p.price, 0);
               const foto = fotoModulo(mod.id);
               const nombreFoto = foto ? `${foto.brand} ${foto.model}` : "";
 
@@ -634,8 +723,16 @@ export function SetupVista() {
 
                     <div className="flex items-center gap-3 shrink-0 ml-4">
                       {productos.length > 0 && (
-                        <span className="hidden sm:inline-block text-[10px] font-mono px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 uppercase">
-                          {tr("Desde", "From")} {usd(precioModulo(productos))}
+                        <span
+                          className={`hidden sm:inline-block text-[10px] font-mono px-2.5 py-1 rounded border uppercase transition-colors ${
+                            prodsModSeleccionados.length > 0
+                              ? "bg-emerald-500/15 border-emerald-500/40 text-emerald-300 font-semibold"
+                              : "bg-white/[0.04] border-white/10 text-gray-400"
+                          }`}
+                        >
+                          {prodsModSeleccionados.length > 0
+                            ? `${usd(totalModSeleccionado)} (${prodsModSeleccionados.length})`
+                            : `${tr("Desde", "From")} ${usd(precioModulo(productos))}`}
                         </span>
                       )}
                       <ChevronDown
@@ -688,8 +785,22 @@ export function SetupVista() {
                             {tr("Sinergia Recomendada para", "Recommended match for")} {currentPreset.name}
                           </div>
                           {productos.length > 0 && (
-                            <div className="text-xs font-mono text-white font-semibold">
-                              {tr("Precio del módulo: desde", "Module price: from")} {usd(precioModulo(productos))}
+                            <div className="text-xs font-mono">
+                              {prodsModSeleccionados.length > 0 ? (
+                                <span className="text-emerald-400 font-semibold">
+                                  {tr("En tu build:", "In your build:")} {usd(totalModSeleccionado)}{" "}
+                                  <span className="text-gray-400 font-normal">
+                                    ({prodsModSeleccionados.length}{" "}
+                                    {prodsModSeleccionados.length === 1
+                                      ? tr("opción", "option")
+                                      : tr("opciones", "options")})
+                                  </span>
+                                </span>
+                              ) : (
+                                <span className="text-gray-400 font-semibold">
+                                  {tr("Precio del módulo: desde", "Module price: from")} {usd(precioModulo(productos))}
+                                </span>
+                              )}
                             </div>
                           )}
                         </div>
@@ -744,77 +855,169 @@ export function SetupVista() {
                               <Database size={12} />
                               {tr("Modelos recomendados", "Recommended models")} · {currentPreset.name}
                             </span>
-                            {hayAlternativas(productos) && (
-                              <span className="normal-case tracking-normal text-gray-500">
-                                {tr("Elige una opción de cada tipo", "Pick one option of each type")}
-                              </span>
-                            )}
+                            <div className="flex flex-wrap items-center gap-3">
+                              {prodsModSeleccionados.length > 0 ? (
+                                <span className="normal-case tracking-normal text-emerald-400 flex items-center gap-1 font-medium">
+                                  <CheckCircle2 size={12} />
+                                  {prodsModSeleccionados.length}{" "}
+                                  {prodsModSeleccionados.length === 1
+                                    ? tr("elegido", "selected")
+                                    : tr("elegidos", "selected")}{" "}
+                                  ({usd(totalModSeleccionado)})
+                                </span>
+                              ) : (
+                                <span className="normal-case tracking-normal text-amber-400/90 flex items-center gap-1 font-medium">
+                                  <Info size={12} />
+                                  {tr("Elige uno o mantén ambos", "Pick one or keep both")}
+                                </span>
+                              )}
+                              {productos.length > 1 && (
+                                <div className="flex items-center gap-1.5 normal-case tracking-normal">
+                                  <button
+                                    type="button"
+                                    onClick={() => seleccionarTodosDelModulo(productos.map((p) => p.id))}
+                                    className="text-[10px] text-emerald-400 hover:text-emerald-300 underline cursor-pointer"
+                                  >
+                                    {tr("Elegir ambos", "Keep both")}
+                                  </button>
+                                  <span className="text-gray-600">·</span>
+                                  <button
+                                    type="button"
+                                    onClick={() => deseleccionarTodosDelModulo(productos.map((p) => p.id))}
+                                    className="text-[10px] text-gray-500 hover:text-gray-300 underline cursor-pointer"
+                                  >
+                                    {tr("Quitar módulo", "Remove all")}
+                                  </button>
+                                </div>
+                              )}
+                            </div>
                           </div>
 
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                            {productos.map((p) => (
-                              <div
-                                key={p.id}
-                                className="rounded-xl border border-white/10 bg-white/[0.02] overflow-hidden flex flex-col"
-                              >
-                                <div className="h-52 bg-white flex items-center justify-center p-3">
-                                  {p.image ? (
-                                    <img
-                                      src={p.image}
-                                      alt={`${p.brand} ${p.model}`}
-                                      loading="lazy"
-                                      className="max-h-full max-w-full object-contain"
-                                    />
-                                  ) : (
-                                    <Icon size={40} className="text-gray-300" />
-                                  )}
-                                </div>
-                                <div className="p-4 space-y-3 flex-1 flex flex-col">
-                                  <div>
-                                    {p.kind && (
-                                      <div className="text-[10px] font-mono uppercase tracking-wider text-emerald-400 mb-0.5">
-                                        {tipoDe(p, lang)}
-                                      </div>
+                            {productos.map((p) => {
+                              const isSelected = selectedProductIds.includes(p.id);
+                              return (
+                                <div
+                                  key={p.id}
+                                  onClick={() => toggleProducto(p.id)}
+                                  role="checkbox"
+                                  aria-checked={isSelected}
+                                  tabIndex={0}
+                                  onKeyDown={(e) => {
+                                    if (e.key === "Enter" || e.key === " ") {
+                                      e.preventDefault();
+                                      toggleProducto(p.id);
+                                    }
+                                  }}
+                                  className={`relative rounded-xl border transition-all duration-200 overflow-hidden flex flex-col cursor-pointer group select-none ${
+                                    isSelected
+                                      ? "border-emerald-500/70 bg-emerald-500/[0.04] ring-1 ring-emerald-500/30 shadow-lg shadow-emerald-500/5"
+                                      : "border-white/10 bg-white/[0.02] hover:border-white/25 hover:bg-white/[0.04]"
+                                  }`}
+                                >
+                                  {/* Badge superior de estado en build */}
+                                  <div className="absolute top-2.5 right-2.5 z-10">
+                                    {isSelected ? (
+                                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-500 text-black text-[10px] font-mono font-bold shadow-md">
+                                        <Check size={12} strokeWidth={3} />
+                                        {tr("EN TU BUILD", "IN YOUR BUILD")}
+                                      </span>
+                                    ) : (
+                                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-black/70 backdrop-blur-sm border border-white/20 text-[10px] font-mono text-gray-300 group-hover:text-white group-hover:border-white/40 transition-colors">
+                                        <Plus size={11} />
+                                        {tr("Añadir", "Add")}
+                                      </span>
                                     )}
-                                    <div className="text-sm font-medium text-white leading-snug">
-                                      {p.brand} {p.model}
-                                    </div>
                                   </div>
-                                  <div className="space-y-1 text-[11px] font-mono">
-                                    {(lang === "en" && p.specsEn ? p.specsEn : p.specs).map((s) => (
-                                      <div key={s.label} className="flex justify-between gap-3">
-                                        <span className="text-gray-500 shrink-0">{s.label}</span>
-                                        <span className="text-gray-200 text-right">{s.value}</span>
-                                      </div>
-                                    ))}
+
+                                  <div className="h-52 bg-white flex items-center justify-center p-3 relative">
+                                    {p.image ? (
+                                      <img
+                                        src={p.image}
+                                        alt={`${p.brand} ${p.model}`}
+                                        loading="lazy"
+                                        className="max-h-full max-w-full object-contain transition-transform duration-200 group-hover:scale-105"
+                                      />
+                                    ) : (
+                                      <Icon size={40} className="text-gray-300" />
+                                    )}
                                   </div>
-                                  {(lang === "en" ? p.noteEn : p.note) && (
-                                    <p className="text-[11px] text-gray-400 leading-relaxed italic">
-                                      {lang === "en" ? p.noteEn : p.note}
-                                    </p>
-                                  )}
-                                  <div className="mt-auto pt-3 border-t border-white/10 flex items-end justify-between gap-3">
+                                  <div className="p-4 space-y-3 flex-1 flex flex-col">
                                     <div>
-                                      <div className="text-lg font-mono font-medium text-white">{usd(p.price)}</div>
-                                      <div className="text-[10px] font-mono text-gray-500">
-                                        {lang === "en" ? p.storeEn ?? p.store : p.store}
-                                        {p.stock && p.stock !== "disponible"
-                                          ? ` · ${lang === "en" ? p.stockEn ?? p.stock : p.stock}`
-                                          : ""}
+                                      {p.kind && (
+                                        <div className="text-[10px] font-mono uppercase tracking-wider text-emerald-400 mb-0.5">
+                                          {tipoDe(p, lang)}
+                                        </div>
+                                      )}
+                                      <div className="text-sm font-medium text-white leading-snug group-hover:text-emerald-300 transition-colors">
+                                        {p.brand} {p.model}
                                       </div>
                                     </div>
-                                    <a
-                                      href={p.url}
-                                      target="_blank"
-                                      rel="noopener noreferrer nofollow"
-                                      className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded border border-white/15 text-[10px] font-mono uppercase tracking-wider text-gray-300 hover:text-white hover:border-white/40 transition-colors print:hidden"
-                                    >
-                                      {tr("Ver tienda", "View store")} <ExternalLink size={11} />
-                                    </a>
+                                    <div className="space-y-1 text-[11px] font-mono">
+                                      {(lang === "en" && p.specsEn ? p.specsEn : p.specs).map((s) => (
+                                        <div key={s.label} className="flex justify-between gap-3">
+                                          <span className="text-gray-500 shrink-0">{s.label}</span>
+                                          <span className="text-gray-200 text-right">{s.value}</span>
+                                        </div>
+                                      ))}
+                                    </div>
+                                    {(lang === "en" ? p.noteEn : p.note) && (
+                                      <p className="text-[11px] text-gray-400 leading-relaxed italic">
+                                        {lang === "en" ? p.noteEn : p.note}
+                                      </p>
+                                    )}
+                                    <div className="mt-auto pt-3 border-t border-white/10 flex items-end justify-between gap-3">
+                                      <div>
+                                        <div className="text-lg font-mono font-medium text-white">{usd(p.price)}</div>
+                                        <div className="text-[10px] font-mono text-gray-500">
+                                          {lang === "en" ? p.storeEn ?? p.store : p.store}
+                                          {p.stock && p.stock !== "disponible"
+                                            ? ` · ${lang === "en" ? p.stockEn ?? p.stock : p.stock}`
+                                            : ""}
+                                        </div>
+                                      </div>
+                                      <div className="flex items-center gap-2">
+                                        <button
+                                          type="button"
+                                          onClick={(e) => {
+                                            e.stopPropagation();
+                                            toggleProducto(p.id);
+                                          }}
+                                          className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded text-[10px] font-mono uppercase tracking-wider font-semibold transition-all cursor-pointer ${
+                                            isSelected
+                                              ? "bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/50 text-emerald-300"
+                                              : "bg-white/5 hover:bg-white/10 border border-white/15 text-gray-300 hover:text-white"
+                                          }`}
+                                        >
+                                          {isSelected ? (
+                                            <>
+                                              <Check size={11} className="text-emerald-400" />
+                                              <span>{tr("Quitar", "Remove")}</span>
+                                            </>
+                                          ) : (
+                                            <>
+                                              <Plus size={11} />
+                                              <span>{tr("Elegir", "Pick")}</span>
+                                            </>
+                                          )}
+                                        </button>
+
+                                        <a
+                                          href={p.url}
+                                          target="_blank"
+                                          rel="noopener noreferrer nofollow"
+                                          onClick={(e) => e.stopPropagation()}
+                                          className="inline-flex items-center gap-1 px-2 py-1.5 rounded border border-white/15 text-[10px] font-mono uppercase tracking-wider text-gray-400 hover:text-white hover:border-white/40 transition-colors print:hidden"
+                                          title={tr("Abrir en tienda oficial", "Open in official store")}
+                                        >
+                                          <ExternalLink size={11} />
+                                        </a>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
-                              </div>
-                            ))}
+                              );
+                            })}
                           </div>
                         </div>
                       )}
@@ -915,25 +1118,47 @@ export function SetupVista() {
               </div>
               )}
 
-              {/* Desglose de los 6 Módulos Arquitectónicos */}
+              {/* Desglose de los Módulos Arquitectónicos */}
               <div className="space-y-2 text-xs">
                 <span className="text-[10px] font-mono tracking-widest uppercase text-gray-400 block">
                   {tr("Módulos Arquitectónicos:", "Setup modules:")}
                 </span>
-                {SETUP_MODULES.map((mod) => (
-                  <div
-                    key={mod.id}
-                    className="flex justify-between items-center text-gray-300 py-1.5 border-b border-white/[0.03] text-xs font-mono"
-                  >
-                    <span className="text-gray-400 flex items-center gap-1.5">
-                      <span className="text-gray-600">{mod.order}</span>
-                      <span>{nombreModulo(mod, lang)}:</span>
-                    </span>
-                    <span className={`text-[11px] ${mod.optional ? "text-gray-500" : "text-white"}`}>
-                      {nivel ? `${mod.optional ? "+ " : ""}${usd(precioModulo(productosDe(mod.id, nivel)))}` : "—"}
-                    </span>
-                  </div>
-                ))}
+                {SETUP_MODULES.map((mod) => {
+                  const prodsMod = SETUP_PRODUCTS.filter(
+                    (p) => p.module === mod.id && selectedProductIds.includes(p.id)
+                  );
+                  const totalMod = prodsMod.reduce((s, p) => s + p.price, 0);
+                  const tieneSeleccion = prodsMod.length > 0;
+
+                  return (
+                    <div
+                      key={mod.id}
+                      className="flex justify-between items-center text-gray-300 py-1.5 border-b border-white/[0.03] text-xs font-mono"
+                    >
+                      <span className="text-gray-400 flex items-center gap-1.5">
+                        <span className="text-gray-600">{mod.order}</span>
+                        <span>{nombreModulo(mod, lang)}:</span>
+                      </span>
+                      <span
+                        className={`text-[11px] ${
+                          tieneSeleccion
+                            ? "text-emerald-400 font-semibold"
+                            : mod.optional
+                            ? "text-gray-500"
+                            : "text-gray-400"
+                        }`}
+                      >
+                        {tieneSeleccion
+                          ? `${usd(totalMod)}${prodsMod.length > 1 ? ` (${prodsMod.length})` : ""}`
+                          : nivel
+                          ? mod.optional
+                            ? tr("Opcional", "Optional")
+                            : tr("Sin elegir", "None")
+                          : "—"}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
 
               {/* Rango de Inversión Estimada */}
@@ -941,28 +1166,31 @@ export function SetupVista() {
                 <div className="flex justify-between items-baseline">
                   <div>
                     <div className="text-[10px] font-mono text-gray-400 uppercase tracking-widest">
-                      {tr("Setup Completo Desde", "Full setup from")}
+                      {tr("Setup Seleccionado", "Selected Setup")}
                     </div>
                     <div className="text-[10px] text-gray-500 font-mono">
-                      {tr("Opción más barata de cada periférico", "Cheapest option of each peripheral")}
+                      {selectedProductIds.length}{" "}
+                      {selectedProductIds.length === 1
+                        ? tr("periférico en tu build", "peripheral in build")
+                        : tr("periféricos en tu build", "peripherals in build")}
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-xl font-medium font-mono text-white">
-                      {nivel ? usd(totalSetup) : "—"}
+                    <div className="text-xl font-medium font-mono text-emerald-400">
+                      {usd(totalSetup)}
                     </div>
                   </div>
                 </div>
                 {totalStreaming > 0 && (
                   <div className="flex justify-between items-baseline text-[11px] font-mono text-gray-400">
-                    <span>{tr("Con el kit de streaming:", "With the streaming kit:")}</span>
-                    <span className="text-gray-200">{usd(totalSetup + totalStreaming)}</span>
+                    <span>{tr("Incluye kit de streaming:", "Includes streaming kit:")}</span>
+                    <span className="text-gray-200">{usd(totalStreaming)}</span>
                   </div>
                 )}
                 {totalLiquidos > 0 && (
                   <div className="flex justify-between items-baseline text-[11px] font-mono text-gray-400">
-                    <span>{tr("Líquidos para pecera (aparte):", "Fishbowl coolant (separate):")}</span>
-                    <span className="text-gray-200">+ {usd(totalLiquidos)}</span>
+                    <span>{tr("Incluye refrigerante pecera:", "Includes fishbowl coolant:")}</span>
+                    <span className="text-gray-200">{usd(totalLiquidos)}</span>
                   </div>
                 )}
               </div>
@@ -1000,7 +1228,7 @@ export function SetupVista() {
                 )}
                 <div className="flex justify-between items-baseline pt-2 border-t border-white/10">
                   <span className="text-[10px] tracking-widest uppercase text-emerald-400">
-                    {tr("PC + Setup desde", "PC + Setup from")}
+                    {tr("PC + Setup total", "Total PC + Setup")}
                   </span>
                   <span className="text-2xl font-medium text-white">{usd(precioPc + totalSetup)}</span>
                 </div>
@@ -1051,7 +1279,12 @@ export function SetupVista() {
       </main>
 
       <VistaPreviaFlotante soloIzquierda />
-      <InformeEquipo componentes={pc?.componentes ?? null} origenPc={origenPc} setupNivel={nivel} />
+      <InformeEquipo
+        componentes={pc?.componentes ?? null}
+        origenPc={origenPc}
+        setupNivel={nivel}
+        setupProductos={selectedProductIds}
+      />
 
       {/* Barra Fija Inferior para Móviles */}
       <div className="lg:hidden print:hidden fixed bottom-0 inset-x-0 z-40 border-t border-white/10 bg-[#0d0f12]/95 backdrop-blur-md px-4 py-3">
@@ -1062,7 +1295,7 @@ export function SetupVista() {
             </div>
             <div className="text-[10px] font-mono text-emerald-400 truncate">
               {nivel
-                ? tr(`PC + setup desde ${usd(precioPc + totalSetup)}`, `PC + setup from ${usd(precioPc + totalSetup)}`)
+                ? tr(`PC + setup: ${usd(precioPc + totalSetup)}`, `PC + setup: ${usd(precioPc + totalSetup)}`)
                 : tr("Elige un nivel de rig", "Pick a rig level")}
             </div>
           </div>

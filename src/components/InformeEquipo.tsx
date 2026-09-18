@@ -8,6 +8,7 @@ import { createPortal } from "react-dom";
 import type { TierType } from "@/store/useConfiguratorStore";
 import { textoPreciosConFechas } from "@/components/AvisoPrecios";
 import {
+  SETUP_PRODUCTS,
   MODULOS_SETUP,
   nombreModulo,
   nombreNivelSetup,
@@ -32,11 +33,13 @@ export function InformeEquipo({
   componentes,
   origenPc,
   setupNivel,
+  setupProductos,
   notasPc = [],
 }: {
   componentes: Record<string, string> | null;
   origenPc: string;
   setupNivel: TierType | null;
+  setupProductos?: string[];
   notasPc?: string[]; // p. ej. compatibilidad y consumo, que sólo conoce el configurador
 }) {
   const { lang, tr } = useIdioma();
@@ -45,7 +48,14 @@ export function InformeEquipo({
 
   const piezas = componentes ? piezasPc(componentes, lang) : [];
   const precioPc = componentes ? totalPc(componentes) : 0;
-  const precioSetup = setupNivel ? totalSetup(setupNivel) : 0;
+  const prodsElegidos = setupProductos && setupProductos.length > 0
+    ? SETUP_PRODUCTS.filter((p) => setupProductos.includes(p.id))
+    : null;
+  const precioSetup = prodsElegidos
+    ? prodsElegidos.reduce((s, p) => s + p.price, 0)
+    : setupNivel
+    ? totalSetup(setupNivel)
+    : 0;
   const fecha = new Date().toLocaleDateString(lang === "en" ? "en-US" : "es-ES", {
     day: "numeric",
     month: "long",
@@ -98,13 +108,34 @@ export function InformeEquipo({
           {tr("Setup completo", "Full setup")} {setupNivel ? `· ${nombreNivelSetup(setupNivel, lang)}` : ""}
         </caption>
         <tbody>
-          {!setupNivel ? (
+          {!setupNivel && !prodsElegidos ? (
             <tr>
               <td className="py-1">{tr("Sin nivel elegido.", "No level chosen.")}</td>
             </tr>
+          ) : prodsElegidos ? (
+            MODULOS_SETUP.map((m) => {
+              const productos = prodsElegidos.filter((p) => p.module === m.id);
+              if (productos.length === 0) return null;
+              return (
+                <tr key={m.id} className="border-b border-gray-300 align-top">
+                  <td className="py-1 pr-3 w-40 text-gray-600">{nombreModulo(m, lang)}</td>
+                  <td className="py-1 pr-3">
+                    {productos.map((p) => (
+                      <div key={p.id}>
+                        {tipoDe(p, lang) ? `${tipoDe(p, lang)}: ` : ""}
+                        {p.brand} {p.model} — {usd(p.price)}
+                      </div>
+                    ))}
+                  </td>
+                  <td className="py-1 text-right whitespace-nowrap">
+                    {usd(productos.reduce((s, p) => s + p.price, 0))}
+                  </td>
+                </tr>
+              );
+            })
           ) : (
             MODULOS_SETUP.map((m) => {
-              const productos = productosDe(m.id, setupNivel);
+              const productos = productosDe(m.id, setupNivel!);
               if (productos.length === 0) return null;
               return (
                 <tr key={m.id} className="border-b border-gray-300 align-top">
@@ -127,7 +158,9 @@ export function InformeEquipo({
           )}
           <tr>
             <td colSpan={2} className="pt-1.5 font-bold">
-              {tr("Subtotal setup (opción más barata de cada tipo)", "Setup subtotal (cheapest option of each type)")}
+              {prodsElegidos
+                ? tr("Subtotal setup (periféricos elegidos)", "Setup subtotal (selected peripherals)")
+                : tr("Subtotal setup (opción más barata de cada tipo)", "Setup subtotal (cheapest option of each type)")}
             </td>
             <td className="pt-1.5 text-right font-bold">{usd(precioSetup)}</td>
           </tr>
