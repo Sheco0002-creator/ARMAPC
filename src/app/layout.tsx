@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { StaticBackgroundVideo } from "@/components/StaticBackgroundVideo";
 import { mediaAssets } from "@/data/mediaAssets";
 
@@ -47,6 +49,9 @@ export default function RootLayout({
           showGradient={false}
         />
         {children}
+        {/* Métricas de tráfico y rendimiento de Vercel en tiempo real */}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
