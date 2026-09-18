@@ -30,9 +30,11 @@ import {
   ChevronDown,
   ArrowRight,
   Fan,
+  ExternalLink,
 } from "lucide-react";
 import componentsData from "@/data/components.json";
 import { useConfiguratorStore, TierType } from "@/store/useConfiguratorStore";
+import { obtenerInfoTienda } from "@/lib/presupuestoTiendas";
 import { AvisoPrecios, textoPreciosConFechas } from "@/components/AvisoPrecios";
 import { VistaPreviaFlotante, vistaPrevia, ampliarAlTocar } from "@/components/VistaPreviaProducto";
 import { InformeEquipo } from "@/components/InformeEquipo";
@@ -63,6 +65,8 @@ import type { Lang } from "@/i18n/rutas";
 type ItemCatalogo = {
   id: string;
   name: string;
+  brand?: string;
+  mpn?: string;
   price: number;
   image?: string;
   specs?: string;
@@ -1033,6 +1037,7 @@ export function ConfiguradorVista() {
   const tarjetaVersion = (categoryId: string, item: ItemCatalogo, currentSelectedId: string | undefined, recomendada: boolean) => {
     const isChecked = currentSelectedId === item.id;
     const compat = checkItemCompatibility(categoryId, item);
+    const storeInfo = obtenerInfoTienda(item);
     return (
       <div
         key={item.id}
@@ -1099,18 +1104,18 @@ export function ConfiguradorVista() {
           </div>
         </div>
 
-        {/* Compatibility Badge on item */}
-        <div className="mt-2.5 pt-2 border-t border-white/5 flex items-center justify-between gap-2">
-          {compat.compatible ? (
-            <span className="text-[10px] font-mono text-emerald-400 flex items-center gap-1">
-              <CheckCircle2 size={11} /> {tr("Compatible", "Compatible")}
-            </span>
-          ) : (
-            <span className="text-[10px] font-mono text-rose-400 flex items-center gap-1">
-              <AlertTriangle size={11} /> {compat.reason || tr("Incompatible", "Not compatible")}
-            </span>
-          )}
-          <span className="flex items-center gap-1.5">
+        {/* Compatibility Badge and Store Buttons on item */}
+        <div className="mt-2.5 pt-2 border-t border-white/5 flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center gap-1.5 flex-wrap">
+            {compat.compatible ? (
+              <span className="text-[10px] font-mono text-emerald-400 flex items-center gap-1">
+                <CheckCircle2 size={11} /> {tr("Compatible", "Compatible")}
+              </span>
+            ) : (
+              <span className="text-[10px] font-mono text-rose-400 flex items-center gap-1">
+                <AlertTriangle size={11} /> {compat.reason || tr("Incompatible", "Not compatible")}
+              </span>
+            )}
             {recomendada && (
               <span className="text-[10px] font-mono text-emerald-300 bg-emerald-500/10 border border-emerald-500/30 px-1.5 py-0.5 rounded">
                 {tr("RECOMENDADA", "RECOMMENDED")}
@@ -1121,7 +1126,45 @@ export function ConfiguradorVista() {
                 {tr("ACTIVA", "ACTIVE")}
               </span>
             )}
-          </span>
+          </div>
+
+          {/* Botones de tienda híbrida: Directo/Oficial + Respaldo MPN */}
+          <div className="flex items-center gap-1.5 ml-auto print:hidden">
+            <a
+              href={storeInfo.url}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1 px-2 py-1 rounded bg-white/5 border border-white/10 hover:border-white/30 hover:bg-white/10 text-gray-300 hover:text-white text-[10px] font-mono tracking-wider transition-all"
+              title={
+                storeInfo.isGlobal
+                  ? tr("Abrir web oficial del fabricante", "Open official manufacturer page")
+                  : tr(`Abrir en ${storeInfo.store}`, `Open on ${storeInfo.store}`)
+              }
+            >
+              <span>{storeInfo.store}</span>
+              <ExternalLink size={10} className="text-gray-400" />
+            </a>
+
+            <a
+              href={storeInfo.backupUrl}
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-0.5 px-1.5 py-1 rounded border border-white/5 hover:border-white/20 text-gray-400 hover:text-gray-200 text-[9px] font-mono transition-all"
+              title={
+                storeInfo.isGlobal
+                  ? tr(`Buscar ${item.mpn || item.name} en Geizhals (Europa)`, `Search ${item.mpn || item.name} on Geizhals (Europe)`)
+                  : tr(
+                      `Buscar por MPN (${item.mpn || "modelo"}) en ${storeInfo.backupStore}`,
+                      `Search by MPN (${item.mpn || "model"}) on ${storeInfo.backupStore}`
+                    )
+              }
+            >
+              <Search size={9} />
+              <span>{storeInfo.backupStore}</span>
+            </a>
+          </div>
         </div>
       </div>
     );
@@ -1482,7 +1525,27 @@ export function ConfiguradorVista() {
                       </div>
                     </button>
 
-                    <div className="flex items-center gap-3 shrink-0">
+                    <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+                      {currentSelectedId && selectedItemObj && (() => {
+                        const sInfo = obtenerInfoTienda(selectedItemObj as ItemCatalogo);
+                        return (
+                          <a
+                            href={sInfo.url}
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            onClick={(e) => e.stopPropagation()}
+                            className="text-[11px] font-mono text-gray-300 hover:text-white transition-colors flex items-center gap-1 cursor-pointer px-2 py-1 rounded bg-white/[0.04] border border-white/10 hover:border-white/20 print:hidden"
+                            title={
+                              sInfo.isGlobal
+                                ? tr("Abrir web oficial del fabricante", "Open official manufacturer page")
+                                : tr(`Abrir en ${sInfo.store}`, `Open on ${sInfo.store}`)
+                            }
+                          >
+                            <ExternalLink size={11} />
+                            <span className="hidden sm:inline">{sInfo.store}</span>
+                          </a>
+                        );
+                      })()}
                       {currentSelectedId && (
                         <button
                           onClick={(e) => handleRemoveComponent(category.id, e)}
@@ -1635,6 +1698,47 @@ export function ConfiguradorVista() {
                                       {!multi && r.sinStock && (
                                         <span className="text-amber-400">{tr("Sin stock EE.UU.", "Out of stock in the US")}</span>
                                       )}
+                                      {!multi && (() => {
+                                        const sInfo = obtenerInfoTienda(r);
+                                        return (
+                                          <div
+                                            className="flex items-center gap-1.5 print:hidden"
+                                            onClick={(e) => e.stopPropagation()}
+                                          >
+                                            <a
+                                              href={sInfo.url}
+                                              target="_blank"
+                                              rel="noopener noreferrer nofollow"
+                                              className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-white/5 border border-white/10 hover:border-white/30 hover:bg-white/10 text-gray-300 hover:text-white text-[9px] font-mono tracking-wider transition-all"
+                                              title={
+                                                sInfo.isGlobal
+                                                  ? tr("Abrir web oficial del fabricante", "Open official manufacturer page")
+                                                  : tr(`Abrir en ${sInfo.store}`, `Open on ${sInfo.store}`)
+                                              }
+                                            >
+                                              <span>{sInfo.store}</span>
+                                              <ExternalLink size={9} className="text-gray-400" />
+                                            </a>
+                                            <a
+                                              href={sInfo.backupUrl}
+                                              target="_blank"
+                                              rel="noopener noreferrer nofollow"
+                                              className="inline-flex items-center gap-0.5 px-1 py-0.5 rounded border border-white/5 hover:border-white/20 text-gray-400 hover:text-gray-200 text-[9px] font-mono transition-all"
+                                              title={
+                                                sInfo.isGlobal
+                                                  ? tr(`Buscar ${r.mpn || r.name} en Geizhals (Europa)`, `Search ${r.mpn || r.name} on Geizhals (Europe)`)
+                                                  : tr(
+                                                      `Buscar por MPN (${r.mpn || "modelo"}) en ${sInfo.backupStore}`,
+                                                      `Search by MPN (${r.mpn || "model"}) on ${sInfo.backupStore}`
+                                                    )
+                                              }
+                                            >
+                                              <Search size={8} />
+                                              <span>{sInfo.backupStore}</span>
+                                            </a>
+                                          </div>
+                                        );
+                                      })()}
                                       {elegido && (
                                         <span className="ml-auto text-black bg-white px-1.5 py-0.5 rounded font-bold">
                                           {tr("ELEGIDO", "CHOSEN")}
@@ -1913,22 +2017,43 @@ export function ConfiguradorVista() {
                         {txt(cat, "label", lang)}:
                       </span>
                       {it ? (
-                        <div className="flex items-center gap-2 truncate min-w-0 max-w-[200px] sm:max-w-xs">
-                          <img
-                            src={(it as any).image || getCategoryDefaultImage(cat.id)}
-                            alt={it.name}
-                            className="w-5 h-5 rounded object-contain bg-black/40 border border-white/10 shrink-0 p-0.5"
-                          />
-                          <span className={`truncate font-medium text-xs ${(it as ItemCatalogo).importacionGlobal ? "text-orange-300" : "text-white"}`}>
-                            {it.name}{" "}
-                            <span className="text-gray-400 font-mono text-[10px]">
-                              (
-                              {(it as ItemCatalogo).sinPrecio
-                                ? tr("sin precio", "no price")
-                                : `${(it as ItemCatalogo).importacionGlobal ? "≈ " : ""}$${it.price}`}
-                              )
+                        <div className="flex items-center gap-1.5 min-w-0 max-w-[200px] sm:max-w-xs justify-end">
+                          <div className="flex items-center gap-2 truncate min-w-0">
+                            <img
+                              src={(it as any).image || getCategoryDefaultImage(cat.id)}
+                              alt={it.name}
+                              className="w-5 h-5 rounded object-contain bg-black/40 border border-white/10 shrink-0 p-0.5"
+                            />
+                            <span className={`truncate font-medium text-xs ${(it as ItemCatalogo).importacionGlobal ? "text-orange-300" : "text-white"}`}>
+                              {it.name}{" "}
+                              <span className="text-gray-400 font-mono text-[10px]">
+                                (
+                                {(it as ItemCatalogo).sinPrecio
+                                  ? tr("sin precio", "no price")
+                                  : `${(it as ItemCatalogo).importacionGlobal ? "≈ " : ""}$${it.price}`}
+                                )
+                              </span>
                             </span>
-                          </span>
+                          </div>
+                          {(() => {
+                            const sInfo = obtenerInfoTienda(it as ItemCatalogo);
+                            return (
+                              <a
+                                href={sInfo.url}
+                                target="_blank"
+                                rel="noopener noreferrer nofollow"
+                                onClick={(e) => e.stopPropagation()}
+                                className="shrink-0 p-1 rounded hover:bg-white/10 text-gray-400 hover:text-white transition-colors print:hidden"
+                                title={
+                                  sInfo.isGlobal
+                                    ? tr("Abrir web oficial del fabricante", "Open official manufacturer page")
+                                    : tr(`Ver en ${sInfo.store}`, `View on ${sInfo.store}`)
+                                }
+                              >
+                                <ExternalLink size={11} />
+                              </a>
+                            );
+                          })()}
                         </div>
                       ) : (
                         <span className="text-gray-600 italic text-xs">{tr("Sin elegir", "Not chosen")}</span>

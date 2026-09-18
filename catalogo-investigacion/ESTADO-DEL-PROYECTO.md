@@ -1,6 +1,6 @@
 # Estado del proyecto — ArmaPC
 
-> **Última actualización:** 18 de septiembre de 2026 (Setup Completo: combinación libre de gamas y modo personalizado).
+> **Última actualización:** 18 de septiembre de 2026 (Configurador y Presupuestos: enlaces híbridos a tiendas con soporte para productos globales y sin stock).
 > **Punto de entrada para cualquier IA que retome el proyecto.** Es una foto del presente: se
 > sobrescribe, no se acumula. Cómo se llegó hasta aquí (fuentes y métodos de cada categoría, trampas ya
 > resueltas, auditoría, integración paso a paso, cifras de cada hito) está en
@@ -8,8 +8,13 @@
 
 ## Estado hoy
 
-**La web funciona con el catálogo real.** Último cambio: Presupuestos con enlaces híbridos a tiendas (18-09-2026).
-- **Presupuestos con enlaces híbridos a tiendas (18-09-2026):** los 102 componentes únicos de las 44 builds cuentan con enlaces a tiendas de EE.UU. (`src/data/presupuestoStoreLinks.json` y `src/lib/presupuestoTiendas.ts`). Cada tarjeta muestra el precio de referencia, la tienda principal verificada (Amazon, Newegg, Best Buy, B&H) con botón `ExternalLink`, y un botón de respaldo inteligente que busca el MPN exacto del fabricante en la tienda alterna (Amazon/Newegg) para facilitar la revisión quincenal de precios sin riesgo de enlaces caídos.
+**La web funciona con el catálogo real.** Último cambio: Configurador con enlaces híbridos a tiendas (18-09-2026).
+- **Configurador con enlaces híbridos a tiendas (18-09-2026):** se mapearon los 329 componentes del catálogo del configurador (`src/data/configuradorStoreLinks.json`) y se unificó la lógica en `src/lib/presupuestoTiendas.ts`.
+  - *283 productos de EE.UU.:* enlace directo a la tienda verificada (Amazon, Newegg, Best Buy, B&H) + botón de respaldo que busca el MPN exacto en la tienda alternativa.
+  - *46 productos globales/europeos (Palit, Gainward, Biostar, DeepCool bajo sanciones):* enlace directo a la web oficial del fabricante (`url_oficial`) + búsqueda por MPN en el comparador europeo Geizhals.de.
+  - *13 productos sin stock temporal en EE.UU.:* conservan su precio de lista y ofrecen búsqueda en vivo por MPN para comprobación rápida de reposición durante revisiones quincenales.
+  - Los enlaces están integrados en las tarjetas de versión (`tarjetaVersion`), tarjetas de modelo único (`!multi`), la cabecera del paso elegido y el desglose del resumen lateral con `e.stopPropagation()`.
+- **Presupuestos con enlaces híbridos a tiendas (18-09-2026):** los 102 componentes únicos de las 44 builds cuentan con enlaces a tiendas de EE.UU. (`src/data/presupuestoStoreLinks.json`). Cada tarjeta muestra el precio de referencia, la tienda principal verificada con botón `ExternalLink`, y botón de respaldo inteligente por MPN exacto en la tienda alterna.
 - **Setup Completo libre / híbrido (18-09-2026):** se permite combinar periféricos de cualquier gama (ej. monitor Entrada con teclado Alta o mouse Media con silla Extrema). Cada módulo cuenta con filtro por gama (`[Todos]`, `[Entrada]`, `[Media]`, `[Alta]`, `[Extrema]`) y etiquetas visuales con el color de su tier. El botón de reinicio (RotateCcw) y el nuevo selector "Personalizado" limpian la selección o abren un lienzo limpio para construir una build propia desde cero. La barra lateral, barra móvil, informe para imprimir/PDF y configurador reflejan dinámicamente la suma exacta y las métricas sensoriales de la combinación elegida.
 
 - **La web se dirige a EE.UU.** (decisión del usuario, 15-09-2026): el precio base es el dólar americano y
