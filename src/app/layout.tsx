@@ -56,6 +56,13 @@ export const metadata: Metadata = {
     title: "TuPCGamer — Arma tu PC Gamer Paso a Paso",
     description: "Guía interactiva de ensamblaje de PC gamer paso a paso y configurador de componentes.",
   },
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({

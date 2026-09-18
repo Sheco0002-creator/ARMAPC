@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Degradado de fondo metálico oscuro -->
+    <radialGradient id="hexBg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#181a20" />
+      <stop offset="60%" stop-color="#0c0e12" />
+      <stop offset="100%" stop-color="#050608" />
+    </radialGradient>
+
+    <!-- Borde con acento rojo carmesí neón -->
+    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4d5a" />
+      <stop offset="35%" stop-color="rgba(255, 255, 255, 0.4)" />
+      <stop offset="70%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+
+    <!-- Barra de poder roja -->
+    <linearGradient id="powerBarGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff6b76" />
+      <stop offset="50%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+
+    <!-- Resplandor neón suave -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#ef4444" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Hexágono Exterior con esquinas redondeadas -->
+  <polygon
+    points="256,36 446,146 446,366 256,476 66,366 66,146"
+    fill="url(#hexBg)"
+    stroke="url(#borderGlow)"
+    stroke-width="18"
+    stroke-linejoin="round"
+  />
+
+  <!-- Acento tecnológico interior sutil -->
+  <polygon
+    points="256,54 430,154 430,358 256,458 82,358 82,154"
+    fill="none"
+    stroke="rgba(255, 255, 255, 0.05)"
+    stroke-width="4"
+    stroke-linejoin="round"
+  />
+
+  <!-- Símbolo Power: Arco Blanco Luminoso -->
+  <path
+    d="M 194 195 A 102 102 0 1 0 318 195"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="32"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Símbolo Power: Barra Vertical Roja Neón con Resplandor -->
+  <line
+    x1="256"
+    y1="135"
+    x2="256"
+    y2="255"
+    stroke="url(#powerBarGrad)"
+    stroke-width="32"
+    stroke-linecap="round"
+    filter="url(#neonGlow)"
+  />
+</svg>
