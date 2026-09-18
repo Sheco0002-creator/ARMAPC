@@ -1,6 +1,6 @@
 # Estado del proyecto — ArmaPC
 
-> **Última actualización:** 17 de septiembre de 2026 (Guías también en inglés y español).
+> **Última actualización:** 18 de septiembre de 2026 (Setup Completo: combinación libre de gamas y modo personalizado).
 > **Punto de entrada para cualquier IA que retome el proyecto.** Es una foto del presente: se
 > sobrescribe, no se acumula. Cómo se llegó hasta aquí (fuentes y métodos de cada categoría, trampas ya
 > resueltas, auditoría, integración paso a paso, cifras de cada hito) está en
@@ -8,7 +8,8 @@
 
 ## Estado hoy
 
-**La web funciona con el catálogo real.** Último cambio: estilo pecera (16-09-2026, ver su sección).
+**La web funciona con el catálogo real.** Último cambio: Setup Completo híbrido y personalizado (18-09-2026).
+- **Setup Completo libre / híbrido (18-09-2026):** se permite combinar periféricos de cualquier gama (ej. monitor Entrada con teclado Alta o mouse Media con silla Extrema). Cada módulo cuenta con filtro por gama (`[Todos]`, `[Entrada]`, `[Media]`, `[Alta]`, `[Extrema]`) y etiquetas visuales con el color de su tier. El botón de reinicio (RotateCcw) y el nuevo selector "Personalizado" limpian la selección o abren un lienzo limpio para construir una build propia desde cero. La barra lateral, barra móvil, informe para imprimir/PDF y configurador reflejan dinámicamente la suma exacta y las métricas sensoriales de la combinación elegida.
 
 - **La web se dirige a EE.UU.** (decisión del usuario, 15-09-2026): el precio base es el dólar americano y
   **no se menciona ningún precio peruano** en ninguna pantalla. Los 13 productos cuyo precio salía de una
