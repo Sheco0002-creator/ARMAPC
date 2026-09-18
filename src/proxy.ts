@@ -42,7 +42,14 @@ function redirigir(request: NextRequest, destino: string) {
 
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  const limpio = pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
+  let limpio = pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
+
+  // Si viene con .html (URL antigua de Google), limpiarlo
+  if (limpio.endsWith(".html")) {
+    limpio = limpio.slice(0, -5);
+    const antigua = ANTIGUAS[limpio];
+    if (antigua) return redirigir(request, RUTAS[antigua].es);
+  }
 
   const antigua = ANTIGUAS[limpio];
   if (antigua) return redirigir(request, RUTAS[antigua].es);
@@ -79,5 +86,6 @@ export const config = {
     "/privacy",
     "/es",
     "/es/:path*",
+    "/:path*.html",
   ],
 };
