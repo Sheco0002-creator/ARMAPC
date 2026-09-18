@@ -266,14 +266,14 @@
    "precio_usd": 104.99,
    "tienda": "keychron.com",
    "url": "https://www.keychron.com/products/keychron-v1-max-qmk-via-wireless-custom-mechanical-keyboard",
-   "stock": "disponible",
+   "stock": "agotado",
    "specs": {
     "Formato": "75% con perilla",
     "Switch": "Gateron Jupiter Red, hot-swap",
     "Conexión": "2,4 GHz / Bluetooth 5.1 / cable, 1000 Hz",
     "Montaje": "Gasket con espuma acústica"
    },
-   "fecha": "2026-09-15",
+   "fecha": "2026-09-17",
    "imagen": "/images/setup/keyboard-media-keychron-v1-max.jpg",
    "imagen_fuente": "https://cdn.shopify.com/s/files/1/0059/0630/1017/files/V1-Max-Iconic-Features.jpg?v=1760933054",
    "imagen_px_original": [
@@ -633,12 +633,12 @@
    "precio_usd": 129.99,
    "tienda": "hyperx.com",
    "url": "https://hyperx.com/products/hyperx-cloud-iii-s-wireless-gaming-headset",
-   "stock": "disponible",
+   "stock": "agotado",
    "specs": {
     "Tipo": "Cerrado inalámbrico con micrófono",
     "Conexión": "2,4 GHz + Bluetooth"
    },
-   "fecha": "2026-09-15",
+   "fecha": "2026-09-17",
    "imagen": "/images/setup/audio-media-hyperx-cloud-iii-s-wireless.jpg",
    "imagen_fuente": "https://cdn.shopify.com/s/files/1/0561/8345/5901/files/hyperx_cloud_iii_s_wireless_red_a59z0aa_main_1_cefbdccc-36c7-4b81-96da-c437f6737248.jpg?v=1787248257",
    "imagen_px_original": [
@@ -1570,7 +1570,7 @@
    "marca": "Corsair",
    "modelo": "Hydro X XL8 Clear (1 L)",
    "mpn": "CX-9060007-WW",
-   "precio_usd": 16.19,
+   "precio_usd": 17.99,
    "tienda": "Performance-PCs",
    "url": "https://www.performance-pcs.com/products/hydro-x-series-xl8-performance-coolant-1l-clear",
    "specs": {

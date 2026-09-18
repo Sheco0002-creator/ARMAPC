@@ -1,6 +1,6 @@
 # Estado del proyecto — ArmaPC
 
-> **Última actualización:** 18 de septiembre de 2026 (Configurador y Presupuestos: enlaces híbridos a tiendas con soporte para productos globales y sin stock).
+> **Última actualización:** 18 de septiembre de 2026 (Auditoría de precios en vivo y actualización: CPU, Placa, RAM y GPU).
 > **Punto de entrada para cualquier IA que retome el proyecto.** Es una foto del presente: se
 > sobrescribe, no se acumula. Cómo se llegó hasta aquí (fuentes y métodos de cada categoría, trampas ya
 > resueltas, auditoría, integración paso a paso, cifras de cada hito) está en
@@ -8,7 +8,11 @@
 
 ## Estado hoy
 
-**La web funciona con el catálogo real.** Último cambio: Configurador con enlaces híbridos a tiendas (18-09-2026).
+**La web funciona con el catálogo real.** Último cambio: Auditoría y actualización de precios (18-09-2026).
+- **Auditoría de precios y renovación de vigencia (18-09-2026):** se contrastaron en vivo los precios de mercado en EE.UU. (Amazon, Newegg y B&H) para las 4 categorías volátiles (19 CPUs, 38 placas base, 30 kits de RAM DDR5 y 66 GPUs).
+  - *Ajuste CPU:* AMD Ryzen 7 7800X3D rebajado de US$ 349 a US$ 339 (reflejando la oferta activa de Amazon/Newegg en US$ 333.99 - 339.00).
+  - *Confirmación de mercado:* Los precios de Ryzen 7600X ($164), 9600X ($174), i5-14600K ($250), MSI B650 Tomahawk ($170), Corsair DDR5 6000 ($536) y RTX 5070 ($840) demostraron estar con precisión centavo por centavo o dentro de los rangos reales vigentes.
+  - *Renovación de fecha:* Se actualizó `preciosHasta` a `2026-09-18` en `catalogo-final.json`, `components.json` y `setupProducts.json`. El respaldo previo se guardó en JORGE (`D:\pruebas-y-superados\BACKUP-web-antes-ajuste-precios_2026-09-18`) y en catálogo (`catalogo-final.BACKUP-2026-09-18-antes-precios.json`).
 - **Configurador con enlaces híbridos a tiendas (18-09-2026):** se mapearon los 329 componentes del catálogo del configurador (`src/data/configuradorStoreLinks.json`) y se unificó la lógica en `src/lib/presupuestoTiendas.ts`.
   - *283 productos de EE.UU.:* enlace directo a la tienda verificada (Amazon, Newegg, Best Buy, B&H) + botón de respaldo que busca el MPN exacto en la tienda alternativa.
   - *46 productos globales/europeos (Palit, Gainward, Biostar, DeepCool bajo sanciones):* enlace directo a la web oficial del fabricante (`url_oficial`) + búsqueda por MPN en el comparador europeo Geizhals.de.

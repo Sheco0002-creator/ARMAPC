@@ -64,12 +64,12 @@
       "mpn": "100-100000910WOF",
       "category": "cpu",
       "store": "Amazon",
-      "priceUSD": 349,
+      "priceUSD": 339,
       "url": "https://www.amazon.com/s?k=100-100000910WOF",
       "amazonUrl": "https://www.amazon.com/s?k=100-100000910WOF",
       "neweggUrl": "https://www.newegg.com/p/pl?d=100-100000910WOF",
       "officialUrl": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
-      "storeNote": "revisado en ficha: Amazon (con stock)"
+      "storeNote": "revisado en ficha: Amazon y Newegg con stock a US$ 333.99 - 339.00 (18-09-2026)"
     },
     "cpu-amd-ryzen-7-9800x3d": {
       "id": "cpu-amd-ryzen-7-9800x3d",

@@ -659,7 +659,7 @@ for tid in ("entrada", "media", "alta", "extrema"):
 # precios son referencias "vistas en los últimos 15 días" mientras preciosDesde tenga 15 días o
 # menos, y si no, da este rango de fechas (componente AvisoPrecios).
 fechas = sorted(str(p["precio_usd_fecha"])[:10] for p in incluidos + globales_inc if p.get("precio_usd_fecha"))
-data = {"updated": "2026-09-15", "currency": "USD",
+data = {"updated": "2026-09-18", "currency": "USD",
         "preciosDesde": fechas[0], "preciosHasta": fechas[-1],
         "categories": list(categories.values()), "tiers": tiers}
 os.makedirs(EXPORT, exist_ok=True)

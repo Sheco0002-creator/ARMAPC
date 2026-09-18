@@ -4638,6 +4638,30 @@
     "sockets_de_ficha": true
    },
    {
+    "idx": 229,
+    "marca": "ARCTIC",
+    "modelo": "Freezer 36",
+    "mpn": "ACFRE00123A",
+    "categoria": "Refrigeración",
+    "gama": "entrada",
+    "precio_usd": 30.54,
+    "sin_stock": false,
+    "imagen": "imagenes/refrigeracion/entrada/high/ARCTIC_ACFRE00123A_CDN_1.jpg",
+    "slug": "arctic-freezer-36",
+    "color": "negro",
+    "tipo": "aire",
+    "altura_mm": 159.0,
+    "tdp_max": 205.0,
+    "sockets_inferidos": [],
+    "sockets": [
+     "AM5",
+     "AM4",
+     "LGA1851",
+     "LGA1700"
+    ],
+    "sockets_de_ficha": true
+   },
+   {
     "idx": 230,
     "marca": "ARCTIC",
     "modelo": "Freezer 36 A-RGB",
@@ -4676,6 +4700,31 @@
     "tipo": "liquida",
     "altura_mm": null,
     "radiador_mm": 360,
+    "tdp_max": null,
+    "sockets_inferidos": [],
+    "sockets": [
+     "AM5",
+     "AM4",
+     "LGA1851",
+     "LGA1700"
+    ],
+    "sockets_de_ficha": true
+   },
+   {
+    "idx": 232,
+    "marca": "ARCTIC",
+    "modelo": "Liquid Freezer III Pro 420",
+    "mpn": "ACFRE00181A",
+    "categoria": "Refrigeración",
+    "gama": "extrema",
+    "precio_usd": 81.89,
+    "sin_stock": false,
+    "imagen": "imagenes/refrigeracion/extrema/high/ARCTIC_ACFRE00181A_CDN_1.jpg",
+    "slug": "arctic-liquid-freezer-iii-pro-420",
+    "color": "negro",
+    "tipo": "liquida",
+    "altura_mm": null,
+    "radiador_mm": 420,
     "tdp_max": null,
     "sockets_inferidos": [],
     "sockets": [
@@ -7055,55 +7104,6 @@
   ],
   "Refrigeración": [
    {
-    "idx": 229,
-    "marca": "ARCTIC",
-    "modelo": "Freezer 36",
-    "mpn": "ACFRE00123A",
-    "categoria": "Refrigeración",
-    "gama": "entrada",
-    "precio_usd": null,
-    "sin_stock": false,
-    "imagen": "imagenes/refrigeracion/entrada/high/ARCTIC_ACFRE00123A_CDN_1.jpg",
-    "slug": "arctic-freezer-36",
-    "color": "negro",
-    "tipo": "aire",
-    "altura_mm": 159.0,
-    "tdp_max": 205.0,
-    "sockets_inferidos": [],
-    "sockets": [
-     "AM5",
-     "AM4",
-     "LGA1851",
-     "LGA1700"
-    ],
-    "sockets_de_ficha": true
-   },
-   {
-    "idx": 232,
-    "marca": "ARCTIC",
-    "modelo": "Liquid Freezer III Pro 420",
-    "mpn": "ACFRE00181A",
-    "categoria": "Refrigeración",
-    "gama": "extrema",
-    "precio_usd": null,
-    "sin_stock": false,
-    "imagen": "imagenes/refrigeracion/extrema/high/ARCTIC_ACFRE00181A_CDN_1.jpg",
-    "slug": "arctic-liquid-freezer-iii-pro-420",
-    "color": "negro",
-    "tipo": "liquida",
-    "altura_mm": null,
-    "radiador_mm": 420,
-    "tdp_max": null,
-    "sockets_inferidos": [],
-    "sockets": [
-     "AM5",
-     "AM4",
-     "LGA1851",
-     "LGA1700"
-    ],
-    "sockets_de_ficha": true
-   },
-   {
     "idx": 233,
     "marca": "DEEPCOOL",
     "modelo": "AK400 G2",
@@ -7289,10 +7289,10 @@
      "gpu": 41,
      "psu": 147,
      "case": 197,
-     "cooling": 241,
+     "cooling": 229,
      "storage": 182
     },
-    "precio_usd": 1369.2,
+    "precio_usd": 1361.84,
     "fuera_de_gama": {
      "gpu": "media"
     },
@@ -7913,10 +7913,10 @@
      "gpu": 38,
      "psu": 145,
      "case": 208,
-     "cooling": 244,
+     "cooling": 232,
      "storage": 180
     },
-    "precio_usd": 3861.0,
+    "precio_usd": 3802.99,
     "fuera_de_gama": {
      "cpu": "alta",
      "ram": "alta",
@@ -7976,10 +7976,10 @@
      "gpu": 38,
      "psu": 145,
      "case": 208,
-     "cooling": 244,
+     "cooling": 232,
      "storage": 180
     },
-    "precio_usd": 3876.99,
+    "precio_usd": 3818.98,
     "fuera_de_gama": {
      "ram": "alta",
      "gpu": "alta"
@@ -7997,10 +7997,10 @@
      "gpu": 38,
      "psu": 145,
      "case": 208,
-     "cooling": 244,
+     "cooling": 232,
      "storage": 180
     },
-    "precio_usd": 4524.0,
+    "precio_usd": 4465.99,
     "fuera_de_gama": {
      "gpu": "alta"
     },
@@ -8017,11 +8017,11 @@
      "gpu": 38,
      "psu": 145,
      "case": 208,
-     "cooling": 244,
+     "cooling": 232,
      "storage": 180,
      "fans": 343
     },
-    "precio_usd": 4051.65,
+    "precio_usd": 3993.64,
     "fuera_de_gama": {
      "cpu": "alta",
      "ram": "alta",
@@ -8065,11 +8065,11 @@
      "gpu": 38,
      "psu": 145,
      "case": 208,
-     "cooling": 244,
+     "cooling": 232,
      "storage": 180,
      "fans": 343
     },
-    "precio_usd": 4067.64,
+    "precio_usd": 4009.63,
     "fuera_de_gama": {
      "ram": "alta",
      "gpu": "alta"
@@ -8111,11 +8111,11 @@
      "gpu": 38,
      "psu": 145,
      "case": 208,
-     "cooling": 244,
+     "cooling": 232,
      "storage": 180,
      "fans": 343
     },
-    "precio_usd": 4870.99,
+    "precio_usd": 4812.98,
     "fuera_de_gama": {
      "gpu": "alta"
     },

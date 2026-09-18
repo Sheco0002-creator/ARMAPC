@@ -234,6 +234,7 @@
  },
  "stock": {
   "disponible": "in stock",
-  "en reposición (llega 18-09)": "restocking (arrives Sep 18)"
+  "en reposición (llega 18-09)": "restocking (arrives Sep 18)",
+  "agotado": "out of stock"
  }
 }
