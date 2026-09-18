@@ -1965,7 +1965,7 @@ export function ConfiguradorVista() {
                 <div className="p-3.5 rounded-lg bg-white/[0.03] border border-white/10 space-y-1.5 text-xs font-mono">
                   <div className="flex justify-between items-baseline text-gray-400">
                     <span>
-                      {tr("Setup completo", "Full setup")}{setupNivel ? ` · ${nombreNivelSetup(setupNivel, lang)}` : ""}:
+                      {tr("Setup completo", "Full setup")}{setupNivel ? ` · ${nombreNivelSetup(setupNivel, lang)}` : tr(" · Personalizado", " · Custom")}:
                     </span>
                     <span className="text-gray-200">+ {usd(totalSetupElegido)}</span>
                   </div>

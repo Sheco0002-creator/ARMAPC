@@ -105,12 +105,17 @@ export function InformeEquipo({
 
       <table className="w-full mb-5 border-collapse">
         <caption className="text-left font-bold text-sm mb-1">
-          {tr("Setup completo", "Full setup")} {setupNivel ? `· ${nombreNivelSetup(setupNivel, lang)}` : ""}
+          {tr("Setup completo", "Full setup")}{" "}
+          {setupNivel
+            ? `· ${nombreNivelSetup(setupNivel, lang)}`
+            : prodsElegidos
+            ? `· ${tr("Personalizado", "Custom")}`
+            : ""}
         </caption>
         <tbody>
           {!setupNivel && !prodsElegidos ? (
             <tr>
-              <td className="py-1">{tr("Sin nivel elegido.", "No level chosen.")}</td>
+              <td className="py-1">{tr("Sin selección de periféricos.", "No peripherals chosen.")}</td>
             </tr>
           ) : prodsElegidos ? (
             MODULOS_SETUP.map((m) => {
