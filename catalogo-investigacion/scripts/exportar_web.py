@@ -217,12 +217,32 @@ def slugify(mpn):
 # apuntan a ese archivo. IMAGENES_ESCRITAS = lo que produce esta exportación (para ver sobrantes).
 FOTO_POR_HASH, IMAGENES_ESCRITAS = {}, set()
 
+MAPA_FOTOS_FILE = os.path.join(CATD, "mapping_fotos.json")
+MAPA_FOTOS = json.load(open(MAPA_FOTOS_FILE, encoding="utf-8")) if os.path.exists(MAPA_FOTOS_FILE) else {}
+
 
 def imagen(p, idx):
-    src = os.path.join(CATD, p["imagen_principal"])
+    catid = CAT_ID[p["categoria"]]
     slug = p["slug"]
+    item_id = f"{catid}-{slug}"
     dst_rel = f"{slug}.jpg"
     dst = os.path.join(IMG_OUT, dst_rel)
+
+    # 1. Si la foto ya fue verificada y existe en public/images/catalogo/:
+    mapped = MAPA_FOTOS.get(item_id)
+    if mapped:
+        pub_path = os.path.join(RAIZ, "public", mapped.lstrip("/"))
+        if os.path.exists(pub_path):
+            IMAGENES_ESCRITAS.add(os.path.basename(mapped))
+            return mapped, None
+
+    src = os.path.join(CATD, p["imagen_principal"])
+    if not os.path.exists(src):
+        # Intentar en USB JORGE si está conectado
+        src_jorge = os.path.join(r"D:\catalogo-investigacion-ARCHIVO", p["imagen_principal"])
+        if os.path.exists(src_jorge):
+            src = src_jorge
+
     try:
         im = Image.open(src)
         if im.mode in ("RGBA", "LA", "P"):
@@ -237,6 +257,8 @@ def imagen(p, idx):
         im.save(buf, format="JPEG", quality=82, optimize=True)
         datos = buf.getvalue()
     except Exception as e:
+        if mapped:
+            return mapped, None
         return None, str(e)
     h = hashlib.sha256(datos).hexdigest()
     if h in FOTO_POR_HASH:  # misma foto que un hermano ya exportado: se reutiliza su archivo
