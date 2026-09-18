@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -65,13 +66,21 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <head>
-        {/* Placeholder para Google AdSense - Configura tu client id cuando esté aprobado:
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX"
-          crossOrigin="anonymous"
-        ></script>
-        */}
+        {/* Google Analytics (ARMAPC - G-GH7D533JHR) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GH7D533JHR"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GH7D533JHR', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
       </head>
       <body className="min-h-screen bg-[#08090a] text-white font-sans antialiased selection:bg-white selection:text-black">
         {/* Video de Fondo Centralizado para Todo el Sitio (Velo 30%) */}
