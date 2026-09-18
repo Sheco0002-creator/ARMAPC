@@ -1077,6 +1077,11 @@ export function ConfiguradorVista() {
             <div className="text-xs text-gray-400 font-mono leading-relaxed space-y-0.5">
               <div>{dato(item, "specs")}</div>
               <div className="text-[11px] text-gray-500 flex flex-wrap gap-x-2 pt-0.5">
+                {item.mpn && (
+                  <span className="text-gray-400">
+                    MPN: <span className="text-gray-200 font-semibold">{item.mpn}</span>
+                  </span>
+                )}
                 {"socket" in item && <span>Socket: {item.socket}</span>}
                 {"tdp" in item && <span>TDP: {item.tdp}W</span>}
                 {"powerDraw" in item && <span>{tr("Consumo", "Draw")}: {item.powerDraw}W</span>}
@@ -1151,7 +1156,7 @@ export function ConfiguradorVista() {
               target="_blank"
               rel="noopener noreferrer nofollow"
               onClick={(e) => e.stopPropagation()}
-              className="inline-flex items-center gap-0.5 px-1.5 py-1 rounded border border-white/5 hover:border-white/20 text-gray-400 hover:text-gray-200 text-[9px] font-mono transition-all"
+              className="inline-flex items-center gap-1 px-1.5 py-1 rounded border border-white/5 hover:border-white/20 text-gray-400 hover:text-gray-200 text-[9px] font-mono transition-all"
               title={
                 storeInfo.isGlobal
                   ? tr(`Buscar ${item.mpn || item.name} en Geizhals (Europa)`, `Search ${item.mpn || item.name} on Geizhals (Europe)`)
@@ -1162,7 +1167,7 @@ export function ConfiguradorVista() {
               }
             >
               <Search size={9} />
-              <span>{storeInfo.backupStore}</span>
+              <span>MPN · {storeInfo.backupStore}</span>
             </a>
           </div>
         </div>
@@ -1513,6 +1518,11 @@ export function ConfiguradorVista() {
                           {selectedItemObj ? (
                             <span className="text-gray-200">
                               {selectedItemObj.name}{" "}
+                              {selectedItemObj.mpn && (
+                                <span className="text-gray-500 font-mono text-[11px] font-normal">
+                                  · MPN: {selectedItemObj.mpn}
+                                </span>
+                              )}{" "}
                               <span className="font-mono text-gray-400">— {precioTexto(selectedItemObj as ItemCatalogo)}</span>
                               {(selectedItemObj as ItemCatalogo).importacionGlobal && (
                                 <span className="text-orange-400"> · {dato(selectedItemObj as ItemCatalogo, "avisoTitulo")}</span>
@@ -1525,25 +1535,45 @@ export function ConfiguradorVista() {
                       </div>
                     </button>
 
-                    <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+                    <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
                       {currentSelectedId && selectedItemObj && (() => {
                         const sInfo = obtenerInfoTienda(selectedItemObj as ItemCatalogo);
                         return (
-                          <a
-                            href={sInfo.url}
-                            target="_blank"
-                            rel="noopener noreferrer nofollow"
-                            onClick={(e) => e.stopPropagation()}
-                            className="text-[11px] font-mono text-gray-300 hover:text-white transition-colors flex items-center gap-1 cursor-pointer px-2 py-1 rounded bg-white/[0.04] border border-white/10 hover:border-white/20 print:hidden"
-                            title={
-                              sInfo.isGlobal
-                                ? tr("Abrir web oficial del fabricante", "Open official manufacturer page")
-                                : tr(`Abrir en ${sInfo.store}`, `Open on ${sInfo.store}`)
-                            }
-                          >
-                            <ExternalLink size={11} />
-                            <span className="hidden sm:inline">{sInfo.store}</span>
-                          </a>
+                          <div className="flex items-center gap-1.5 print:hidden">
+                            <a
+                              href={sInfo.url}
+                              target="_blank"
+                              rel="noopener noreferrer nofollow"
+                              onClick={(e) => e.stopPropagation()}
+                              className="text-[11px] font-mono text-gray-300 hover:text-white transition-colors flex items-center gap-1 cursor-pointer px-2 py-1 rounded bg-white/[0.04] border border-white/10 hover:border-white/20"
+                              title={
+                                sInfo.isGlobal
+                                  ? tr("Abrir web oficial del fabricante", "Open official manufacturer page")
+                                  : tr(`Abrir en ${sInfo.store}`, `Open on ${sInfo.store}`)
+                              }
+                            >
+                              <ExternalLink size={11} />
+                              <span className="hidden sm:inline">{sInfo.store}</span>
+                            </a>
+                            <a
+                              href={sInfo.backupUrl}
+                              target="_blank"
+                              rel="noopener noreferrer nofollow"
+                              onClick={(e) => e.stopPropagation()}
+                              className="text-[11px] font-mono text-gray-400 hover:text-white transition-colors flex items-center gap-1 cursor-pointer px-2 py-1 rounded border border-white/5 hover:border-white/20"
+                              title={
+                                sInfo.isGlobal
+                                  ? tr(`Buscar en Geizhals (Europa)`, `Search on Geizhals (Europe)`)
+                                  : tr(
+                                      `Buscar por MPN (${selectedItemObj.mpn || "modelo"}) en ${sInfo.backupStore}`,
+                                      `Search by MPN (${selectedItemObj.mpn || "model"}) on ${sInfo.backupStore}`
+                                    )
+                              }
+                            >
+                              <Search size={10} />
+                              <span className="hidden sm:inline">MPN · {sInfo.backupStore}</span>
+                            </a>
+                          </div>
                         );
                       })()}
                       {currentSelectedId && (
@@ -1681,8 +1711,8 @@ export function ConfiguradorVista() {
                                             g.fuera && !g.soloFuera
                                               ? ` · ${g.fuera} ${tr("fuera de EE.UU.", "outside the US")}`
                                               : ""
-                                          }`
-                                        : dato(r, "specs")}
+                                          }${r.mpn ? ` · MPN: ${r.mpn}` : ""}`
+                                        : `${dato(r, "specs")}${r.mpn ? ` · MPN: ${r.mpn}` : ""}`}
                                     </div>
                                     <div className="flex items-center gap-2 text-[10px] font-mono flex-wrap">
                                       {g.compatible ? (
@@ -1694,11 +1724,16 @@ export function ConfiguradorVista() {
                                           <AlertTriangle size={11} /> {g.razon || tr("Incompatible", "Not compatible")}
                                         </span>
                                       )}
+                                      {r.mpn && (
+                                        <span className="text-gray-400 border border-white/10 bg-white/[0.03] px-1.5 py-0.5 rounded text-[9px] font-mono">
+                                          MPN: <span className="text-gray-200 font-semibold">{r.mpn}</span>
+                                        </span>
+                                      )}
                                       {g.soloFuera && <span className="text-orange-400">{dato(r, "avisoTitulo")}</span>}
-                                      {!multi && r.sinStock && (
+                                      {r.sinStock && (
                                         <span className="text-amber-400">{tr("Sin stock EE.UU.", "Out of stock in the US")}</span>
                                       )}
-                                      {!multi && (() => {
+                                      {(() => {
                                         const sInfo = obtenerInfoTienda(r);
                                         return (
                                           <div
@@ -1734,7 +1769,7 @@ export function ConfiguradorVista() {
                                               }
                                             >
                                               <Search size={8} />
-                                              <span>{sInfo.backupStore}</span>
+                                              <span>MPN · {sInfo.backupStore}</span>
                                             </a>
                                           </div>
                                         );
@@ -1745,7 +1780,7 @@ export function ConfiguradorVista() {
                                         </span>
                                       )}
                                     </div>
-                                    {!multi && r.importacionGlobal && (
+                                    {r.importacionGlobal && (
                                       <div className="text-[10px] text-orange-300 leading-snug">
                                         {dato(r, "avisoDetalle")}
                                         {r.avisoImportacion && (
@@ -2038,20 +2073,39 @@ export function ConfiguradorVista() {
                           {(() => {
                             const sInfo = obtenerInfoTienda(it as ItemCatalogo);
                             return (
-                              <a
-                                href={sInfo.url}
-                                target="_blank"
-                                rel="noopener noreferrer nofollow"
-                                onClick={(e) => e.stopPropagation()}
-                                className="shrink-0 p-1 rounded hover:bg-white/10 text-gray-400 hover:text-white transition-colors print:hidden"
-                                title={
-                                  sInfo.isGlobal
-                                    ? tr("Abrir web oficial del fabricante", "Open official manufacturer page")
-                                    : tr(`Ver en ${sInfo.store}`, `View on ${sInfo.store}`)
-                                }
-                              >
-                                <ExternalLink size={11} />
-                              </a>
+                              <div className="flex items-center gap-0.5 shrink-0 print:hidden">
+                                <a
+                                  href={sInfo.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer nofollow"
+                                  onClick={(e) => e.stopPropagation()}
+                                  className="p-1 rounded hover:bg-white/10 text-gray-400 hover:text-white transition-colors"
+                                  title={
+                                    sInfo.isGlobal
+                                      ? tr("Abrir web oficial del fabricante", "Open official manufacturer page")
+                                      : tr(`Ver en ${sInfo.store}`, `View on ${sInfo.store}`)
+                                  }
+                                >
+                                  <ExternalLink size={11} />
+                                </a>
+                                <a
+                                  href={sInfo.backupUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer nofollow"
+                                  onClick={(e) => e.stopPropagation()}
+                                  className="p-1 rounded hover:bg-white/10 text-gray-500 hover:text-gray-200 transition-colors"
+                                  title={
+                                    sInfo.isGlobal
+                                      ? tr(`Buscar en Geizhals (Europa)`, `Search on Geizhals (Europe)`)
+                                      : tr(
+                                          `Buscar por MPN (${(it as ItemCatalogo).mpn || "modelo"}) en ${sInfo.backupStore}`,
+                                          `Search by MPN (${(it as ItemCatalogo).mpn || "model"}) on ${sInfo.backupStore}`
+                                        )
+                                  }
+                                >
+                                  <Search size={11} />
+                                </a>
+                              </div>
                             );
                           })()}
                         </div>

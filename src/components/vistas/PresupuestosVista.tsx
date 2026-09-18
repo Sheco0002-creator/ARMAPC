@@ -441,6 +441,7 @@ function PresupuestosContent() {
                         <div className="text-sm font-medium text-white truncate">{comp.name}</div>
                         <div className="text-xs text-gray-400 font-mono truncate">
                           {txt(comp, "specs", lang)}
+                          {comp.mpn ? ` // MPN: ${comp.mpn}` : ""}
                           {"socket" in comp ? ` // ${(comp as any).socket}` : ""}
                           {"tdp" in comp ? ` // ${(comp as any).tdp}W` : ""}
                         </div>
@@ -471,25 +472,33 @@ function PresupuestosContent() {
                           rel="noopener noreferrer nofollow"
                           onClick={(e) => e.stopPropagation()}
                           className="inline-flex items-center gap-1 px-2 py-1 rounded bg-white/5 border border-white/10 hover:border-white/30 hover:bg-white/10 text-gray-300 hover:text-white text-[10px] font-mono tracking-wider transition-all"
-                          title={tr(`Abrir en ${storeInfo.store}`, `Open on ${storeInfo.store}`)}
+                          title={
+                            storeInfo.isGlobal
+                              ? tr("Abrir web oficial del fabricante", "Open official manufacturer page")
+                              : tr(`Abrir en ${storeInfo.store}`, `Open on ${storeInfo.store}`)
+                          }
                         >
                           <span>{storeInfo.store}</span>
                           <ExternalLink size={10} className="text-gray-400" />
                         </a>
 
                         <a
-                          href={storeInfo.store === "Amazon" ? storeInfo.neweggUrl : storeInfo.amazonUrl}
+                          href={storeInfo.backupUrl}
                           target="_blank"
                           rel="noopener noreferrer nofollow"
                           onClick={(e) => e.stopPropagation()}
                           className="inline-flex items-center gap-0.5 px-1.5 py-1 rounded border border-white/5 hover:border-white/20 text-gray-400 hover:text-gray-200 text-[9px] font-mono transition-all"
-                          title={tr(
-                            `Buscar por MPN (${comp.mpn || "modelo"}) en ${storeInfo.store === "Amazon" ? "Newegg" : "Amazon"}`,
-                            `Search by MPN (${comp.mpn || "model"}) on ${storeInfo.store === "Amazon" ? "Newegg" : "Amazon"}`
-                          )}
+                          title={
+                            storeInfo.isGlobal
+                              ? tr(`Buscar ${comp.mpn || comp.name} en Geizhals (Europa)`, `Search ${comp.mpn || comp.name} on Geizhals (Europe)`)
+                              : tr(
+                                  `Buscar por MPN (${comp.mpn || "modelo"}) en ${storeInfo.backupStore}`,
+                                  `Search by MPN (${comp.mpn || "model"}) on ${storeInfo.backupStore}`
+                                )
+                          }
                         >
                           <Search size={9} />
-                          <span>{storeInfo.store === "Amazon" ? "Newegg" : "Amazon"}</span>
+                          <span>MPN · {storeInfo.backupStore}</span>
                         </a>
                       </div>
                     </div>
