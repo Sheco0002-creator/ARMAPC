@@ -20,9 +20,41 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-// Título y descripción de cada página: en su page.tsx de app/(en) o app/es (Guías incluida desde el 17-09-2026).
+// Título y descripción base para todo el dominio tupcgamer.com
 export const metadata: Metadata = {
-  title: "ARMAPC",
+  metadataBase: new URL("https://tupcgamer.com"),
+  title: {
+    default: "TuPCGamer — Arma tu PC Gamer Paso a Paso y Configurador",
+    template: "%s | TuPCGamer",
+  },
+  description:
+    "Guía interactiva de ensamblaje de PC gamer paso a paso, configurador de piezas con verificación de compatibilidad automática y presupuestos optimizados.",
+  keywords: [
+    "PC Gamer",
+    "Armar PC",
+    "Configurador de PC",
+    "Guía de ensamblaje PC",
+    "Presupuestos gamer",
+    "Compatibilidad PC",
+    "Gaming PC build",
+  ],
+  authors: [{ name: "TuPCGamer" }],
+  creator: "TuPCGamer",
+  openGraph: {
+    type: "website",
+    locale: "es_ES",
+    alternateLocale: "en_US",
+    url: "https://tupcgamer.com",
+    siteName: "TuPCGamer",
+    title: "TuPCGamer — Arma tu PC Gamer Paso a Paso y Configurador",
+    description:
+      "Guía interactiva de ensamblaje de PC gamer paso a paso, configurador con verificación de compatibilidad y presupuestos gamer.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TuPCGamer — Arma tu PC Gamer Paso a Paso",
+    description: "Guía interactiva de ensamblaje de PC gamer paso a paso y configurador de componentes.",
+  },
 };
 
 export default function RootLayout({
