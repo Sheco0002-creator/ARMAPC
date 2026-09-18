@@ -8,7 +8,8 @@
 
 ## Estado hoy
 
-**La web funciona con el catálogo real.** Último cambio: Setup Completo híbrido y personalizado (18-09-2026).
+**La web funciona con el catálogo real.** Último cambio: Presupuestos con enlaces híbridos a tiendas (18-09-2026).
+- **Presupuestos con enlaces híbridos a tiendas (18-09-2026):** los 102 componentes únicos de las 44 builds cuentan con enlaces a tiendas de EE.UU. (`src/data/presupuestoStoreLinks.json` y `src/lib/presupuestoTiendas.ts`). Cada tarjeta muestra el precio de referencia, la tienda principal verificada (Amazon, Newegg, Best Buy, B&H) con botón `ExternalLink`, y un botón de respaldo inteligente que busca el MPN exacto del fabricante en la tienda alterna (Amazon/Newegg) para facilitar la revisión quincenal de precios sin riesgo de enlaces caídos.
 - **Setup Completo libre / híbrido (18-09-2026):** se permite combinar periféricos de cualquier gama (ej. monitor Entrada con teclado Alta o mouse Media con silla Extrema). Cada módulo cuenta con filtro por gama (`[Todos]`, `[Entrada]`, `[Media]`, `[Alta]`, `[Extrema]`) y etiquetas visuales con el color de su tier. El botón de reinicio (RotateCcw) y el nuevo selector "Personalizado" limpian la selección o abren un lienzo limpio para construir una build propia desde cero. La barra lateral, barra móvil, informe para imprimir/PDF y configurador reflejan dinámicamente la suma exacta y las métricas sensoriales de la combinación elegida.
 
 - **La web se dirige a EE.UU.** (decisión del usuario, 15-09-2026): el precio base es el dólar americano y

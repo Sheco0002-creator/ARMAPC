@@ -34,10 +34,13 @@ import {
   ArrowRight,
   Sparkles,
   Monitor,
+  ExternalLink,
+  Search,
 } from "lucide-react";
 import componentsData from "@/data/components.json";
 import { useConfiguratorStore, TierType } from "@/store/useConfiguratorStore";
 import { setupPeripheralsData } from "@/data/setupPeripherals";
+import { obtenerInfoTienda } from "@/lib/presupuestoTiendas";
 
 // Piezas de una build sin huecos: sólo las builds pecera traen "fans"
 const piezasDe = (b: { components: Partial<Record<string, string>> }): Record<string, string> =>
@@ -413,6 +416,7 @@ function PresupuestosContent() {
                 if (!comp) return null;
 
                 const compImage = (comp as any).image || `/images/components/${catKey}.jpg`;
+                const storeInfo = obtenerInfoTienda(comp);
 
                 return (
                   <div
@@ -449,10 +453,44 @@ function PresupuestosContent() {
                         )}
                       </div>
                     </div>
-                    <div className="text-right shrink-0">
-                      <div className="text-[10px] font-mono text-gray-400 uppercase">{tr("Referencia", "Reference")}</div>
-                      <div className="text-sm font-mono font-semibold text-white">
-                        ${comp.price} USD
+                    <div className="text-right shrink-0 flex flex-col items-end gap-1.5">
+                      <div>
+                        <div className="text-[10px] font-mono text-gray-400 uppercase">
+                          {storeInfo.store || tr("Referencia", "Reference")}
+                        </div>
+                        <div className="text-sm font-mono font-semibold text-white">
+                          ${comp.price} USD
+                        </div>
+                      </div>
+
+                      {/* Botones de tienda híbrida: Ficha directa + Respaldo de búsqueda por MPN */}
+                      <div className="flex items-center gap-1.5 pt-0.5 print:hidden">
+                        <a
+                          href={storeInfo.url}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center gap-1 px-2 py-1 rounded bg-white/5 border border-white/10 hover:border-white/30 hover:bg-white/10 text-gray-300 hover:text-white text-[10px] font-mono tracking-wider transition-all"
+                          title={tr(`Abrir en ${storeInfo.store}`, `Open on ${storeInfo.store}`)}
+                        >
+                          <span>{storeInfo.store}</span>
+                          <ExternalLink size={10} className="text-gray-400" />
+                        </a>
+
+                        <a
+                          href={storeInfo.store === "Amazon" ? storeInfo.neweggUrl : storeInfo.amazonUrl}
+                          target="_blank"
+                          rel="noopener noreferrer nofollow"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center gap-0.5 px-1.5 py-1 rounded border border-white/5 hover:border-white/20 text-gray-400 hover:text-gray-200 text-[9px] font-mono transition-all"
+                          title={tr(
+                            `Buscar por MPN (${comp.mpn || "modelo"}) en ${storeInfo.store === "Amazon" ? "Newegg" : "Amazon"}`,
+                            `Search by MPN (${comp.mpn || "model"}) on ${storeInfo.store === "Amazon" ? "Newegg" : "Amazon"}`
+                          )}
+                        >
+                          <Search size={9} />
+                          <span>{storeInfo.store === "Amazon" ? "Newegg" : "Amazon"}</span>
+                        </a>
                       </div>
                     </div>
                   </div>
