@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { ArmaPcLogo } from "@/components/ArmaPcLogo";
 import { useIdioma } from "@/i18n/Idioma";
+import { siteConfig } from "@/config/siteConfig";
 
 interface SiteFooterProps {
   className?: string;
@@ -11,6 +12,8 @@ interface SiteFooterProps {
 
 export function SiteFooter({ className = "bg-[#08090a]" }: SiteFooterProps) {
   const { tr, ruta } = useIdioma();
+  const activeSocials = siteConfig.socialLinks.filter((s) => s.enabled);
+
   return (
     <footer className={`relative z-10 w-full text-white border-t border-white/10 ${className}`}>
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-12">
@@ -20,10 +23,7 @@ export function SiteFooter({ className = "bg-[#08090a]" }: SiteFooterProps) {
               <ArmaPcLogo className="h-5 sm:h-6 w-auto" />
             </Link>
             <p className="text-xs text-gray-400 mt-2 max-w-md leading-relaxed font-mono">
-              {tr(
-                "Guía didáctica y arquitectura de hardware 2026. Ensambla tu computadora sin cuellos de botella y verifica compatibilidades sin pagar sobreprecio.",
-                "A hands-on hardware guide for 2026. Build your computer without bottlenecks and check compatibility without overpaying."
-              )}
+              {tr(siteConfig.branding.subtitle.es, siteConfig.branding.subtitle.en)}
             </p>
           </div>
 
@@ -55,18 +55,35 @@ export function SiteFooter({ className = "bg-[#08090a]" }: SiteFooterProps) {
           </div>
         </div>
 
-        <div className="pt-8 flex flex-col md:flex-row justify-between items-start md:items-center text-[10px] font-mono tracking-widest uppercase text-gray-400 gap-4">
-          <span>{tr("(C) 2026 ARMAPC // GUÍA TÉCNICA DE HARDWARE INDEPENDIENTE", "(C) 2026 ARMAPC // INDEPENDENT HARDWARE GUIDE")}</span>
+        {/* Redes Sociales si están activas */}
+        {activeSocials.length > 0 && (
+          <div className="py-4 border-b border-white/5 flex items-center gap-3 text-xs font-mono text-gray-400">
+            <span className="text-[10px] uppercase tracking-wider text-gray-500">{tr("Comunidad & Redes:", "Community & Social:")}</span>
+            <div className="flex items-center gap-2 flex-wrap">
+              {activeSocials.map((s) => (
+                <a
+                  key={s.id}
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-2 py-0.5 rounded bg-white/5 border border-white/10 hover:border-white/30 hover:text-white transition-all text-[11px]"
+                >
+                  {s.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="pt-6 flex flex-col md:flex-row justify-between items-start md:items-center text-[10px] font-mono tracking-widest uppercase text-gray-400 gap-4">
+          <span>{tr(siteConfig.footer.copyright.es, siteConfig.footer.copyright.en)}</span>
           <span className="text-gray-400">
-            {tr("OPTIMIZADO PARA GOOGLE ADSENSE // CERO CUELLOS DE BOTELLA", "OPTIMIZED FOR GOOGLE ADSENSE // ZERO BOTTLENECKS")}
+            {tr(siteConfig.footer.badge.es, siteConfig.footer.badge.en)}
           </span>
         </div>
 
         <div className="mt-4 pt-4 border-t border-white/5 text-[9px] font-mono text-gray-500 leading-relaxed">
-          {tr(
-            "* AVISO LEGAL & EDITORIAL: Todas las marcas comerciales, logotipos, nombres de productos e imágenes de hardware (AMD, Intel, NVIDIA, ASUS, Corsair, MSI, etc.) pertenecen a sus respectivos fabricantes y se exhiben con fines ilustrativos, didácticos y de referencia comparativa bajo la doctrina de uso nominativo. ARMAPC es un portal informativo independiente.",
-            "* LEGAL & EDITORIAL NOTICE: All trademarks, logos, product names and hardware images (AMD, Intel, NVIDIA, ASUS, Corsair, MSI, etc.) belong to their respective manufacturers and are shown for illustrative, educational and comparative reference purposes under the nominative fair use doctrine. ARMAPC is an independent informational site."
-          )}
+          {tr(siteConfig.footer.legalNotice.es, siteConfig.footer.legalNotice.en)}
         </div>
       </div>
     </footer>

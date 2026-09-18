@@ -3,40 +3,16 @@ import { SiteFooter } from "@/components/SiteFooter";
 import Link from "next/link";
 import { BookOpen, SlidersHorizontal, Globe, Monitor } from "lucide-react";
 import { ruta, traductor, type Lang } from "@/i18n/rutas";
+import { aboutConfig } from "@/config/aboutConfig";
 
 export function SobreVista({ lang }: { lang: Lang }) {
   const tr = traductor(lang);
   const en = lang === "en";
-  const pilares = [
-    {
-      titulo: tr("Presupuestos Reales en USD", "Real Budgets in USD"),
-      texto: tr(
-        "Configuraciones balanceadas por nivel para gaming, streaming e IA local, basadas en precios oficiales MSRP y minoristas de referencia en EE.UU. (Amazon, Newegg, Best Buy, Micro Center).",
-        "Balanced builds for every level, for gaming, streaming and local AI, based on official MSRP and reference US retailers (Amazon, Newegg, Best Buy, Micro Center)."
-      ),
-    },
-    {
-      titulo: tr("Configurador Inteligente", "Smart Configurator"),
-      texto: tr(
-        "Motor interactivo que valida en tiempo real sockets, dimensiones de tarjeta gráfica frente al gabinete y demanda eléctrica en watts para evitar fuentes cortas.",
-        "An interactive engine that checks sockets, graphics card size against the case, and power draw in watts in real time, so your power supply is never too small."
-      ),
-    },
-    {
-      titulo: tr("Guías Didácticas Claras", "Clear, Practical Guides"),
-      texto: tr(
-        "Explicaciones técnicas rigurosas redactadas en español llano y directo, sin dar por sentado que ya eres ingeniero de sistemas ni abrumarte con tecnicismos vacíos.",
-        "Rigorous technical explanations in plain, direct language, without assuming you're already an engineer or burying you in empty jargon."
-      ),
-    },
-    {
-      titulo: tr("Setup Completo", "Full Setup"),
-      texto: tr(
-        "Monitor, teclado, ratón, audio, silla y kit de streaming a la altura de tu PC, con modelos reales por nivel. Tu PC y tu setup se suman en una sola lista y un solo PDF.",
-        "Monitor, keyboard, mouse, audio, chair and streaming kit to match your PC, with real models for each level. Your PC and your setup add up in one list and one PDF."
-      ),
-    },
-  ];
+
+  const pilares = aboutConfig.pillars.map((p) => ({
+    titulo: tr(p.tituloEs, p.tituloEn),
+    texto: tr(p.textoEs, p.textoEn),
+  }));
 
   return (
     <div className="relative min-h-screen text-white flex flex-col selection:bg-white selection:text-black overflow-x-hidden">
@@ -55,22 +31,27 @@ export function SobreVista({ lang }: { lang: Lang }) {
         </div>
 
         {/* Header */}
-        <div className="border-b border-white/10 pb-10 mb-12">
+        <div className="border-b border-white/10 pb-10 mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#08090a]/50 backdrop-blur-sm border border-white/10 text-[11px] font-mono tracking-[0.25em] text-emerald-400 uppercase mb-3">
-            <Globe size={14} /> {tr("[ MANIFIESTO EDITORIAL // EE.UU. & MERCADO GLOBAL ]", "[ EDITORIAL MANIFESTO // US & GLOBAL MARKET ]")}
+            <Globe size={14} /> {tr(aboutConfig.manifesto.badgeEs, aboutConfig.manifesto.badgeEn)}
           </div>
           <h1 className="text-3xl md:text-5xl font-medium tracking-tight leading-tight text-white mb-6">
-            {tr(
-              "Armar tu propia PC gamer no debería ser un privilegio de expertos.",
-              "Building your own gaming PC shouldn't be a privilege for experts."
-            )}
+            {tr(aboutConfig.manifesto.headlineEs, aboutConfig.manifesto.headlineEn)}
           </h1>
           <p className="text-base md:text-lg text-gray-300 leading-relaxed font-sans font-light">
-            {tr(
-              "Con la información correcta, cualquiera puede hacerlo: aprovechando la transparencia del mercado de hardware en Estados Unidos y a nivel mundial, ahorrando dinero y entendiendo con exactitud cada componente que compras.",
-              "With the right information, anyone can do it: taking advantage of how transparent the hardware market is in the United States and worldwide, saving money and understanding exactly every part you buy."
-            )}
+            {tr(aboutConfig.manifesto.leadEs, aboutConfig.manifesto.leadEn)}
           </p>
+        </div>
+
+        {/* Métricas Destacadas Configurables */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-12">
+          {aboutConfig.metrics.map((m) => (
+            <div key={m.id} className="p-4 rounded-xl bg-[#08090a]/50 border border-white/10 backdrop-blur-sm">
+              <div className="text-2xl sm:text-3xl font-bold font-mono text-emerald-400 mb-1">{m.value}</div>
+              <div className="text-xs font-semibold text-white leading-tight mb-0.5">{tr(m.labelEs, m.labelEn)}</div>
+              <div className="text-[10px] font-mono text-gray-400">{tr(m.subEs, m.subEn)}</div>
+            </div>
+          ))}
         </div>
 
         {/* Content sections */}

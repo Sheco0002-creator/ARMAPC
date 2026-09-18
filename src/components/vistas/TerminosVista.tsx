@@ -3,10 +3,11 @@ import { SiteFooter } from "@/components/SiteFooter";
 import Link from "next/link";
 import { Scale } from "lucide-react";
 import { ruta, traductor, type Lang } from "@/i18n/rutas";
+import { siteConfig } from "@/config/siteConfig";
 
 const Correo = () => (
-  <a href="mailto:contacto@tupcgamer.com" className="text-white underline font-mono">
-    contacto@tupcgamer.com
+  <a href={`mailto:${siteConfig.contact.email}`} className="text-white underline font-mono">
+    {siteConfig.contact.email}
   </a>
 );
 

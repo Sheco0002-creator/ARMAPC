@@ -9,26 +9,52 @@ import { ArrowRight, SlidersHorizontal, BookOpen, Layers, Info, Mail, Shield, Ho
 import { ArmaPcLogo } from "@/components/ArmaPcLogo";
 import { SelectorIdioma } from "@/components/SelectorIdioma";
 import { useIdioma } from "@/i18n/Idioma";
+import { siteConfig } from "@/config/siteConfig";
 
 interface SiteHeaderProps {
   onOpenCalculator?: () => void;
 }
+
+const ICON_MAP: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+  guias: BookOpen,
+  presupuestos: Layers,
+  configurador: SlidersHorizontal,
+  setup: Monitor,
+  sobre: Info,
+  contacto: Mail,
+};
 
 export function SiteHeader({ onOpenCalculator }: SiteHeaderProps) {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { tr, ruta } = useIdioma();
 
-  const navLinks = [
-    { href: ruta("guias"), label: tr("Guías", "Guides"), icon: BookOpen },
-    { href: ruta("presupuestos"), label: tr("Presupuestos", "Budgets"), icon: Layers },
-    { href: ruta("configurador"), label: tr("Configurador", "Configurator"), icon: SlidersHorizontal },
-    { href: ruta("setup"), label: tr("Setup Completo", "Full Setup"), icon: Monitor },
-    { href: ruta("sobre"), label: tr("Sobre", "About"), icon: Info },
-  ];
+  const navLinks = siteConfig.navigation.map((item) => ({
+    href: ruta(item.rutaKey),
+    label: tr(item.labelEs, item.labelEn),
+    badge: item.badge ? tr(item.badge.textEs, item.badge.textEn) : undefined,
+    badgeColor: item.badge?.color,
+    icon: ICON_MAP[item.id] || BookOpen,
+  }));
 
   return (
     <header className="relative w-full z-40 bg-[#08090a]/90 backdrop-blur-md border-b border-white/10 text-white">
+      {/* Barra de Anuncio Superior Configurable */}
+      {siteConfig.announcement.enabled && (
+        <aside aria-label={tr("Aviso del sitio", "Site announcement")} className="bg-emerald-950/40 border-b border-emerald-500/20 px-4 py-1.5 text-[11px] font-mono text-center flex items-center justify-center gap-2 flex-wrap text-emerald-200">
+          <span className="px-1.5 py-0.5 rounded bg-emerald-500/20 border border-emerald-500/30 text-[9px] font-bold text-emerald-300">
+            {tr(siteConfig.announcement.badge.es, siteConfig.announcement.badge.en)}
+          </span>
+          <span>{tr(siteConfig.announcement.text.es, siteConfig.announcement.text.en)}</span>
+          <Link
+            href={ruta(siteConfig.announcement.linkRutaKey)}
+            className="underline hover:text-white transition-colors font-semibold text-emerald-300 ml-1"
+          >
+            {tr(siteConfig.announcement.linkText.es, siteConfig.announcement.linkText.en)}
+          </Link>
+        </aside>
+      )}
+
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
         {/* Logo con animación arquitectónica */}
         <Link href={ruta("guias")} className="group flex items-center select-none" aria-label={tr("ARMAPC - Guías", "ARMAPC - Guides")}>
@@ -43,11 +69,16 @@ export function SiteHeader({ onOpenCalculator }: SiteHeaderProps) {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`transition-colors py-1 relative ${
+                className={`transition-colors py-1 relative flex items-center gap-1.5 ${
                   isActive ? "text-white font-bold" : "text-gray-400 hover:text-white"
                 }`}
               >
-                {link.label}
+                <span>{link.label}</span>
+                {link.badge && (
+                  <span className={`text-[8px] font-mono px-1 py-0.2 rounded font-bold ${link.badgeColor || "bg-white/10 text-gray-300"}`}>
+                    {link.badge}
+                  </span>
+                )}
                 {isActive && (
                   <motion.span
                     layoutId="activeNavIndicator"

@@ -4,24 +4,13 @@ import React, { useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import Link from "next/link";
-import { Send, CheckCircle2, HelpCircle, Globe, Clock, Mail } from "lucide-react";
+import { Mail, Clock, CheckCircle2, HelpCircle, Send, Globe } from "lucide-react";
 import { useIdioma } from "@/i18n/Idioma";
-
-// Motivos de consulta: [español, inglés]. El valor que viaja en el correo es el del idioma de la página.
-const MOTIVOS: [string, string][] = [
-  ["Duda sobre compatibilidad de piezas (EE.UU. / Global)", "Part compatibility question (US / Global)"],
-  ["Consulta sobre presupuesto en USD para gaming o trabajo", "USD budget question for gaming or work"],
-  [
-    "Reporte de precio o stock desactualizado (Amazon, Newegg, Best Buy, etc.)",
-    "Outdated price or stock report (Amazon, Newegg, Best Buy, etc.)",
-  ],
-  ["Sugerencia para nueva guía educativa", "Suggestion for a new guide"],
-  ["Notificaciones legales / Solicitud de Privacidad CCPA / DMCA", "Legal notices / CCPA privacy request / DMCA"],
-  ["Propuesta comercial, prensa o colaboración", "Business proposal, press or partnership"],
-];
+import { contactConfig } from "@/config/contactConfig";
 
 export function ContactoVista() {
   const { en, tr, ruta } = useIdioma();
+  const MOTIVOS = contactConfig.topics.map((t) => [t.es, t.en] as [string, string]);
   const motivo = (m: [string, string]) => (en ? m[1] : m[0]);
   const [formData, setFormData] = useState({ name: "", email: "", subject: motivo(MOTIVOS[0]), message: "" });
   const [submitted, setSubmitted] = useState(false);
@@ -29,7 +18,7 @@ export function ContactoVista() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Pre-fill mailto link with encoded parameters
-    const mailtoUrl = `mailto:contacto@tupcgamer.com?subject=${encodeURIComponent(
+    const mailtoUrl = `mailto:${contactConfig.destinationEmail}?subject=${encodeURIComponent(
       `[${tr("Contacto", "Contact")} ArmaPC] ${formData.subject} - ${formData.name}`
     )}&body=${encodeURIComponent(
       tr(
@@ -60,16 +49,13 @@ export function ContactoVista() {
         {/* Header */}
         <div className="border-b border-white/10 pb-8 mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#08090a]/50 backdrop-blur-sm border border-white/10 text-[11px] font-mono tracking-[0.25em] text-emerald-400 uppercase mb-3">
-            <Globe size={14} /> {tr("[ COMUNICACIÓN DIRECTA // ATENCIÓN EE.UU. & GLOBAL ]", "[ DIRECT CONTACT // US & GLOBAL SUPPORT ]")}
+            <Globe size={14} /> {tr(contactConfig.header.badgeEs, contactConfig.header.badgeEn)}
           </div>
           <h1 className="text-3xl md:text-5xl font-medium tracking-tight text-white mb-4">
-            {tr("Escríbenos. Leemos cada mensaje.", "Write to us. We read every message.")}
+            {tr(contactConfig.header.titleEs, contactConfig.header.titleEn)}
           </h1>
           <p className="text-base md:text-lg text-gray-300 max-w-2xl leading-relaxed font-sans font-light">
-            {tr(
-              "¿Tienes una duda técnica sobre compatibilidad, encontraste un precio desactualizado en tiendas de EE.UU. o deseas sugerir una nueva guía? Nuestro equipo técnico está a tu disposición.",
-              "Have a technical question about compatibility, found an outdated price at a US store, or want to suggest a new guide? Our tech team is here to help."
-            )}
+            {tr(contactConfig.header.subtitleEs, contactConfig.header.subtitleEn)}
           </p>
         </div>
 
@@ -181,10 +167,10 @@ export function ContactoVista() {
               </div>
               <div className="flex items-center gap-3 text-white">
                 <a
-                  href="mailto:contacto@tupcgamer.com"
+                  href={`mailto:${contactConfig.destinationEmail}`}
                   className="text-sm font-mono hover:text-gray-300 transition-colors break-all"
                 >
-                  contacto@tupcgamer.com
+                  {contactConfig.destinationEmail}
                 </a>
               </div>
               <p className="text-xs text-gray-400 leading-relaxed font-sans">
@@ -207,7 +193,7 @@ export function ContactoVista() {
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 size={12} className="text-emerald-400" />
-                  <span>{tr("Respuesta habitual: 24 a 48 horas", "Typical reply: 24 to 48 hours")}</span>
+                  <span>{tr(contactConfig.responseTime.es, contactConfig.responseTime.en)}</span>
                 </div>
               </div>
             </div>
