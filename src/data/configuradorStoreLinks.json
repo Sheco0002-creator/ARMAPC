@@ -1056,7 +1056,7 @@
       "store": "Newegg",
       "url": "https://www.newegg.com/p/pl?d=F5-6000J3038F16GX2-TZ5N",
       "backupStore": "Amazon",
-      "backupUrl": "https://www.amazon.com/s?k=F5-6000J3038F16GX2-TZ5N",
+      "backupUrl": "https://www.amazon.com/dp/B0BFCV7JZ8",
       "officialUrl": "https://www.gskill.com/search/F5-6000J3038F16GX2-TZ5N",
       "storeNote": "revisado en ficha: Newegg (con stock)"
     },
@@ -1124,7 +1124,7 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/s?k=F5-6400J3039G16GX2-TR5NS",
       "backupStore": "Newegg",
-      "backupUrl": "https://www.newegg.com/p/pl?d=F5-6400J3039G16GX2-TR5NS",
+      "backupUrl": "https://www.newegg.com/g-skill-trident-z5-royal-series-32gb-ddr5-6400-cas-latency-cl30-desktop-memory-silver/p/N82E16820374628",
       "officialUrl": "https://www.gskill.com/search/F5-6400J3039G16GX2-TR5NS",
       "storeNote": "revisado en ficha: Amazon (con stock)"
     },
@@ -1277,7 +1277,7 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/s?k=KF560C30BBEAK2-32",
       "backupStore": "Newegg",
-      "backupUrl": "https://www.newegg.com/p/pl?d=KF560C30BBEAK2-32",
+      "backupUrl": "https://www.newegg.com/kingston-technology-corp-fury-beast-32gb-ddr5-6000-cas-latency-cl30-memory-black/p/N82E16820242861",
       "officialUrl": "https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-rgb-memory",
       "storeNote": "revisado en ficha: Amazon (con stock)"
     },
@@ -1309,9 +1309,9 @@
       "isGlobal": false,
       "sinStock": false,
       "store": "Amazon",
-      "url": "https://www.amazon.com/s?k=FF4D532G6000HC38ADC01",
+      "url": "https://www.amazon.com/dp/B09LHNF6GT",
       "backupStore": "Newegg",
-      "backupUrl": "https://www.newegg.com/p/pl?d=FF4D532G6000HC38ADC01",
+      "backupUrl": "https://www.newegg.com/team-group-t-force-delta-rgb-32gb-ddr5-6000-cas-latency-cl38-desktop-memory-white/p/N82E16820331749",
       "officialUrl": "https://pcpartpicker.com/product/jZD7YJ/",
       "storeNote": "revisado en ficha: Amazon (con stock) | también: Newegg"
     },
@@ -1360,7 +1360,7 @@
       "isGlobal": false,
       "sinStock": false,
       "store": "Amazon",
-      "url": "https://www.amazon.com/s?k=CP2K16G60C36U5W",
+      "url": "https://www.amazon.com/dp/B0D2JLWLWZ",
       "backupStore": "Newegg",
       "backupUrl": "https://www.newegg.com/p/pl?d=CP2K16G60C36U5W",
       "officialUrl": "https://pcpartpicker.com/product/63TZxr/",
@@ -1379,7 +1379,7 @@
       "store": "Newegg",
       "url": "https://www.newegg.com/p/pl?d=F5-6000J3636F16GX2-RM5RW",
       "backupStore": "Amazon",
-      "backupUrl": "https://www.amazon.com/s?k=F5-6000J3636F16GX2-RM5RW",
+      "backupUrl": "https://www.amazon.com/dp/B0DN5S68H3",
       "officialUrl": "https://pcpartpicker.com/product/jPmNnQ/",
       "storeNote": "revisado en ficha: Newegg (con stock)"
     },
@@ -1411,9 +1411,9 @@
       "isGlobal": false,
       "sinStock": false,
       "store": "Amazon",
-      "url": "https://www.amazon.com/s?k=FF4D564G6000HC38ADC01",
+      "url": "https://www.amazon.com/dp/B0BNTXVW8V",
       "backupStore": "Newegg",
-      "backupUrl": "https://www.newegg.com/p/pl?d=FF4D564G6000HC38ADC01",
+      "backupUrl": "https://www.newegg.com/team-group-t-force-delta-rgb-64gb-ddr5-6000-cas-latency-cl38-desktop-memory-white/p/N82E16820331979",
       "officialUrl": "https://pcpartpicker.com/product/kmP8TW/",
       "storeNote": "revisado en ficha: Amazon (con stock)"
     },
@@ -1430,7 +1430,7 @@
       "store": "Amazon",
       "url": "https://www.amazon.com/s?k=KF560C36BWEK2-64",
       "backupStore": "Newegg",
-      "backupUrl": "https://www.newegg.com/p/pl?d=KF560C36BWEK2-64",
+      "backupUrl": "https://www.newegg.com/kingston-technology-corp-fury-beast-64gb-ddr5-6000-cas-latency-cl36-memory-white/p/0RM-001W-006Y2",
       "officialUrl": "https://pcpartpicker.com/product/ZPCZxr/",
       "storeNote": "revisado en ficha: Amazon (con stock) | también: Newegg"
     },
